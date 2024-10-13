@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>6.3. O Teorema de Fubini ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch6.S2.html" title="6.2. Medidas Produto ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch6.S4.html" title="6.4. O Completamento da Medida Produto ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch6.S1.html" title="6.1. Produto de 𝜎-Álgebras ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch6.S2.html" title="6.2. Medidas Produto ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch6.S4.html" title="6.4. O Completamento da Medida Produto ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch6.Sx1.html" title="Exercícios para o Capítulo 6 ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content="Fubini, Tonelli, abstrato, de Fubini–Tonelli, teorema, teorema de">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="6.1" data-path="Ch6.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S1.html" title="In Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.1 </span></b>Produto de <math class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-Álgebras</a></li>
+<li data-level="6.2" data-path="Ch6.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S2.html" title="In Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.2 </span></b>Medidas Produto</a></li>
+<li data-level="6.3" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.3 </span></b>O Teorema de Fubini</a></li>
+<li data-level="6.4" data-path="Ch6.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.S4.html" title="In Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6.4 </span></b>O Completamento da Medida Produto</a></li>
+<li data-level="" data-path="Ch6.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch6.Sx1.html" title="In Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">6</span></a></li>
+</ol>
+</li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Teorema de Fubini</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">6.3</span>. O Teorema de Fubini</h1>
+
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">6.3.1 Teorema</span></span><span class="ltx_text ltx_font_bold"> </span>(Fubini–Tonelli)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math>, <math id="Thmteo1.p1.m2" class="ltx_Math" alttext="(Y,\mathcal{B},\nu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>,</mo><mi>ν</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(Y,\mathcal{B},\nu)</annotation></semantics></math> espaços de medida, com <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> e <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="\nu" display="inline"><semantics><mi>ν</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math> <math id="Thmteo1.p1.m5" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-finitas.
+Seja <math id="Thmteo1.p1.m6" class="ltx_Math" alttext="f:X\times Y\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\times Y\to\overline{\mathds{R}}</annotation></semantics></math> uma função mensurável, onde <math id="Thmteo1.p1.m7" class="ltx_Math" alttext="X\times Y" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X\times Y</annotation></semantics></math> é munido da <math id="Thmteo1.p1.m8" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra produto <math id="Thmteo1.p1.m9" class="ltx_Math" alttext="\mathcal{A}\otimes\mathcal{B}" display="inline"><semantics><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo lspace="0.222em" rspace="0.222em">⊗</mo><mi class="ltx_font_mathcaligraphic">ℬ</mi></mrow><annotation encoding="application/x-tex">\mathcal{A}\otimes\mathcal{B}</annotation></semantics></math>.
+Se <math id="Thmteo1.p1.m10" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável então:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">para todo </span><math id="I1.ix1.p1.m1" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math><span class="ltx_text ltx_font_italic">, a função </span><math id="I1.ix1.p1.m2" class="ltx_Math" alttext="Y\ni y\mapsto f(x,y)\in\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>Y</mi><mo>∋</mo><mi>y</mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">Y\ni y\mapsto f(x,y)\in\overline{\mathds{R}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é mensurável;</span></p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">o conjunto:</span></p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="X_{0}=\big{\{}x\in X:\text{a função $Y\ni y\mapsto f(x,y)\in\overline{\mathds{%
+R}}$ é quase integrável}\big{\}}" display="block"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mtext class="ltx_mathvariant_italic">a função </mtext><mrow><mi>Y</mi><mo>∋</mo><mi>y</mi><mo stretchy="false">↦</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow><mtext class="ltx_mathvariant_italic"> é quase integrável</mtext></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">X_{0}=\big{\{}x\in X:\text{a função $Y\ni y\mapsto f(x,y)\in\overline{\mathds{%
+R}}$ é quase integrável}\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">é mensurável e </span><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="\mu(X\setminus X_{0})=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>∖</mo><msub><mi>X</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(X\setminus X_{0})=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.ix3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">a função </span><math id="I1.ix3.p1.m1" class="ltx_Math" alttext="X_{0}\ni x\mapsto\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\in\overline{\mathds{R}}" display="inline"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>∋</mo><mi>x</mi><mo rspace="0.111em" stretchy="false">↦</mo><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>∈</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">X_{0}\ni x\mapsto\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\in\overline{\mathds{R}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é
+quase integrável;</span></p>
+</div>
+</li>
+<li id="I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I1.ix4.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">vale a igualdade:</span></p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\int_{X_{0}}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=%
+\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><msub><mi>X</mi><mn>0</mn></msub></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X_{0}}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=%
+\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y).</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Observe que se a função <math id="p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é não negativa então <math id="p1.m2" class="ltx_Math" alttext="X_{0}=X" display="inline"><semantics><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>=</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X_{0}=X</annotation></semantics></math> e a afirmação que aparece
+no item (b) é trivial.</p>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">A validade do item (a) segue diretamente do Exemplo <a href="Ch6.S1.html#Thmteo6" title="6.1.6 Exemplo. ‣ 6.1. Produto de 𝜎-Álgebras ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.1.6</span></a>.
+Dividimos o restante da demonstração em itens.</p>
+<ul class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i1.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">O teorema vale se <math id="I2.i1.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é simples, mensurável e não negativa</span>.</p>
+</div>
+<div id="I2.i1.p2" class="ltx_para">
+<p class="ltx_p">Podemos escrever <math id="I2.i1.p2.m1" class="ltx_Math" alttext="f=\sum_{i=1}^{k}c_{i}\chi_{\lower 2.0pt\hbox{$\scriptstyle A^{i}$}}" display="inline"><semantics><mrow><mi>f</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>χ</mi><mpadded voffset="-2.0pt"><msup><mi mathsize="70%">A</mi><mi mathsize="70%">i</mi></msup></mpadded></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">f=\sum_{i=1}^{k}c_{i}\chi_{\lower 2.0pt\hbox{$\scriptstyle A^{i}$}}</annotation></semantics></math>, com <math id="I2.i1.p2.m2" class="ltx_Math" alttext="c_{i}\in[0,+\infty]" display="inline"><semantics><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">c_{i}\in[0,+\infty]</annotation></semantics></math> e <math id="I2.i1.p2.m3" class="ltx_Math" alttext="A^{i}" display="inline"><semantics><msup><mi>A</mi><mi>i</mi></msup><annotation encoding="application/x-tex">A^{i}</annotation></semantics></math>
+um subconjunto mensurável de <math id="I2.i1.p2.m4" class="ltx_Math" alttext="X\times Y" display="inline"><semantics><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X\times Y</annotation></semantics></math>, para <math id="I2.i1.p2.m5" class="ltx_Math" alttext="i=1,\ldots,k" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\ldots,k</annotation></semantics></math>. Note que,
+se <math id="I2.i1.p2.m6" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>, temos:</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="f(x,y)=\sum_{i=1}^{k}c_{i}\chi_{\lower 2.0pt\hbox{$\scriptstyle A^{i}_{x}$}}(y)," display="block"><semantics><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><msub><mi>χ</mi><mpadded voffset="-2.0pt"><msubsup><mi mathsize="70%">A</mi><mi mathsize="70%">x</mi><mi mathsize="70%">i</mi></msubsup></mpadded></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">f(x,y)=\sum_{i=1}^{k}c_{i}\chi_{\lower 2.0pt\hbox{$\scriptstyle A^{i}_{x}$}}(y),</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.3.1)</span>
+                    
+                  
+</div>
+<p class="ltx_p">para todo <math id="I2.i1.p2.m7" class="ltx_Math" alttext="y\in Y" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">y\in Y</annotation></semantics></math>. Logo, usando a Proposição <a href="Ch6.S2.html#Thmteo9" title="6.2.9 Proposição. ‣ 6.2. Medidas Produto ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.2.9</span></a>, obtemos:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I2.i1.p2.m8" class="ltx_Math" alttext="\int_{X}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=\int_%
+{X}\sum_{i=1}^{k}c_{i}\nu(A^{i}_{x})\,\mathrm{d}\mu(x)\\
+=\sum_{i=1}^{k}c_{i}\int_{X}\nu(A^{i}_{x})\,\mathrm{d}\mu(x)=\sum_{i=1}^{k}c_{%
+i}\,(\mu\times\nu)(A^{i})\\
+=\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)." display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo rspace="0em">∫</mo><mi>X</mi></msub><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>A</mi><mi>x</mi><mi>i</mi></msubsup><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>ν</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>A</mi><mi>x</mi><mi>i</mi></msubsup><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></munderover><mrow><msub><mi>c</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>A</mi><mi>i</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\int_{X}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=\int_%
+{X}\sum_{i=1}^{k}c_{i}\nu(A^{i}_{x})\,\mathrm{d}\mu(x)\\
+=\sum_{i=1}^{k}c_{i}\int_{X}\nu(A^{i}_{x})\,\mathrm{d}\mu(x)=\sum_{i=1}^{k}c_{%
+i}\,(\mu\times\nu)(A^{i})\\
+=\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y).</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i2.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">O teorema vale se <math id="I2.i2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é mensurável e não negativa</span>.</p>
+</div>
+<div id="I2.i2.p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="I2.i2.p2.m1" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math> uma seqüências de funções <math id="I2.i2.p2.m2" class="ltx_Math" alttext="f_{k}:X\times Y\to[0,+\infty]" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f_{k}:X\times Y\to[0,+\infty]</annotation></semantics></math>
+simples e mensuráveis com <math id="I2.i2.p2.m3" class="ltx_Math" alttext="f_{k}\nearrow f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>↗</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{k}\nearrow f</annotation></semantics></math>. Pelo Teorema da Convergência Monotônica,
+temos:</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\int_{Y}f(x,y)\,\mathrm{d}\nu(y)=\lim_{k\to\infty}\int_{Y}f_{k}(x,y)\,\mathrm{%
+d}\nu(y)," display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int_{Y}f(x,y)\,\mathrm{d}\nu(y)=\lim_{k\to\infty}\int_{Y}f_{k}(x,y)\,\mathrm{%
+d}\nu(y),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I2.i2.p2.m4" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>. Logo a função <math id="I2.i2.p2.m5" class="ltx_Math" alttext="x\mapsto\int_{Y}f(x,y)\,\mathrm{d}\nu(y)" display="inline"><semantics><mrow><mi>x</mi><mo rspace="0.111em" stretchy="false">↦</mo><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">x\mapsto\int_{Y}f(x,y)\,\mathrm{d}\nu(y)</annotation></semantics></math>
+é mensurável e, usando novamente o Teorema da Convergência Monotônica, obtemos:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I2.i2.p2.m6" class="ltx_Math" alttext="\int_{X}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=\lim_%
+{k\to\infty}\int_{X}\Big{(}\int_{Y}f_{k}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)\\
+=\lim_{k\to\infty}\int_{X\times Y}f_{k}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)=%
+\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)." display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo rspace="0em">∫</mo><mi>X</mi></msub><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\int_{X}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)=\lim_%
+{k\to\infty}\int_{X}\Big{(}\int_{Y}f_{k}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)\\
+=\lim_{k\to\infty}\int_{X\times Y}f_{k}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)=%
+\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y).</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i3.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">O teorema vale se <math id="I2.i3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável</span>.</p>
+</div>
+<div id="I2.i3.p2" class="ltx_para">
+<p class="ltx_p">Como <math id="I2.i3.p2.m1" class="ltx_Math" alttext="f^{+}" display="inline"><semantics><msup><mi>f</mi><mo>+</mo></msup><annotation encoding="application/x-tex">f^{+}</annotation></semantics></math> e <math id="I2.i3.p2.m2" class="ltx_Math" alttext="f^{-}" display="inline"><semantics><msup><mi>f</mi><mo>−</mo></msup><annotation encoding="application/x-tex">f^{-}</annotation></semantics></math> são funções mensuráveis não negativas, temos:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S2.EGx28" class="ltx_equationgroup ltx_eqn_gather ltx_eqn_table">
+
+<tbody id="E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E2.m1" class="ltx_Math" alttext="\displaystyle\int_{X}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)=\int_{X\times Y}f^{+}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)," display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\int_{X}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)=\int_{X\times Y}f^{+}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.3.2)</span></td>
+</tr></tbody>
+<tbody id="E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E3.m1" class="ltx_Math" alttext="\displaystyle\int_{X}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)=\int_{X\times Y}f^{-}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\displaystyle\int_{X}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,%
+\mathrm{d}\mu(x)=\int_{X\times Y}f^{-}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y).</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6.3.3)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">O conjunto <math id="I2.i3.p2.m3" class="ltx_Math" alttext="X_{0}" display="inline"><semantics><msub><mi>X</mi><mn>0</mn></msub><annotation encoding="application/x-tex">X_{0}</annotation></semantics></math> é igual ao conjunto dos pontos de <math id="I2.i3.p2.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> onde ao menos uma das funções:</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="X\ni x\longmapsto\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y),\quad X\ni x\longmapsto%
+\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)," display="block"><semantics><mrow><mrow><mrow><mi>X</mi><mo>∋</mo><mi>x</mi><mo rspace="0.111em" stretchy="false">⟼</mo><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mi>X</mi><mo>∋</mo><mi>x</mi><mo rspace="0.111em" stretchy="false">⟼</mo><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">X\ni x\longmapsto\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y),\quad X\ni x\longmapsto%
+\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é finita; como essas funções são ambas mensuráveis, segue que o conjunto <math id="I2.i3.p2.m5" class="ltx_Math" alttext="X_{0}" display="inline"><semantics><msub><mi>X</mi><mn>0</mn></msub><annotation encoding="application/x-tex">X_{0}</annotation></semantics></math> é mensurável.
+Como <math id="I2.i3.p2.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável, temos que <math id="I2.i3.p2.m7" class="ltx_Math" alttext="f^{+}" display="inline"><semantics><msup><mi>f</mi><mo>+</mo></msup><annotation encoding="application/x-tex">f^{+}</annotation></semantics></math> é integrável ou <math id="I2.i3.p2.m8" class="ltx_Math" alttext="f^{-}" display="inline"><semantics><msup><mi>f</mi><mo>−</mo></msup><annotation encoding="application/x-tex">f^{-}</annotation></semantics></math> é integrável;
+para fixar as idéias, vamos supor que:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\int_{X\times Y}f^{-}\,\mathrm{d}(\mu\times\nu)&lt;+\infty." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X\times Y}f^{-}\,\mathrm{d}(\mu\times\nu)&lt;+\infty.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Tendo em mente o resultado do Exercício <a href="Ch2.Sx1.html#Ch2.Thmexercise19" title="Exercício 2.19. ‣ Definição da Integral ‣ Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.19</span></a>, segue de (<a href="#E3" title="In 3 ‣ 6.3. O Teorema de Fubini ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3.3</span></a>) que:</p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)&lt;+\infty," display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)&lt;+\infty,</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(6.3.4)</span>
+                    
+                  
+</div>
+<p class="ltx_p">para quase todo <math id="I2.i3.p2.m9" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>. Como o conjunto <math id="I2.i3.p2.m10" class="ltx_Math" alttext="X_{0}" display="inline"><semantics><msub><mi>X</mi><mn>0</mn></msub><annotation encoding="application/x-tex">X_{0}</annotation></semantics></math> contém os pontos <math id="I2.i3.p2.m11" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math> tais que
+(<a href="#E4" title="In 3 ‣ 6.3. O Teorema de Fubini ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3.4</span></a>) vale, concluímos que <math id="I2.i3.p2.m12" class="ltx_Math" alttext="\mu(X\setminus X_{0})=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>X</mi><mo>∖</mo><msub><mi>X</mi><mn>0</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(X\setminus X_{0})=0</annotation></semantics></math>. Além do mais,
+de (<a href="#E2" title="In 3 ‣ 6.3. O Teorema de Fubini ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3.2</span></a>) e (<a href="#E3" title="In 3 ‣ 6.3. O Teorema de Fubini ‣ Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6.3.3</span></a>) vem:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I2.i3.p2.m13" class="ltx_Math" alttext="\hfil\int_{X_{0}}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu%
+(x)=\\
+\int_{X_{0}}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(%
+x)-\int_{X_{0}}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}%
+\mu(x)\\
+=\int_{X}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)-%
+\int_{X}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)\\
+=\int_{X\times Y}f^{+}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)-\int_{X\times Y}f^{%
+-}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)\\
+=\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)," display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mo>∫</mo><msub><mi>X</mi><mn>0</mn></msub></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi></mi></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><msub><mo>∫</mo><msub><mi>X</mi><mn>0</mn></msub></msub><mrow><mrow><mo lspace="0em" maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msub><mo rspace="0em">∫</mo><msub><mi>X</mi><mn>0</mn></msub></msub><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><mrow><msub><mo rspace="0em">∫</mo><mi>X</mi></msub><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msub><mo rspace="0em">∫</mo><mi>X</mi></msub><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>ν</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msup><mi>f</mi><mo>+</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><msup><mi>f</mi><mo>−</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>μ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ν</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\hfil\int_{X_{0}}\Big{(}\int_{Y}f(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu%
+(x)=\\
+\int_{X_{0}}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(%
+x)-\int_{X_{0}}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}%
+\mu(x)\\
+=\int_{X}\Big{(}\int_{Y}f^{+}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)-%
+\int_{X}\Big{(}\int_{Y}f^{-}(x,y)\,\mathrm{d}\nu(y)\Big{)}\,\mathrm{d}\mu(x)\\
+=\int_{X\times Y}f^{+}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)-\int_{X\times Y}f^{%
+-}(x,y)\,\mathrm{d}(\mu\times\nu)(x,y)\\
+=\int_{X\times Y}f(x,y)\,\mathrm{d}(\mu\times\nu)(x,y),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde usamos também o Corolário <a href="Ch2.S4.html#Thmteo11" title="2.4.11 Corolário. ‣ 2.4. Definição da Integral: o Caso Geral ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.4.11</span></a>.∎</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch6.S2.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch6.S4.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

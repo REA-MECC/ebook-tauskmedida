@@ -1,0 +1,522 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch3.S2.html" title="3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S2.html" title="3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S4.html" title="3.4. Apêndice à Seção 3.3: recordação de Cálculo no ℝ^𝑛 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.Sx1.html" title="Exercícios para o Capítulo 3 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , , Lipschitz, Lipschitziana, constante, constante de, de Lipschitz, de uma aplicação linear, função, localmente, localmente Lipschitziana, norma">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Aplicações Lipschitzianas</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Aplicações Lineares</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>O Teorema de Mudança de Variáveis</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>recordação de Cálculo no <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">3</span></a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.1</span>. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue</h1>
+
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_notation">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.1 Notação</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p">Dado <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="x\in\mathds{R}^{n}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x\in\mathds{R}^{n}</annotation></semantics></math>, escrevemos:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\|x\|_{\infty}=\max\big{\{}|x_{i}|:i=1,\ldots,n\big{\}}," display="block"><semantics><mrow><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mo stretchy="false">|</mo><msub><mi>x</mi><mi>i</mi></msub><mo rspace="0.278em" stretchy="false">|</mo></mrow><mo rspace="0.278em">:</mo><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\|x\|_{\infty}=\max\big{\{}|x_{i}|:i=1,\ldots,n\big{\}},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e para <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="x,y\in\mathds{R}^{n}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x,y\in\mathds{R}^{n}</annotation></semantics></math>, escrevemos:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="d_{\infty}(x,y)=\|x-y\|_{\infty}=\max\big{\{}|x_{i}-y_{i}|:i=1,\ldots,n\big{\}}." display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>=</mo><mrow><mi>max</mi><mo>⁡</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>−</mo><msub><mi>y</mi><mi>i</mi></msub></mrow><mo rspace="0.278em" stretchy="false">|</mo></mrow><mo rspace="0.278em">:</mo><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">d_{\infty}(x,y)=\|x-y\|_{\infty}=\max\big{\{}|x_{i}-y_{i}|:i=1,\ldots,n\big{\}}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Claramente se <math id="p1.m1" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math> é um cubo <math id="p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensional com aresta <math id="p1.m3" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> (veja Definição <a href="Ch1.S4.html#Thmteo22" title="1.4.22 Definição. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.22</span></a>)
+então <math id="p1.m4" class="ltx_Math" alttext="d_{\infty}(x,y)\leq a" display="inline"><semantics><mrow><mrow><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">d_{\infty}(x,y)\leq a</annotation></semantics></math>, para todos <math id="p1.m5" class="ltx_Math" alttext="x,y\in B" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">x,y\in B</annotation></semantics></math>. Provamos agora a seguinte recíproca
+para essa afirmação:</p>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.2 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo2.p1.m1" class="ltx_Math" alttext="A\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">A\subset\mathds{R}^{n}</annotation></semantics></math> e <math id="Thmteo2.p1.m2" class="ltx_Math" alttext="a\geq 0" display="inline"><semantics><mrow><mi>a</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a\geq 0</annotation></semantics></math> tais que <math id="Thmteo2.p1.m3" class="ltx_Math" alttext="d_{\infty}(x,y)\leq a" display="inline"><semantics><mrow><mrow><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">d_{\infty}(x,y)\leq a</annotation></semantics></math>, para todos <math id="Thmteo2.p1.m4" class="ltx_Math" alttext="x,y\in A" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x,y\in A</annotation></semantics></math>. Então
+<math id="Thmteo2.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> está contido em um cubo <math id="Thmteo2.p1.m6" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensional de aresta <math id="Thmteo2.p1.m7" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>; em particular:</span></p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mathfrak{m}^{*}(A)\leq a^{n}." display="block"><semantics><mrow><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><msup><mi>a</mi><mi>n</mi></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}^{*}(A)\leq a^{n}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Se <math id="p2.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é vazio, não há nada para se mostrar. Senão, seja <math id="p2.m2" class="ltx_Math" alttext="\pi_{i}:\mathds{R}^{n}\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>π</mi><mi>i</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\pi_{i}:\mathds{R}^{n}\to\mathds{R}</annotation></semantics></math> a projeção sobre
+a <math id="p2.m3" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>-ésima coordenada e considere o conjunto <math id="p2.m4" class="ltx_Math" alttext="A_{i}=\pi_{i}(A)" display="inline"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>=</mo><mrow><msub><mi>π</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">A_{i}=\pi_{i}(A)</annotation></semantics></math>.
+Temos <math id="p2.m5" class="ltx_Math" alttext="|t-s|\leq a" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mi>t</mi><mo>−</mo><mi>s</mi></mrow><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">|t-s|\leq a</annotation></semantics></math>, para todos <math id="p2.m6" class="ltx_Math" alttext="t,s\in A_{i}" display="inline"><semantics><mrow><mrow><mi>t</mi><mo>,</mo><mi>s</mi></mrow><mo>∈</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">t,s\in A_{i}</annotation></semantics></math> e portanto <math id="p2.m7" class="ltx_Math" alttext="\sup A_{i}-\inf A_{i}\leq a" display="inline"><semantics><mrow><mrow><mrow><mo rspace="0.167em">sup</mo><msub><mi>A</mi><mi>i</mi></msub></mrow><mo>−</mo><mrow><mo lspace="0em" rspace="0.167em">inf</mo><msub><mi>A</mi><mi>i</mi></msub></mrow></mrow><mo>≤</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">\sup A_{i}-\inf A_{i}\leq a</annotation></semantics></math>;
+se <math id="p2.m8" class="ltx_Math" alttext="a_{i}=\inf A_{i}" display="inline"><semantics><mrow><msub><mi>a</mi><mi>i</mi></msub><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0.167em">inf</mo><msub><mi>A</mi><mi>i</mi></msub></mrow></mrow><annotation encoding="application/x-tex">a_{i}=\inf A_{i}</annotation></semantics></math>, segue que:</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="A_{i}\subset[a_{i},a_{i}+a]" display="block"><semantics><mrow><msub><mi>A</mi><mi>i</mi></msub><mo>⊂</mo><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A_{i}\subset[a_{i},a_{i}+a]</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e portanto:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="A\subset\prod_{i=1}^{n}A_{i}\subset\prod_{i=1}^{n}[a_{i},a_{i}+a].\qed" display="block"><semantics><mrow><mrow><mi>A</mi><mo rspace="0.111em">⊂</mo><mrow><munderover><mo movablelimits="false">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>i</mi></msub></mrow><mo rspace="0.111em">⊂</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">[</mo><msub><mi>a</mi><mi>i</mi></msub><mo>,</mo><mrow><msub><mi>a</mi><mi>i</mi></msub><mo>+</mo><mi>a</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">A\subset\prod_{i=1}^{n}A_{i}\subset\prod_{i=1}^{n}[a_{i},a_{i}+a].\qed</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.3 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Thmteo3.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num subconjunto <math id="Thmteo3.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo3.p1.m3" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math>. Dizemos que <math id="Thmteo3.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é
+<span class="ltx_text ltx_font_italic">Lipschitziana</span>
+se existe uma constante <math id="Thmteo3.p1.m5" class="ltx_Math" alttext="k\geq 0" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\geq 0</annotation></semantics></math> tal que:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="d_{\infty}\big{(}\phi(x),\phi(y)\big{)}\leq k\,d_{\infty}(x,y)," display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>k</mi><mo lspace="0.170em">⁢</mo><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">d_{\infty}\big{(}\phi(x),\phi(y)\big{)}\leq k\,d_{\infty}(x,y),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="Thmteo3.p1.m6" class="ltx_Math" alttext="x,y\in X" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x,y\in X</annotation></semantics></math>. A constante <math id="Thmteo3.p1.m7" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math> é dita uma
+<span class="ltx_text ltx_font_italic">constante de Lipschitz</span>
+para a função <math id="Thmteo3.p1.m8" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Claramente toda função Lipschitziana é (uniformemente) contínua.</p>
+</div>
+<div id="Thmteo4" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.4 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo4.p1.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> um subconjunto de <math id="Thmteo4.p1.m2" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>. Dado <math id="Thmteo4.p1.m3" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>, existe um conjunto enumerável
+<math id="Thmteo4.p1.m4" class="ltx_Math" alttext="\mathcal{R}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> de cubos <math id="Thmteo4.p1.m5" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensionais tal que <math id="Thmteo4.p1.m6" class="ltx_Math" alttext="A\subset\bigcup_{B\in\mathcal{R}}B" display="inline"><semantics><mrow><mi>A</mi><mo rspace="0.111em">⊂</mo><mrow><msub><mo>⋃</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></msub><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">A\subset\bigcup_{B\in\mathcal{R}}B</annotation></semantics></math>
+e <math id="Thmteo4.p1.m7" class="ltx_Math" alttext="\sum_{B\in\mathcal{R}}|B|\leq\mathfrak{m}^{*}(A)+\varepsilon" display="inline"><semantics><mrow><mrow><msub><mo>∑</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></msub><mrow><mo lspace="0em" stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>ε</mi></mrow></mrow><annotation encoding="application/x-tex">\sum_{B\in\mathcal{R}}|B|\leq\mathfrak{m}^{*}(A)+\varepsilon</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Pelo Lema <a href="Ch1.S4.html#Thmteo12" title="1.4.12 Lema. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.12</span></a> existe um aberto <math id="p4.m1" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> em <math id="p4.m2" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> contendo <math id="p4.m3" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> tal que
+<math id="p4.m4" class="ltx_Math" alttext="\mathfrak{m}(U)\leq\mathfrak{m}^{*}(A)+\varepsilon" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>ε</mi></mrow></mrow><annotation encoding="application/x-tex">\mathfrak{m}(U)\leq\mathfrak{m}^{*}(A)+\varepsilon</annotation></semantics></math> e pelo Lema <a href="Ch1.S4.html#Thmteo23" title="1.4.23 Lema. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.23</span></a> existe um conjunto
+enumerável <math id="p4.m5" class="ltx_Math" alttext="\mathcal{R}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> de cubos <math id="p4.m6" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensionais com interiores dois a dois disjuntos
+tal que <math id="p4.m7" class="ltx_Math" alttext="U=\bigcup_{B\in\mathcal{R}}B" display="inline"><semantics><mrow><mi>U</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>⋃</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></msub><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">U=\bigcup_{B\in\mathcal{R}}B</annotation></semantics></math>. Daí:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\sum_{B\in\mathcal{R}}|B|=\mathfrak{m}(U)\leq\mathfrak{m}^{*}(A)+\varepsilon.\qed" display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></munder><mrow><mo lspace="0em" stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow><mo>=</mo><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>ε</mi></mrow></mrow><mo lspace="0em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\sum_{B\in\mathcal{R}}|B|=\mathfrak{m}(U)\leq\mathfrak{m}^{*}(A)+\varepsilon.\qed</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmteo5" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.5 Proposição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo5.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> uma função Lipschitziana com constante de Lipschitz <math id="Thmteo5.p1.m2" class="ltx_Math" alttext="k\geq 0" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\geq 0</annotation></semantics></math>, onde
+<math id="Thmteo5.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é um subconjunto de <math id="Thmteo5.p1.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>. Então, para todo subconjunto <math id="Thmteo5.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="Thmteo5.p1.m6" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, temos:</span></p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq k^{n}\mathfrak{m}^{*}(A)." display="block"><semantics><mrow><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>⁢</mo><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq k^{n}\mathfrak{m}^{*}(A).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Dado <math id="p5.m1" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math> então, pelo Lema <a href="#Thmteo4" title="3.1.4 Lema. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a> existe um conjunto enumerável
+<math id="p5.m2" class="ltx_Math" alttext="\mathcal{R}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">ℛ</mi><annotation encoding="application/x-tex">\mathcal{R}</annotation></semantics></math> de cubos <math id="p5.m3" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensionais tal que <math id="p5.m4" class="ltx_Math" alttext="A\subset\bigcup_{B\in\mathcal{R}}B" display="inline"><semantics><mrow><mi>A</mi><mo rspace="0.111em">⊂</mo><mrow><msub><mo>⋃</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></msub><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">A\subset\bigcup_{B\in\mathcal{R}}B</annotation></semantics></math>
+e:</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\sum_{B\in\mathcal{R}}|B|\leq\mathfrak{m}^{*}(A)+\varepsilon." display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></munder><mrow><mo lspace="0em" stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow><mo>≤</mo><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>ε</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sum_{B\in\mathcal{R}}|B|\leq\mathfrak{m}^{*}(A)+\varepsilon.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1.1)</span>
+              
+            
+</div>
+<p class="ltx_p">Daí <math id="p5.m5" class="ltx_Math" alttext="\phi(A)\subset\bigcup_{B\in\mathcal{R}}\phi(B\cap X)" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">⊂</mo><mrow><msub><mo>⋃</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></msub><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∩</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi(A)\subset\bigcup_{B\in\mathcal{R}}\phi(B\cap X)</annotation></semantics></math> e portanto:</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq\sum_{B\in\mathcal{R}}\mathfrak{m}^{*%
+}\big{(}\phi(B\cap X)\big{)}." display="block"><semantics><mrow><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.111em">≤</mo><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></munder><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∩</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq\sum_{B\in\mathcal{R}}\mathfrak{m}^{*%
+}\big{(}\phi(B\cap X)\big{)}.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1.2)</span>
+              
+            
+</div>
+<p class="ltx_p">Fixado um cubo <math id="p5.m6" class="ltx_Math" alttext="B\in\mathcal{R}" display="inline"><semantics><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow><annotation encoding="application/x-tex">B\in\mathcal{R}</annotation></semantics></math> então, se <math id="p5.m7" class="ltx_Math" alttext="a" display="inline"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math> denota a aresta de <math id="p5.m8" class="ltx_Math" alttext="B" display="inline"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>, temos:</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="d_{\infty}\big{(}\phi(x),\phi(y)\big{)}\leq k\,d_{\infty}(x,y)\leq ka," display="block"><semantics><mrow><mrow><mrow><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>k</mi><mo lspace="0.170em">⁢</mo><msub><mi>d</mi><mi mathvariant="normal">∞</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">d_{\infty}\big{(}\phi(x),\phi(y)\big{)}\leq k\,d_{\infty}(x,y)\leq ka,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="p5.m9" class="ltx_Math" alttext="x,y\in B\cap X" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mi>B</mi><mo>∩</mo><mi>X</mi></mrow></mrow><annotation encoding="application/x-tex">x,y\in B\cap X</annotation></semantics></math>. Segue do Lema <a href="#Thmteo2" title="3.1.2 Lema. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a> que:</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="\mathfrak{m}^{*}\big{(}\phi(B\cap X)\big{)}\leq(ka)^{n}=k^{n}|B|." display="block"><semantics><mrow><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∩</mo><mi>X</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>⁢</mo><mi>a</mi></mrow><mo stretchy="false">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}^{*}\big{(}\phi(B\cap X)\big{)}\leq(ka)^{n}=k^{n}|B|.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1.3)</span>
+              
+            
+</div>
+<p class="ltx_p">De (<a href="#E1" title="In 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>), (<a href="#E2" title="In 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.2</span></a>) e (<a href="#E3" title="In 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.3</span></a>) vem:</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq k^{n}\sum_{B\in\mathcal{R}}|B|\leq k%
+^{n}\big{(}\mathfrak{m}^{*}(A)+\varepsilon\big{)}." display="block"><semantics><mrow><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>⁢</mo><mrow><munder><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>B</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">ℛ</mi></mrow></munder><mrow><mo stretchy="false">|</mo><mi>B</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><mo>≤</mo><mrow><msup><mi>k</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><msup><mi>𝔪</mi><mo>∗</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi>ε</mi></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}^{*}\big{(}\phi(A)\big{)}\leq k^{n}\sum_{B\in\mathcal{R}}|B|\leq k%
+^{n}\big{(}\mathfrak{m}^{*}(A)+\varepsilon\big{)}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A conclusão segue fazendo <math id="p5.m10" class="ltx_Math" alttext="\varepsilon\to 0" display="inline"><semantics><mrow><mi>ε</mi><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon\to 0</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo6" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.6 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo6.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Thmteo6.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> é uma função Lipschitziana definida num subconjunto <math id="Thmteo6.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo6.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> então <math id="Thmteo6.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> leva
+subconjuntos de <math id="Thmteo6.p1.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de medida nula em subconjuntos de medida nula de <math id="Thmteo6.p1.m6" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>.∎</span></p>
+</div>
+</div>
+<div id="Thmteo7" class="ltx_theorem ltx_theorem_rem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">3.1.7 Observação</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Thmteo7.p1" class="ltx_para">
+<p class="ltx_p">Recorde que toda aplicação linear <math id="Thmteo7.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{m}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>m</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{m}\to\mathds{R}^{n}</annotation></semantics></math> é Lipschitziana. Mais explicitamente, se a
+<span class="ltx_text ltx_font_italic">norma</span>
+da aplicação linear <math id="Thmteo7.p1.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é definida por:</p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="\|T\|=\sup_{\|x\|_{\infty}\leq 1}\|T(x)\|_{\infty}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>≤</mo><mn>1</mn></mrow></munder><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\|T\|=\sup_{\|x\|_{\infty}\leq 1}\|T(x)\|_{\infty},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.1.4)</span>
+              
+            
+</div>
+<p class="ltx_p">então:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\|T(x)\|_{\infty}\leq\|T\|\|x\|_{\infty}," display="block"><semantics><mrow><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\infty}\leq\|T\|\|x\|_{\infty},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="Thmteo7.p1.m3" class="ltx_Math" alttext="x\in\mathds{R}^{m}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">x\in\mathds{R}^{m}</annotation></semantics></math>, donde segue facilmente que <math id="Thmteo7.p1.m4" class="ltx_Math" alttext="\|T\|" display="inline"><semantics><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow><annotation encoding="application/x-tex">\|T\|</annotation></semantics></math> é uma constante de Lipschitz para <math id="Thmteo7.p1.m5" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.
+A finitude do supremo em (<a href="#E4" title="In 3.1.7 Observação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.4</span></a>) segue, por exemplo, do fato que a aplicação <math id="Thmteo7.p1.m6" class="ltx_Math" alttext="x\mapsto\|T(x)\|_{\infty}" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow><annotation encoding="application/x-tex">x\mapsto\|T(x)\|_{\infty}</annotation></semantics></math>
+é contínua e a bola <math id="Thmteo7.p1.m7" class="ltx_Math" alttext="\big{\{}x:\|x\|_{\infty}\leq 1\big{\}}" display="inline"><semantics><mrow><mo maxsize="120%" minsize="120%">{</mo><mi>x</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>≤</mo><mn>1</mn></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><annotation encoding="application/x-tex">\big{\{}x:\|x\|_{\infty}\leq 1\big{\}}</annotation></semantics></math> é compacta.</p>
+</div>
+</div>
+<div id="Thmteo8" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.8 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo8.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma aplicação linear de <math id="Thmteo8.p1.m1" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> em <math id="Thmteo8.p1.m2" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> leva subconjuntos de medida nula de <math id="Thmteo8.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> em subconjuntos de medida
+nula de <math id="Thmteo8.p1.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Segue do Corolário <a href="#Thmteo6" title="3.1.6 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.6</span></a> e da Observação <a href="#Thmteo7" title="3.1.7 Observação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.7</span></a>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo9" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.9 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo9.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Todo subespaço vetorial próprio de <math id="Thmteo9.p1.m1" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> tem medida nula.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Se <math id="p7.m1" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> é um subespaço vetorial próprio de <math id="p7.m2" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> então existe uma aplicação linear <math id="p7.m3" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math>
+tal que <math id="p7.m4" class="ltx_Math" alttext="T\big{(}\mathds{R}^{n-1}\times\{0\}\big{)}=V" display="inline"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.222em" rspace="0.222em">×</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">T\big{(}\mathds{R}^{n-1}\times\{0\}\big{)}=V</annotation></semantics></math>; de fato, podemos escolher uma aplicação linear <math id="p7.m5" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> que
+leva os <math id="p7.m6" class="ltx_Math" alttext="n-1" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> primeiros vetores da base canônica de <math id="p7.m7" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> sobre uma base qualquer de <math id="p7.m8" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> (note que <math id="p7.m9" class="ltx_Math" alttext="\mathrm{dim}(V)\leq n-1" display="inline"><semantics><mrow><mrow><mi>dim</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></mrow><annotation encoding="application/x-tex">\mathrm{dim}(V)\leq n-1</annotation></semantics></math>).
+A conclusão segue do Corolário <a href="Ch1.S4.html#Thmteo7" title="1.4.7 Corolário. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.7</span></a> e do Corolário <a href="#Thmteo8" title="3.1.8 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.8</span></a>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo10" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.10 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo10.p1" class="ltx_para">
+<p class="ltx_p">Uma função <math id="Thmteo10.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> definida num subconjunto <math id="Thmteo10.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo10.p1.m3" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math> é dita
+<span class="ltx_text ltx_font_italic">localmente Lipschitziana</span>
+se todo <math id="Thmteo10.p1.m4" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math> possui uma vizinhança <math id="Thmteo10.p1.m5" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> em <math id="Thmteo10.p1.m6" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math> tal que a função <math id="Thmteo10.p1.m7" class="ltx_Math" alttext="\phi|_{V\cap X}" display="inline"><semantics><msub><mrow><mi>ϕ</mi><mo stretchy="false">|</mo></mrow><mrow><mi>V</mi><mo>∩</mo><mi>X</mi></mrow></msub><annotation encoding="application/x-tex">\phi|_{V\cap X}</annotation></semantics></math> é Lipschitziana.</p>
+</div>
+</div>
+<div id="Thmteo11" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.11 Proposição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo11.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Thmteo11.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> é uma função localmente Lipschitziana definida num subconjunto <math id="Thmteo11.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo11.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> então <math id="Thmteo11.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> leva
+subconjuntos de <math id="Thmteo11.p1.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de medida nula em subconjuntos de medida nula de <math id="Thmteo11.p1.m6" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Para cada <math id="p8.m1" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math> seja <math id="p8.m2" class="ltx_Math" alttext="U_{x}" display="inline"><semantics><msub><mi>U</mi><mi>x</mi></msub><annotation encoding="application/x-tex">U_{x}</annotation></semantics></math> um aberto em <math id="p8.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> contendo <math id="p8.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> tal que a restrição de <math id="p8.m5" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> a <math id="p8.m6" class="ltx_Math" alttext="U_{x}\cap X" display="inline"><semantics><mrow><msub><mi>U</mi><mi>x</mi></msub><mo>∩</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">U_{x}\cap X</annotation></semantics></math> seja
+Lipschitziana. A cobertura aberta <math id="p8.m7" class="ltx_Math" alttext="X\subset\bigcup_{x\in X}U_{x}" display="inline"><semantics><mrow><mi>X</mi><mo rspace="0.111em">⊂</mo><mrow><msub><mo>⋃</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow></msub><msub><mi>U</mi><mi>x</mi></msub></mrow></mrow><annotation encoding="application/x-tex">X\subset\bigcup_{x\in X}U_{x}</annotation></semantics></math> possui uma subcobertura enumerável
+<math id="p8.m8" class="ltx_Math" alttext="X\subset\bigcup_{i=1}^{\infty}U_{x_{i}}" display="inline"><semantics><mrow><mi>X</mi><mo rspace="0.111em">⊂</mo><mrow><msubsup><mo>⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>U</mi><msub><mi>x</mi><mi>i</mi></msub></msub></mrow></mrow><annotation encoding="application/x-tex">X\subset\bigcup_{i=1}^{\infty}U_{x_{i}}</annotation></semantics></math>. Agora, dado qualquer subconjunto <math id="p8.m9" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="p8.m10" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> com <math id="p8.m11" class="ltx_Math" alttext="\mathfrak{m}(A)=0" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathfrak{m}(A)=0</annotation></semantics></math>, segue
+do Corolário <a href="#Thmteo6" title="3.1.6 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.6</span></a> que:</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mathfrak{m}\big{(}\phi(U_{x_{i}}\cap A)\big{)}=0," display="block"><semantics><mrow><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>U</mi><msub><mi>x</mi><mi>i</mi></msub></msub><mo>∩</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}\big{(}\phi(U_{x_{i}}\cap A)\big{)}=0,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="p8.m12" class="ltx_Math" alttext="i" display="inline"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>. A conclusão é obtida agora da igualdade:</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\phi(A)=\bigcup_{i=1}^{\infty}\phi(U_{x_{i}}\cap A).\qed" display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>U</mi><msub><mi>x</mi><mi>i</mi></msub></msub><mo>∩</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em" rspace="0.0835em">.</mo><mo class="ltx_mathvariant_italic" lspace="0.0835em" mathvariant="italic" separator="true">∎</mo></mrow><annotation encoding="application/x-tex">\phi(A)=\bigcup_{i=1}^{\infty}\phi(U_{x_{i}}\cap A).\qed</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Thmteo12" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.12 Proposição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo12.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo12.p1.m1" class="ltx_Math" alttext="\phi:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}^{n}</annotation></semantics></math> uma função localmente Lipschitziana definida num subconjunto
+<math id="Thmteo12.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo12.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>. Então, para todo subconjunto mensurável <math id="Thmteo12.p1.m4" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="Thmteo12.p1.m5" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> contido em <math id="Thmteo12.p1.m6" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, temos que
+<math id="Thmteo12.p1.m7" class="ltx_Math" alttext="\phi(A)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(A)</annotation></semantics></math> é mensurável.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Como <math id="p9.m1" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é mensurável, pelo Corolário <a href="Ch1.S4.html#Thmteo31" title="1.4.31 Corolário. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.31</span></a>, existe um subconjunto <math id="p9.m2" class="ltx_Math" alttext="W" display="inline"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> de <math id="p9.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> de tipo <math id="p9.m4" class="ltx_Math" alttext="F_{\sigma}" display="inline"><semantics><msub><mi>F</mi><mi>σ</mi></msub><annotation encoding="application/x-tex">F_{\sigma}</annotation></semantics></math>
+com <math id="p9.m5" class="ltx_Math" alttext="W\subset A" display="inline"><semantics><mrow><mi>W</mi><mo>⊂</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">W\subset A</annotation></semantics></math> e <math id="p9.m6" class="ltx_Math" alttext="\mathfrak{m}(A\setminus W)=0" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>∖</mo><mi>W</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathfrak{m}(A\setminus W)=0</annotation></semantics></math>; temos então que <math id="p9.m7" class="ltx_Math" alttext="A=W\cup N" display="inline"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mi>W</mi><mo>∪</mo><mi>N</mi></mrow></mrow><annotation encoding="application/x-tex">A=W\cup N</annotation></semantics></math>, onde <math id="p9.m8" class="ltx_Math" alttext="W" display="inline"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> é um <math id="p9.m9" class="ltx_Math" alttext="F_{\sigma}" display="inline"><semantics><msub><mi>F</mi><mi>σ</mi></msub><annotation encoding="application/x-tex">F_{\sigma}</annotation></semantics></math>
+e <math id="p9.m10" class="ltx_Math" alttext="N=A\setminus W" display="inline"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mi>A</mi><mo>∖</mo><mi>W</mi></mrow></mrow><annotation encoding="application/x-tex">N=A\setminus W</annotation></semantics></math> tem medida nula. Como <math id="p9.m11" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é localmente Lipschitziana então <math id="p9.m12" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+é localmente contínua e portanto contínua; daí <math id="p9.m13" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> leva compactos em compactos. Como
+<math id="p9.m14" class="ltx_Math" alttext="W" display="inline"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> é uma união enumerável de fechados e todo fechado é uma união enumerável de compactos,
+segue que <math id="p9.m15" class="ltx_Math" alttext="W" display="inline"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math> é uma união enumerável de compactos; portanto também <math id="p9.m16" class="ltx_Math" alttext="\phi(W)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>W</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(W)</annotation></semantics></math> é uma união enumerável
+de compactos. Temos então:</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\phi(A)=\phi(W)\cup\phi(N)," display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>W</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∪</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi(A)=\phi(W)\cup\phi(N),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde <math id="p9.m17" class="ltx_Math" alttext="\phi(W)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>W</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(W)</annotation></semantics></math> é um <math id="p9.m18" class="ltx_Math" alttext="F_{\sigma}" display="inline"><semantics><msub><mi>F</mi><mi>σ</mi></msub><annotation encoding="application/x-tex">F_{\sigma}</annotation></semantics></math> e <math id="p9.m19" class="ltx_Math" alttext="\phi(N)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(N)</annotation></semantics></math> (é mensurável e) tem medida nula,
+pela Proposição <a href="#Thmteo11" title="3.1.11 Proposição. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.11</span></a>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo13" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.1.13 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo13.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Thmteo13.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é uma aplicação linear então <math id="Thmteo13.p1.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> leva subconjuntos mensuráveis de <math id="Thmteo13.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> em subconjuntos
+mensuráveis de <math id="Thmteo13.p1.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Segue da Observação <a href="#Thmteo7" title="3.1.7 Observação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.7</span></a> e da Proposição <a href="#Thmteo12" title="3.1.12 Proposição. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.12</span></a>.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S2.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

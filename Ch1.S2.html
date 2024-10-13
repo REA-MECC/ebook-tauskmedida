@@ -1,0 +1,389 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1.2. O Problema da Medida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch1.S1.html" title="1.1. Aritmética na Reta Estendida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch1.S3.html" title="1.3. Volume de Blocos Retangulares ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S1.html" title="1.1. Aritmética na Reta Estendida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S3.html" title="1.3. Volume de Blocos Retangulares ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S4.html" title="1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S5.html" title="1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S6.html" title="1.6. Conjuntos não Mensuráveis ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.Sx1.html" title="Exercícios para o Capítulo 1 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , , , conjunto, de equivalência, escolha, relação, translação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="1.1" data-path="Ch1.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S1.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Aritmética na Reta Estendida</a></li>
+<li data-level="1.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>O Problema da Medida</a></li>
+<li data-level="1.3" data-path="Ch1.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S3.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3 </span></b>Volume de Blocos Retangulares</a></li>
+<li data-level="1.4" data-path="Ch1.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S4.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.4 </span></b>Medida de Lebesgue em <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="1.5" data-path="Ch1.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S5.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.5 </span></b>Conjuntos de Cantor</a></li>
+<li data-level="1.6" data-path="Ch1.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S6.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.6 </span></b>Conjuntos não Mensuráveis</a></li>
+<li data-level="" data-path="Ch1.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.Sx1.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">1</span></a></li>
+</ol>
+</li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Problema da Medida</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1.2</span>. O Problema da Medida</h1>
+
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_notation">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.2.1 Notação</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p">Denotamos por <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="\wp(X)" display="inline"><semantics><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\wp(X)</annotation></semantics></math> o conjuntos de todas as partes de um conjunto <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+por <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="\mathds{Q}" display="inline"><semantics><mi>ℚ</mi><annotation encoding="application/x-tex">\mathds{Q}</annotation></semantics></math> o corpo ordenado dos números racionais e por <math id="Thmteo1.p1.m6" class="ltx_Math" alttext="\mathds{Z}" display="inline"><semantics><mi>ℤ</mi><annotation encoding="application/x-tex">\mathds{Z}</annotation></semantics></math> o anel dos números inteiros.</p>
+</div>
+</div>
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Queremos investigar a existência de uma função <math id="p1.m1" class="ltx_Math" alttext="\mu:\wp(\mathds{R})\to[0,+\infty]" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu:\wp(\mathds{R})\to[0,+\infty]</annotation></semantics></math> satisfazendo as seguintes
+propriedades:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p">dada uma seqüência <math id="I1.ix1.p1.m1" class="ltx_Math" alttext="(A_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{n})_{n\geq 1}</annotation></semantics></math> de subconjuntos de <math id="I1.ix1.p1.m2" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math> dois a dois disjuntos então:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\mu\Big{(}\bigcup_{n=1}^{\infty}A_{n}\Big{)}=\sum_{n=1}^{\infty}\mu(A_{n});" display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>A</mi><mi>n</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\mu\Big{(}\bigcup_{n=1}^{\infty}A_{n}\Big{)}=\sum_{n=1}^{\infty}\mu(A_{n});</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="\mu(A+x)=\mu(A)" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu(A+x)=\mu(A)</annotation></semantics></math>, para todo <math id="I1.ix2.p1.m2" class="ltx_Math" alttext="A\subset\mathds{R}" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">A\subset\mathds{R}</annotation></semantics></math> e todo <math id="I1.ix2.p1.m3" class="ltx_Math" alttext="x\in\mathds{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathds{R}</annotation></semantics></math>, onde:
+</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="A+x=\big{\{}a+x:a\in A\big{\}}" display="block"><semantics><mrow><mrow><mi>A</mi><mo>+</mo><mi>x</mi></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>a</mi><mo>+</mo><mi>x</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>a</mi><mo>∈</mo><mi>A</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">A+x=\big{\{}a+x:a\in A\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">denota a <span class="ltx_text ltx_font_italic">translação</span> de <math id="I1.ix2.p1.m5" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> por <math id="I1.ix2.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix3.p1.m1" class="ltx_Math" alttext="0&lt;\mu\big{(}[0,1]\big{)}&lt;+\infty" display="inline"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">0&lt;\mu\big{(}[0,1]\big{)}&lt;+\infty</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Nosso objetivo é mostrar que tal função <math id="p1.m2" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> <span class="ltx_text ltx_font_italic">não existe</span>. Antes disso, observamos algumas
+conseqüências simples das propriedades (a), (b) e (c) acima.</p>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.2.2 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se uma função <math id="Thmteo2.p1.m1" class="ltx_Math" alttext="\mu:\wp(\mathds{R})\to[0,+\infty]" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu:\wp(\mathds{R})\to[0,+\infty]</annotation></semantics></math> satisfaz as propriedades (a), (b) e (c) acima então
+ela também satisfaz as seguintes propriedades:</span></p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I2.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.ix1.p1.m1" class="ltx_Math" alttext="\mu(\emptyset)=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>∅︀</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(\emptyset)=0</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I2.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I2.ix2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">dada uma coleção finita </span><math id="I2.ix2.p1.m1" class="ltx_Math" alttext="(A_{k})_{k=1}^{n}" display="inline"><semantics><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><annotation encoding="application/x-tex">(A_{k})_{k=1}^{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> de subconjuntos de </span><math id="I2.ix2.p1.m2" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> dois a dois disjuntos
+então:</span></p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mu\Big{(}\bigcup_{k=1}^{n}A_{k}\Big{)}=\sum_{k=1}^{n}\mu(A_{k});" display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><munderover><mo lspace="0em" movablelimits="false">⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>A</mi><mi>k</mi></msub></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\mu\Big{(}\bigcup_{k=1}^{n}A_{k}\Big{)}=\sum_{k=1}^{n}\mu(A_{k});</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I2.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span><div id="I2.ix3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">se </span><math id="I2.ix3.p1.m1" class="ltx_Math" alttext="A\subset B\subset\mathds{R}" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><mi>B</mi><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">A\subset B\subset\mathds{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> então </span><math id="I2.ix3.p1.m2" class="ltx_Math" alttext="\mu(A)\leq\mu(B)" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu(A)\leq\mu(B)</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I2.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span><div id="I2.ix4.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">dados </span><math id="I2.ix4.p1.m1" class="ltx_Math" alttext="a,b\in\mathds{R}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a,b\in\mathds{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> com </span><math id="I2.ix4.p1.m2" class="ltx_Math" alttext="a\leq b" display="inline"><semantics><mrow><mi>a</mi><mo>≤</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a\leq b</annotation></semantics></math><span class="ltx_text ltx_font_italic"> então </span><math id="I2.ix4.p1.m3" class="ltx_Math" alttext="\mu\big{(}[a,b]\big{)}&lt;+\infty" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\mu\big{(}[a,b]\big{)}&lt;+\infty</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p2" class="ltx_para">
+<ul class="ltx_itemize">
+<li id="I3.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I3.i1.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I3.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (d).</p>
+</div>
+<div id="I3.i1.p2" class="ltx_para">
+<p class="ltx_p">Tome <math id="I3.i1.p2.m1" class="ltx_Math" alttext="A_{1}=[0,1]" display="inline"><semantics><mrow><msub><mi>A</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A_{1}=[0,1]</annotation></semantics></math> e <math id="I3.i1.p2.m2" class="ltx_Math" alttext="A_{n}=\emptyset" display="inline"><semantics><mrow><msub><mi>A</mi><mi>n</mi></msub><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{n}=\emptyset</annotation></semantics></math> para <math id="I3.i1.p2.m3" class="ltx_Math" alttext="n\geq 2" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n\geq 2</annotation></semantics></math> na propriedade (a) e use a propriedade (c).</p>
+</div>
+</li>
+<li id="I3.i2" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I3.i2.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I3.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (e).</p>
+</div>
+<div id="I3.i2.p2" class="ltx_para">
+<p class="ltx_p">Tome <math id="I3.i2.p2.m1" class="ltx_Math" alttext="A_{k}=\emptyset" display="inline"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">A_{k}=\emptyset</annotation></semantics></math> para <math id="I3.i2.p2.m2" class="ltx_Math" alttext="k&gt;n" display="inline"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">k&gt;n</annotation></semantics></math> e use as propriedades (a) e (d).</p>
+</div>
+</li>
+<li id="I3.i3" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I3.i3.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I3.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (f).</p>
+</div>
+<div id="I3.i3.p2" class="ltx_para">
+<p class="ltx_p">Basta observar que a propriedade (e) implica que:</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\mu(B)=\mu(A)+\mu(B\setminus A)," display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>B</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∖</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu(B)=\mu(A)+\mu(B\setminus A),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde <math id="I3.i3.p2.m1" class="ltx_Math" alttext="\mu(B\setminus A)\geq 0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>B</mi><mo>∖</mo><mi>A</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(B\setminus A)\geq 0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I3.i4" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I3.i4.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I3.i4.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (g).</p>
+</div>
+<div id="I3.i4.p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="I3.i4.p2.m1" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> um inteiro positivo tal que <math id="I3.i4.p2.m2" class="ltx_Math" alttext="b&lt;a+n" display="inline"><semantics><mrow><mi>b</mi><mo>&lt;</mo><mrow><mi>a</mi><mo>+</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">b&lt;a+n</annotation></semantics></math>. As propriedades
+(e) e (f) implicam que:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="I3.i4.p2.m3" class="ltx_Math" alttext="\mu\big{(}[a,b]\big{)}\leq\mu\big{(}\left[a,a+n\right[\big{)}=\sum_{k=0}^{n-1}%
+\mu\big{(}\left[a+k,a+k+1\right[\big{)}\\
+\leq\sum_{k=0}^{n-1}\mu\big{(}[a+k,a+k+1]\big{)}," display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo>[</mo><mi>a</mi><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>n</mi></mrow><mo lspace="0em" rspace="0em" stretchy="true">[</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo>[</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo lspace="0em" rspace="0em" stretchy="true">[</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo rspace="0.111em">≤</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></munderover><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\mu\big{(}[a,b]\big{)}\leq\mu\big{(}\left[a,a+n\right[\big{)}=\sum_{k=0}^{n-1}%
+\mu\big{(}\left[a+k,a+k+1\right[\big{)}\\
+\leq\sum_{k=0}^{n-1}\mu\big{(}[a+k,a+k+1]\big{)},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">e as propriedades (b) e (c) implicam que:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\mu\big{(}[a+k,a+k+1]\big{)}=\mu\big{(}[0,1]\big{)}&lt;+\infty," display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi></mrow><mo>,</mo><mrow><mi>a</mi><mo>+</mo><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu\big{(}[a+k,a+k+1]\big{)}=\mu\big{(}[0,1]\big{)}&lt;+\infty,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I3.i4.p2.m4" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.∎</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Finalmente, mostramos a seguinte:</p>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.2.3 Proposição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Não existe uma função <math id="Thmteo3.p1.m1" class="ltx_Math" alttext="\mu:\wp(\mathds{R})\to[0,+\infty]" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu:\wp(\mathds{R})\to[0,+\infty]</annotation></semantics></math> satisfazendo as propriedades (a), (b)
+e (c) acima.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Pelo Lema <a href="#Thmteo2" title="1.2.2 Lema. ‣ 1.2. O Problema da Medida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.2.2</span></a>, as propriedades (a), (b) e (c) implicam as propriedades
+(d), (e), (f) e (g).
+Considere a relação binária <math id="p4.m1" class="ltx_Math" alttext="\sim" display="inline"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> no intervalo <math id="p4.m2" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math> definida por:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="x\sim y\Longleftrightarrow x-y\in\mathds{Q}," display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow><mo stretchy="false">⟺</mo><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">x\sim y\Longleftrightarrow x-y\in\mathds{Q},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="p4.m3" class="ltx_Math" alttext="x,y\in[0,1]" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x,y\in[0,1]</annotation></semantics></math>. É fácil ver que <math id="p4.m4" class="ltx_Math" alttext="\sim" display="inline"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> é uma relação de equivalência
+em <math id="p4.m5" class="ltx_Math" alttext="[0,1]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Seja <math id="p4.m6" class="ltx_Math" alttext="A\subset[0,1]" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">A\subset[0,1]</annotation></semantics></math> um <span class="ltx_text ltx_font_italic">conjunto escolha</span>
+para <math id="p4.m7" class="ltx_Math" alttext="\sim" display="inline"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math>, i.e., <math id="p4.m8" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> possui exatamente um
+elemento de cada classe de equivalência. Temos então que <math id="p4.m9" class="ltx_Math" alttext="x-y\not\in\mathds{Q}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>∉</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">x-y\not\in\mathds{Q}</annotation></semantics></math>, para todos <math id="p4.m10" class="ltx_Math" alttext="x,y\in A" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">x,y\in A</annotation></semantics></math>
+com <math id="p4.m11" class="ltx_Math" alttext="x\neq y" display="inline"><semantics><mrow><mi>x</mi><mo>≠</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x\neq y</annotation></semantics></math>. Em particular, os conjuntos <math id="p4.m12" class="ltx_Math" alttext="(A+q)_{q\in\mathds{Q}}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>q</mi><mo>∈</mo><mi>ℚ</mi></mrow></msub><annotation encoding="application/x-tex">(A+q)_{q\in\mathds{Q}}</annotation></semantics></math> são dois a dois disjuntos.
+Note também que para todo <math id="p4.m13" class="ltx_Math" alttext="x\in[0,1]" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x\in[0,1]</annotation></semantics></math> existe <math id="p4.m14" class="ltx_Math" alttext="y\in A" display="inline"><semantics><mrow><mi>y</mi><mo>∈</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">y\in A</annotation></semantics></math> com <math id="p4.m15" class="ltx_Math" alttext="x-y\in\mathds{Q}" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">x-y\in\mathds{Q}</annotation></semantics></math>; na verdade, temos
+<math id="p4.m16" class="ltx_Math" alttext="x-y\in\mathds{Q}\cap[-1,1]" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mi>ℚ</mi><mo>∩</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x-y\in\mathds{Q}\cap[-1,1]</annotation></semantics></math>, já que <math id="p4.m17" class="ltx_Math" alttext="x,y\in[0,1]" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">x,y\in[0,1]</annotation></semantics></math>. Segue então que:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="[0,1]\subset\!\!\!\!\!\!\!\bigcup_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\!(A+q)%
+\subset[-1,2]." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mpadded width="0em"><mo>⊂</mo></mpadded><mrow><munder><mo movablelimits="false" rspace="0em">⋃</mo><mrow><mi>q</mi><mo>∈</mo><mrow><mi>ℚ</mi><mo>∩</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></munder><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,2</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">[0,1]\subset\!\!\!\!\!\!\!\bigcup_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\!(A+q)%
+\subset[-1,2].</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como <math id="p4.m18" class="ltx_Math" alttext="\mathds{Q}\cap[-1,1]" display="inline"><semantics><mrow><mi>ℚ</mi><mo>∩</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathds{Q}\cap[-1,1]</annotation></semantics></math> é enumerável, as propriedades (a), (b) e (f) implicam:</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\mu\big{(}[0,1]\big{)}\leq\!\!\!\!\!\!\sum_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\mu%
+(A+q)=\!\!\!\!\!\!\sum_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\mu(A)\leq\mu\big{(}[-1%
+,2]\big{)}." display="block"><semantics><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mpadded width="0.056em"><mo>≤</mo></mpadded><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>q</mi><mo>∈</mo><mrow><mi>ℚ</mi><mo>∩</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></munder><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>A</mi><mo>+</mo><mi>q</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mpadded width="0.056em"><mo>=</mo></mpadded><mrow><munder><mo movablelimits="false">∑</mo><mrow><mi>q</mi><mo>∈</mo><mrow><mi>ℚ</mi><mo>∩</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,1</mn></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow></munder><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>≤</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,2</mn></mrow><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mu\big{(}[0,1]\big{)}\leq\!\!\!\!\!\!\sum_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\mu%
+(A+q)=\!\!\!\!\!\!\sum_{q\in\mathds{Q}\cap[-1,1]}\!\!\!\mu(A)\leq\mu\big{(}[-1%
+,2]\big{)}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Agora, se <math id="p4.m19" class="ltx_Math" alttext="\mu(A)=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(A)=0</annotation></semantics></math> concluímos que <math id="p4.m20" class="ltx_Math" alttext="\mu\big{(}[0,1]\big{)}=0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mn>0,1</mn><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu\big{(}[0,1]\big{)}=0</annotation></semantics></math>, contradizendo (c);
+se <math id="p4.m21" class="ltx_Math" alttext="\mu(A)&gt;0" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu(A)&gt;0</annotation></semantics></math> concluímos que <math id="p4.m22" class="ltx_Math" alttext="\mu\big{(}[-1,2]\big{)}=+\infty" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mn>1,2</mn></mrow><mo stretchy="false">]</mo></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\mu\big{(}[-1,2]\big{)}=+\infty</annotation></semantics></math>, contradizendo (g).
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch1.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch1.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

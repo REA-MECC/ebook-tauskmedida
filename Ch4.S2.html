@@ -1,0 +1,599 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch4.S1.html" title="4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch4.S3.html" title="4.3. Funcionais Lineares e o Espaço Dual ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S1.html" title="4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S3.html" title="4.3. Funcionais Lineares e o Espaço Dual ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S4.html" title="4.4. Espaços 𝐿^𝑝 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S5.html" title="4.5. Apêndice à Seção 4.4: funções convexas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.Sx1.html" title="Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", aplicação, aplicação limitada, aplicação linear, aplicação linear-conjugada, conjugada, de uma aplicação linear, de uma aplicação linear- conjugada, imersão isométrica, isometria, limitada, linear, linear (conjugada), linear-conjugada, norma, norma de">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Espaços Normados e com Produto Interno</a></li>
+<li data-level="4.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Aplicações Lineares Contínuas</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Funcionais Lineares e o Espaço Dual</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Espaços <math class="ltx_Math" alttext="L^{p}" display="inline"><semantics><msup><mi>L</mi><mi>p</mi></msup><annotation encoding="application/x-tex">L^{p}</annotation></semantics></math></a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Funções Convexas</a></li>
+<li data-level="" data-path="Ch4.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.Sx1.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">4</span></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Aplicações Lineares Contínuas</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">4.2</span>. Aplicações Lineares Contínuas</h1>
+
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.1 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo1.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo1.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>
+e <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> uma aplicação linear. As seguintes afirmações são equivalentes:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix1.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é contínua;</span></p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é contínua na origem;</span></p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix3.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é limitada em alguma vizinhança da origem, i.e., existem </span><math id="I1.ix3.p1.m2" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> e uma vizinhança </span><math id="I1.ix3.p1.m3" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math><span class="ltx_text ltx_font_italic"> da origem
+em </span><math id="I1.ix3.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I1.ix3.p1.m5" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math><span class="ltx_text ltx_font_italic">, para todo </span><math id="I1.ix3.p1.m6" class="ltx_Math" alttext="x\in V" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">x\in V</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I1.ix4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix4.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é limitada na bola unitária de </span><math id="I1.ix4.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math><span class="ltx_text ltx_font_italic">, i.e., existe </span><math id="I1.ix4.p1.m3" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I1.ix4.p1.m4" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+para todo </span><math id="I1.ix4.p1.m5" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math><span class="ltx_text ltx_font_italic"> com </span><math id="I1.ix4.p1.m6" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}" display="inline"><semantics><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I1.ix5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix5.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é limitada na esfera unitária de </span><math id="I1.ix5.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math><span class="ltx_text ltx_font_italic">, i.e., existe </span><math id="I1.ix5.p1.m3" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I1.ix5.p1.m4" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math><span class="ltx_text ltx_font_italic">,
+para todo </span><math id="I1.ix5.p1.m5" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math><span class="ltx_text ltx_font_italic"> com </span><math id="I1.ix5.p1.m6" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span><div id="I1.ix6.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">existe </span><math id="I1.ix6.p1.m1" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I1.ix6.p1.m2" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}</annotation></semantics></math><span class="ltx_text ltx_font_italic">, para todo </span><math id="I1.ix6.p1.m3" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(g)</span><div id="I1.ix7.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix7.p1.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é Lipschitziana.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p1" class="ltx_para">
+<ul class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i1.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p">(a)<math id="I2.i1.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(b).</p>
+</div>
+<div id="I2.i1.p2" class="ltx_para">
+<p class="ltx_p">Trivial.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i2.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p">(b)<math id="I2.i2.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(c).</p>
+</div>
+<div id="I2.i2.p2" class="ltx_para">
+<p class="ltx_p">Dado, por exemplo, <math id="I2.i2.p2.m1" class="ltx_Math" alttext="\varepsilon=1" display="inline"><semantics><mrow><mi>ε</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\varepsilon=1</annotation></semantics></math>, existe <math id="I2.i2.p2.m2" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math> tal que:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\big{\|}T(x)-T(0)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\big{\|}T(x)%
+\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}&lt;\varepsilon," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>=</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>&lt;</mo><mi>ε</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}T(x)-T(0)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\big{\|}T(x)%
+\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}&lt;\varepsilon,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I2.i2.p2.m3" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="I2.i2.p2.m4" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}&lt;\delta" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>&lt;</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}&lt;\delta</annotation></semantics></math>. Daí <math id="I2.i2.p2.m5" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é limitada na bola aberta de centro na origem de <math id="I2.i2.p2.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> e raio <math id="I2.i2.p2.m7" class="ltx_Math" alttext="\delta" display="inline"><semantics><mi>δ</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i3.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p">(c)<math id="I2.i3.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(d).</p>
+</div>
+<div id="I2.i3.p2" class="ltx_para">
+<p class="ltx_p">Por hipótese, existem <math id="I2.i3.p2.m1" class="ltx_Math" alttext="r&gt;0" display="inline"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math> e <math id="I2.i3.p2.m2" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math> tais que <math id="I2.i3.p2.m3" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math>, para todo <math id="I2.i3.p2.m4" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="I2.i3.p2.m5" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq r" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq r</annotation></semantics></math>.
+Daí, se <math id="I2.i3.p2.m6" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> é tal que <math id="I2.i3.p2.m7" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1</annotation></semantics></math> então <math id="I2.i3.p2.m8" class="ltx_Math" alttext="\|rx\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq r" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">\|rx\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq r</annotation></semantics></math> e portanto <math id="I2.i3.p2.m9" class="ltx_Math" alttext="\|T(rx)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>r</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(rx)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math>;
+logo <math id="I2.i3.p2.m10" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\frac{c}{r}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mfrac><mi>c</mi><mi>r</mi></mfrac></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\frac{c}{r}</annotation></semantics></math>, para todo <math id="I2.i3.p2.m11" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="I2.i3.p2.m12" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i4.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p">(d)<math id="I2.i4.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(e).</p>
+</div>
+<div id="I2.i4.p2" class="ltx_para">
+<p class="ltx_p">Trivial.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i5.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p">(e)<math id="I2.i5.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(f).</p>
+</div>
+<div id="I2.i5.p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="I2.i5.p2.m1" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math> tal que <math id="I2.i5.p2.m2" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c</annotation></semantics></math>, para todo <math id="I2.i5.p2.m3" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="I2.i5.p2.m4" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1</annotation></semantics></math>. Afirmamos que
+<math id="I2.i5.p2.m5" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}</annotation></semantics></math>, para todo <math id="I2.i5.p2.m6" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. De fato, se <math id="I2.i5.p2.m7" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math> essa desigualdade é trivial. Se <math id="I2.i5.p2.m8" class="ltx_Math" alttext="x\neq 0" display="inline"><semantics><mrow><mi>x</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x\neq 0</annotation></semantics></math>,
+tomamos <math id="I2.i5.p2.m9" class="ltx_Math" alttext="y=\frac{x}{\|x\|_{\lower 2.0pt\hbox{$\scriptscriptstyle E$}}}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>x</mi><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="50%">E</mi></mpadded></msub></mfrac></mrow><annotation encoding="application/x-tex">y=\frac{x}{\|x\|_{\lower 2.0pt\hbox{$\scriptscriptstyle E$}}}</annotation></semantics></math>, de modo que <math id="I2.i5.p2.m10" class="ltx_Math" alttext="\|y\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|y\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1</annotation></semantics></math> e:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\frac{\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}}{\|x\|_{%
+\lower 2.0pt\hbox{$\scriptstyle E$}}}=\big{\|}T(y)\big{\|}_{\lower 2.0pt\hbox{%
+$\scriptstyle F$}}\leq c." display="block"><semantics><mrow><mrow><mfrac><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mfrac><mo>=</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>c</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\frac{\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}}{\|x\|_{%
+\lower 2.0pt\hbox{$\scriptstyle E$}}}=\big{\|}T(y)\big{\|}_{\lower 2.0pt\hbox{%
+$\scriptstyle F$}}\leq c.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A conclusão segue.</p>
+</div>
+</li>
+<li id="I2.i6" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i6.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i6.p1" class="ltx_para">​<p class="ltx_p">(f)<math id="I2.i6.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(g).</p>
+</div>
+<div id="I2.i6.p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="I2.i6.p2.m1" class="ltx_Math" alttext="c\geq 0" display="inline"><semantics><mrow><mi>c</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c\geq 0</annotation></semantics></math> tal que <math id="I2.i6.p2.m2" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x\|_{\lower 2.0pt\hbox{$%
+\scriptstyle E$}}</annotation></semantics></math>, para todo <math id="I2.i6.p2.m3" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. Dados, <math id="I2.i6.p2.m4" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>, então:</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\big{\|}T(x)-T(y)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\big{\|}T(x-y)%
+\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x-y\|_{\lower 2.0pt\hbox%
+{$\scriptstyle E$}}," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>=</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}T(x)-T(y)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\big{\|}T(x-y)%
+\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq c\|x-y\|_{\lower 2.0pt\hbox%
+{$\scriptstyle E$}},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">de modo que <math id="I2.i6.p2.m5" class="ltx_Math" alttext="c" display="inline"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math> é uma constante de Lipschitz para <math id="I2.i6.p2.m6" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i7" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i7.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i7.p1" class="ltx_para">​<p class="ltx_p">(g)<math id="I2.i7.p1.m1" class="ltx_Math" alttext="\Rightarrow" display="inline"><semantics><mo stretchy="false">⇒</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>(a).</p>
+</div>
+<div id="I2.i7.p2" class="ltx_para">
+<p class="ltx_p">Trivial.∎</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.2 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Thmteo2.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo2.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Thmteo2.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Uma aplicação
+linear <math id="Thmteo2.p1.m4" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é dita <span class="ltx_text ltx_font_italic">limitada</span>
+se satisfaz uma das (e portanto todas as) condições equivalentes
+que aparecem no enunciado do Lema <a href="#Thmteo1" title="4.2.1 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a>.</p>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Normalmente, uma função <math id="p2.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> cujo contra-domínio é um espaço métrico é dita <span class="ltx_text ltx_font_italic">limitada</span> quando sua imagem
+é um conjunto limitado. No caso de aplicações lineares, usamos a expressão “limitada” com um significado
+um pouco diferente, i.e., dizemos que uma aplicação linear entre espaços normados é limitada quando sua restrição
+à bola unitária do domínio é limitada no sentido mais usual da palavra. Esse uso ligeiramente ambíguo da palavra
+“limitada” é completamente usual e não causa confusão, já que uma aplicação linear não nula nunca pode ter imagem
+limitada (veja Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise16" title="Exercício 4.16. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.16</span></a>).</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Sejam <math id="p3.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="p3.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="p3.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Denotamos
+por <math id="p3.m4" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math> o conjunto de todas as aplicações lineares limitadas <math id="p3.m6" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math>.
+Segue facilmente do resultado do Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise2" title="Exercício 4.2. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2</span></a> que <math id="p3.m7" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math> é um subespaço
+vetorial do espaço de <span class="ltx_text ltx_font_italic">todas</span> as aplicações lineares <math id="p3.m8" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math>.</p>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.3 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Thmteo3.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo3.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Thmteo3.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>.
+Se <math id="Thmteo3.p1.m4" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é uma aplicação linear limitada então a
+<span class="ltx_text ltx_font_italic">norma</span>
+de <math id="Thmteo3.p1.m5" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é definida por:</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_math_unparsed" alttext="\|T\|=\sup\big{\{}\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}:\text{$x\in E%
+$ e $\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1$}\big{\}}\in\left[0,+%
+\infty\right[." display="block"><semantics><mrow><mo rspace="0.167em">∥</mo><mi>T</mi><mo lspace="0em" rspace="0.0835em">∥</mo><mo lspace="0.0835em" rspace="0.1389em">=</mo><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mo lspace="0em" rspace="0.167em">∥</mo><mi>T</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo rspace="0.278em">:</mo><mrow><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><mtext> e </mtext><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo>∈</mo><mrow><mo>[</mo><mn>0</mn><mo rspace="0em">,</mo><mo lspace="0em">+</mo><mi mathvariant="normal">∞</mi><mo lspace="0em" rspace="0em" stretchy="true">[</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\|T\|=\sup\big{\{}\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}:\text{$x\in E%
+$ e $\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1$}\big{\}}\in\left[0,+%
+\infty\right[.</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2.1)</span>
+              
+            
+</div>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Quando o espaço <math id="p4.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é não nulo, então a norma de uma aplicação linear <math id="p4.m2" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> coincide
+com o supremo de <math id="p4.m3" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}" display="inline"><semantics><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}</annotation></semantics></math> quando <math id="p4.m4" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> percorre a esfera unitária de <math id="p4.m5" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> (veja
+Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise17" title="Exercício 4.17. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.17</span></a>). Deixamos a cargo do leitor a verificação de que
+(<a href="#E1" title="In 4.2.3 Definição. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a>) define uma norma no espaço vetorial <math id="p4.m6" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math> (veja Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise18" title="Exercício 4.18. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.18</span></a>).</p>
+</div>
+<div id="Thmteo4" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.4 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo4.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo4.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Thmteo4.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>.
+Então:</span></p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|T\|\|x\|_{\lower 2.0pt%
+\hbox{$\scriptstyle E$}}," display="block"><semantics><mrow><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|T\|\|x\|_{\lower 2.0pt%
+\hbox{$\scriptstyle E$}},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2.2)</span>
+              
+            
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">para todos <math id="Thmteo4.p1.m4" class="ltx_Math" alttext="T\in\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>T</mi><mo>∈</mo><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">T\in\mathrm{Lin}(E,F)</annotation></semantics></math>, <math id="Thmteo4.p1.m5" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. Se <math id="Thmteo4.p1.m6" class="ltx_math_unparsed" alttext="(G,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle G$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>G</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">G</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(G,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle G$}})</annotation></semantics></math> é um espaço normado sobre <math id="Thmteo4.p1.m7" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>
+e <math id="Thmteo4.p1.m8" class="ltx_Math" alttext="T\in\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>T</mi><mo>∈</mo><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">T\in\mathrm{Lin}(E,F)</annotation></semantics></math>, <math id="Thmteo4.p1.m9" class="ltx_Math" alttext="S\in\mathrm{Lin}(F,G)" display="inline"><semantics><mrow><mi>S</mi><mo>∈</mo><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">S\in\mathrm{Lin}(F,G)</annotation></semantics></math> então:</span></p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\|S\circ T\|\leq\|S\|\|T\|." display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">‖</mo><mrow><mi>S</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>T</mi></mrow><mo stretchy="false">‖</mo></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>S</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\|S\circ T\|\leq\|S\|\|T\|.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Seja <math id="p5.m1" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. Se <math id="p5.m2" class="ltx_Math" alttext="x=0" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>, então a desigualdade (<a href="#E2" title="In 4.2.4 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.2</span></a>) é trivial.
+Senão, seja <math id="p5.m3" class="ltx_Math" alttext="y=\frac{x}{\|x\|_{\lower 2.0pt\hbox{$\scriptscriptstyle E$}}}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mfrac><mi>x</mi><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="50%">E</mi></mpadded></msub></mfrac></mrow><annotation encoding="application/x-tex">y=\frac{x}{\|x\|_{\lower 2.0pt\hbox{$\scriptscriptstyle E$}}}</annotation></semantics></math>; temos <math id="p5.m4" class="ltx_Math" alttext="\|y\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|y\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1</annotation></semantics></math> e portanto:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\frac{\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}}{\|x\|_{%
+\lower 2.0pt\hbox{$\scriptstyle E$}}}=\big{\|}T(y)\big{\|}_{\lower 2.0pt\hbox{%
+$\scriptstyle F$}}\leq\|T\|," display="block"><semantics><mrow><mrow><mfrac><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mfrac><mo>=</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\frac{\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}}{\|x\|_{%
+\lower 2.0pt\hbox{$\scriptstyle E$}}}=\big{\|}T(y)\big{\|}_{\lower 2.0pt\hbox{%
+$\scriptstyle F$}}\leq\|T\|,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde a desigualdade (<a href="#E2" title="In 4.2.4 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.2</span></a>) segue.
+Seja <math id="p5.m5" class="ltx_Math" alttext="S\in\mathrm{Lin}(F,G)" display="inline"><semantics><mrow><mi>S</mi><mo>∈</mo><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">S\in\mathrm{Lin}(F,G)</annotation></semantics></math>; para todo <math id="p5.m6" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="p5.m7" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1</annotation></semantics></math>, temos:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\big{\|}(S\circ T)(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle G$}}=\big{\|}S%
+\big{(}T(x)\big{)}\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle G$}}\leq\|S\|\big{%
+\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|S\|\|T\|," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>S</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>T</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">G</mi></mpadded></msub><mo>=</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>S</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">G</mi></mpadded></msub><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>S</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>S</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}(S\circ T)(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle G$}}=\big{\|}S%
+\big{(}T(x)\big{)}\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle G$}}\leq\|S\|\big{%
+\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|S\|\|T\|,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">donde <math id="p5.m8" class="ltx_Math" alttext="\|S\circ T\|\leq\|S\|\|T\|" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mrow><mi>S</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>T</mi></mrow><mo stretchy="false">‖</mo></mrow><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>S</mi><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\|S\circ T\|\leq\|S\|\|T\|</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo5" class="ltx_theorem ltx_theorem_prop">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.5 Proposição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo5.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo5.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Thmteo5.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Se <math id="Thmteo5.p1.m4" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math>
+é um espaço de Banach então também <math id="Thmteo5.p1.m5" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math> é um espaço de Banach.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Seja <math id="p6.m1" class="ltx_Math" alttext="(T_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>T</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(T_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência de Cauchy em <math id="p6.m2" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math>. Para todo <math id="p6.m3" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>, temos:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\big{\|}T_{n}(x)-T_{m}(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|T%
+_{n}-T_{m}\|\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>T</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mrow><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><msub><mi>T</mi><mi>m</mi></msub></mrow><mo stretchy="false">‖</mo></mrow><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}T_{n}(x)-T_{m}(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\|T%
+_{n}-T_{m}\|\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="p6.m4" class="ltx_Math" alttext="n,m\geq 1" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n,m\geq 1</annotation></semantics></math>; segue que <math id="p6.m5" class="ltx_Math" alttext="\big{(}T_{n}(x)\big{)}_{n\geq 1}" display="inline"><semantics><msub><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">\big{(}T_{n}(x)\big{)}_{n\geq 1}</annotation></semantics></math> é uma seqüência de Cauchy em <math id="p6.m6" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Como <math id="p6.m7" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é completo, podemos definir uma aplicação <math id="p6.m8" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> fazendo:</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="T(x)=\lim_{n\to\infty}T_{n}(x)," display="block"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">T(x)=\lim_{n\to\infty}T_{n}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="p6.m9" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. Se <math id="p6.m10" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> e <math id="p6.m11" class="ltx_Math" alttext="\lambda\in\mathds{K}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{K}</annotation></semantics></math> então segue do resultado
+do Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise2" title="Exercício 4.2. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2</span></a> que:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S2.EGx20" class="ltx_equationgroup ltx_eqn_gather ltx_eqn_table">
+
+<tbody id="Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle T(x+y)=\lim_{n\to\infty}T_{n}(x+y)=\lim_{n\to\infty}\big{(}T_{n}%
+(x)+T_{n}(y)\big{)}=T(x)+T(y)," display="block"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle T(x+y)=\lim_{n\to\infty}T_{n}(x+y)=\lim_{n\to\infty}\big{(}T_{n}%
+(x)+T_{n}(y)\big{)}=T(x)+T(y),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex10"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex10.m1" class="ltx_Math" alttext="\displaystyle T(\lambda x)=\lim_{n\to\infty}T_{n}(\lambda x)=\lim_{n\to\infty}%
+\big{(}\lambda T_{n}(x)\big{)}=\lambda T(x)," display="block"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>λ</mi><mo>⁢</mo><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle T(\lambda x)=\lim_{n\to\infty}T_{n}(\lambda x)=\lim_{n\to\infty}%
+\big{(}\lambda T_{n}(x)\big{)}=\lambda T(x),</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">donde <math id="p6.m12" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é linear. Seja dado <math id="p6.m13" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>. Vamos mostrar que existe <math id="p6.m14" class="ltx_Math" alttext="n_{0}\geq 1" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n_{0}\geq 1</annotation></semantics></math> tal que
+<math id="p6.m15" class="ltx_Math" alttext="T_{n}-T" display="inline"><semantics><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">T_{n}-T</annotation></semantics></math> é limitada e <math id="p6.m16" class="ltx_Math" alttext="\|T_{n}-T\|\leq\varepsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mi>T</mi></mrow><mo stretchy="false">‖</mo></mrow><mo>≤</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\|T_{n}-T\|\leq\varepsilon</annotation></semantics></math>, para todo <math id="p6.m17" class="ltx_Math" alttext="n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n\geq n_{0}</annotation></semantics></math>; seguirá
+daí automaticamente que <math id="p6.m18" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é limitada, já que <math id="p6.m19" class="ltx_Math" alttext="T=T_{n}-(T_{n}-T)" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mi>T</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">T=T_{n}-(T_{n}-T)</annotation></semantics></math>, com <math id="p6.m20" class="ltx_Math" alttext="T_{n}" display="inline"><semantics><msub><mi>T</mi><mi>n</mi></msub><annotation encoding="application/x-tex">T_{n}</annotation></semantics></math> e <math id="p6.m21" class="ltx_Math" alttext="T_{n}-T" display="inline"><semantics><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">T_{n}-T</annotation></semantics></math>
+ambas limitadas. Como <math id="p6.m22" class="ltx_Math" alttext="(T_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>T</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(T_{n})_{n\geq 1}</annotation></semantics></math> é de Cauchy, existe <math id="p6.m23" class="ltx_Math" alttext="n_{0}\geq 1" display="inline"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n_{0}\geq 1</annotation></semantics></math> tal que
+<math id="p6.m24" class="ltx_Math" alttext="\|T_{n}-T_{m}\|&lt;\varepsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><msub><mi>T</mi><mi>m</mi></msub></mrow><mo stretchy="false">‖</mo></mrow><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\|T_{n}-T_{m}\|&lt;\varepsilon</annotation></semantics></math>, para todos <math id="p6.m25" class="ltx_Math" alttext="n,m\geq n_{0}" display="inline"><semantics><mrow><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n,m\geq n_{0}</annotation></semantics></math>. Fixado <math id="p6.m26" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>
+com <math id="p6.m27" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1</annotation></semantics></math> então:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\big{\|}T_{n}(x)-T_{m}(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}&lt;\varepsilon;" display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><msub><mi>T</mi><mi>m</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>&lt;</mo><mi>ε</mi></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\big{\|}T_{n}(x)-T_{m}(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}&lt;\varepsilon;</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">fazendo <math id="p6.m28" class="ltx_Math" alttext="m\to\infty" display="inline"><semantics><mrow><mi>m</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow><annotation encoding="application/x-tex">m\to\infty</annotation></semantics></math> (com <math id="p6.m29" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math> e <math id="p6.m30" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> fixados), obtemos:</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\big{\|}T_{n}(x)-T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\varepsilon," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>≤</mo><mi>ε</mi></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}T_{n}(x)-T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}\leq\varepsilon,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="p6.m31" class="ltx_Math" alttext="n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n\geq n_{0}</annotation></semantics></math> e todo <math id="p6.m32" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math> com <math id="p6.m33" class="ltx_Math" alttext="\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>≤</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}\leq 1</annotation></semantics></math>. Daí
+<math id="p6.m34" class="ltx_Math" alttext="\|T_{n}-T\|\leq\varepsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mrow><msub><mi>T</mi><mi>n</mi></msub><mo>−</mo><mi>T</mi></mrow><mo stretchy="false">‖</mo></mrow><mo>≤</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\|T_{n}-T\|\leq\varepsilon</annotation></semantics></math>, para todo <math id="p6.m35" class="ltx_Math" alttext="n\geq n_{0}" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n\geq n_{0}</annotation></semantics></math>. Isso mostra que
+<math id="p6.m36" class="ltx_Math" alttext="\lim_{n\to\infty}T_{n}=T" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>n</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></msub><msub><mi>T</mi><mi>n</mi></msub></mrow><mo>=</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">\lim_{n\to\infty}T_{n}=T</annotation></semantics></math> em <math id="p6.m37" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math>, o que completa a demonstração.
+∎</p>
+</div>
+</div>
+<div id="Thmteo6" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.6 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo6.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Thmteo6.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, <math id="Thmteo6.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> espaços vetoriais complexos. Uma aplicação <math id="Thmteo6.p1.m3" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é dita
+<span class="ltx_text ltx_font_italic">linear-conjugada</span> se:</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="T(x+y)=T(x)+T(y)\quad\text{e}\quad T(\lambda x)=\bar{\lambda}T(x)," display="block"><semantics><mrow><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mspace width="1.1em"></mspace><mtext>e</mtext></mrow></mrow><mspace width="1.1em"></mspace><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mover accent="true"><mi>λ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">T(x+y)=T(x)+T(y)\quad\text{e}\quad T(\lambda x)=\bar{\lambda}T(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="Thmteo6.p1.m4" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> e todo <math id="Thmteo6.p1.m5" class="ltx_Math" alttext="\lambda\in\mathds{C}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{C}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Se <math id="p7.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, <math id="p7.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> são espaços vetoriais complexos e <math id="p7.m3" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é uma aplicação linear-conjugada
+então <math id="p7.m4" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é <math id="p7.m5" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math>-linear, i.e., a aplicação <math id="p7.m6" class="ltx_Math" alttext="T:E|_{\mathds{R}}\to F|_{\mathds{R}}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><mo stretchy="false">→</mo><msub><mrow><mi>F</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub></mrow></mrow><annotation encoding="application/x-tex">T:E|_{\mathds{R}}\to F|_{\mathds{R}}</annotation></semantics></math> é linear,
+onde <math id="p7.m7" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math>, <math id="p7.m8" class="ltx_Math" alttext="F|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>F</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">F|_{\mathds{R}}</annotation></semantics></math> denotam as realificações dos espaços complexos <math id="p7.m9" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> e <math id="p7.m10" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+respectivamente (veja Definição <a href="Ch4.Sx1.html#Ch4.Thmexdefin1" title="Definição 4.1. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a>). Obtemos daí o seguinte:</p>
+</div>
+<div id="Thmteo7" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.7 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">O resultado do Lema <a href="#Thmteo1" title="4.2.1 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a> também vale se supusermos que <math id="Thmteo7.p1.m1" class="ltx_Math" alttext="\mathds{K}=\mathds{C}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{C}</annotation></semantics></math> e
+que <math id="Thmteo7.p1.m2" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é uma aplicação linear-conjugada.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Basta aplicar o Lema <a href="#Thmteo1" title="4.2.1 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a> para a aplicação linear <math id="p8.m1" class="ltx_Math" alttext="T:E|_{\mathds{R}}\to F|_{\mathds{R}}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><mo stretchy="false">→</mo><msub><mrow><mi>F</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub></mrow></mrow><annotation encoding="application/x-tex">T:E|_{\mathds{R}}\to F|_{\mathds{R}}</annotation></semantics></math>,
+observando que <math id="p8.m2" class="ltx_math_unparsed" alttext="\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow><annotation encoding="application/x-tex">\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}</annotation></semantics></math> e <math id="p8.m3" class="ltx_math_unparsed" alttext="\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub></mrow><annotation encoding="application/x-tex">\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}</annotation></semantics></math> também são normas nos espaços vetorais
+reais <math id="p8.m4" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math> e <math id="p8.m5" class="ltx_Math" alttext="F|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>F</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">F|_{\mathds{R}}</annotation></semantics></math>, respectivamente (veja Exercício <a href="Ch4.Sx1.html#Ch4.Thmexercise7" title="Exercício 4.7. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.7</span></a>).
+∎</p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Dizemos que uma aplicação linear-conjugada <math id="p9.m1" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é
+<span class="ltx_text ltx_font_italic">limitada</span>
+quando satisfaz uma das (e portanto todas as) condições equivalentes que aparecem no enunciado do Lema <a href="#Thmteo1" title="4.2.1 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a>.
+Definimos então a <span class="ltx_text ltx_font_italic">norma</span>
+de <math id="p9.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> como em (<a href="#E1" title="In 4.2.3 Definição. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a>). O Lema <a href="#Thmteo4" title="4.2.4 Lema. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.4</span></a>, a Proposição <a href="#Thmteo5" title="4.2.5 Proposição. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.5</span></a>
+e o resultado dos Exercícios <a href="Ch4.Sx1.html#Ch4.Thmexercise17" title="Exercício 4.17. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.17</span></a> e <a href="Ch4.Sx1.html#Ch4.Thmexercise18" title="Exercício 4.18. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.18</span></a> todos possuem versões correspondentes para
+aplicações lineares-conjugadas (e as correspondentes demonstrações são perfeitamente análogas às demonstrações
+das versões originais).
+Observamos também que uma aplicação linear-conjugada pode ser transformada em uma aplicação
+linear se trocarmos o sinal da estrutura complexa de seu domínio ou de seu contra-domínio
+(veja Exercícios <a href="Ch4.Sx1.html#Ch4.Thmexercise19" title="Exercício 4.19. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.19</span></a>, <a href="Ch4.Sx1.html#Ch4.Thmexercise20" title="Exercício 4.20. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.20</span></a>, <a href="Ch4.Sx1.html#Ch4.Thmexercise21" title="Exercício 4.21. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.21</span></a>
+e <a href="Ch4.Sx1.html#Ch4.Thmexercise22" title="Exercício 4.22. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.22</span></a>). Tal observação permite obter de forma imediata as versões para aplicações
+lineares-conjugadas dos resultados que demonstramos sobre aplicações lineares.</p>
+</div>
+<div id="Thmteo8" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">4.2.8 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo8.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Thmteo8.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Thmteo8.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços vetoriais sobre <math id="Thmteo8.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e seja <math id="Thmteo8.p1.m4" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> uma aplicação
+linear (resp., linear conjugada). Dizemos que <math id="Thmteo8.p1.m5" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é uma
+<span class="ltx_text ltx_font_italic">imersão isométrica linear</span>
+(resp., <span class="ltx_text ltx_font_italic">imersão isométrica linear-conjugada</span>) se:</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\|x\|_{\lower 2.0pt%
+\hbox{$\scriptstyle E$}}," display="block"><semantics><mrow><mrow><msub><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo>=</mo><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{\|}T(x)\big{\|}_{\lower 2.0pt\hbox{$\scriptstyle F$}}=\|x\|_{\lower 2.0pt%
+\hbox{$\scriptstyle E$}},</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.2.3)</span>
+              
+            
+</div>
+<p class="ltx_p">para todo <math id="Thmteo8.p1.m6" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>. Se, além do mais, <math id="Thmteo8.p1.m7" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é sobrejetora, dizemos que <math id="Thmteo8.p1.m8" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é uma
+<span class="ltx_text ltx_font_italic">isometria linear</span> (resp., <span class="ltx_text ltx_font_italic">isometria linear-conjugada</span>).</p>
+</div>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">A condição (<a href="#E3" title="In 4.2.8 Definição. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.3</span></a>) implica diretamente que <math id="p10.m1" class="ltx_Math" alttext="\mathrm{Ker}(T)=\{0\}" display="inline"><semantics><mrow><mrow><mi>Ker</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>T</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Ker}(T)=\{0\}</annotation></semantics></math>, i.e., que <math id="p10.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é injetora.
+Assim, toda isometria linear (resp., isometria linear conjugada) é bijetora e é fácil ver que sua inversa
+<math id="p10.m3" class="ltx_Math" alttext="T^{-1}:F\to E" display="inline"><semantics><mrow><msup><mi>T</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>F</mi><mo stretchy="false">→</mo><mi>E</mi></mrow></mrow><annotation encoding="application/x-tex">T^{-1}:F\to E</annotation></semantics></math> também é uma isometria linear (resp., isometria linear conjugada). Além do mais,
+é claro que toda imersão isométrica linear (e toda imersão isométrica linear-conjugada) <math id="p10.m4" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é limitada
+e que <math id="p10.m5" class="ltx_Math" alttext="\|T\|=1" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mi>T</mi><mo stretchy="false">‖</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|T\|=1</annotation></semantics></math>, a menos que seu domínio seja o espaço nulo.</p>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch4.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

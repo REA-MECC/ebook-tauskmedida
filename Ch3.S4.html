@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.4. Apêndice à Seção 3.3: recordação de Cálculo no ℝ^𝑛 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch3.Sx1.html" title="Exercícios para o Capítulo 3 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S1.html" title="3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S2.html" title="3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.Sx1.html" title="Exercícios para o Capítulo 3 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , , , Jacobiana, aberta, aplicação, cadeia, classe , conjunto, convexo, da cadeia, da função inversa, de classe , de uma função, desigualdade, desigualdade do, difeomorfismo, diferencial, diferenciável, do valor médio, função, função de, função inversa, matriz, regra, regra da, segmento de reta, teorema, teorema da, valor médio">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Aplicações Lipschitzianas</a></li>
+<li data-level="3.2" data-path="Ch3.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S2.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Aplicações Lineares</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>O Teorema de Mudança de Variáveis</a></li>
+<li data-level="3.4" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>recordação de Cálculo no <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">3</span></a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Apêndice à Seção </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.4</span>. Apêndice à Seção <a href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>: recordação de Cálculo no <math id="m1" class="ltx_Math" alttext="{\mathds{R}^{n}}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">{\mathds{R}^{n}}</annotation></semantics></math>
+</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="p1.m1" class="ltx_Math" alttext="U\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{m}</annotation></semantics></math> um aberto e <math id="p1.m2" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> uma função. Recorde que <math id="p1.m3" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é dita
+<span class="ltx_text ltx_font_italic">diferenciável</span>
+num ponto <math id="p1.m4" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math> se existe uma aplicação linear <math id="p1.m5" class="ltx_Math" alttext="T:\mathds{R}^{m}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>m</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{m}\to\mathds{R}^{n}</annotation></semantics></math> tal que (recorde Notação <a href="Ch3.S1.html#Thmteo1" title="3.1.1 Notação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a>):</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\lim_{h\to 0}\frac{\phi(x+h)-\phi(x)-T(h)}{\|h\|_{\infty}}=0;" display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>h</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>h</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><msub><mrow><mo stretchy="false">‖</mo><mi>h</mi><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub></mfrac></mrow><mo>=</mo><mn>0</mn></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\lim_{h\to 0}\frac{\phi(x+h)-\phi(x)-T(h)}{\|h\|_{\infty}}=0;</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.4.1)</span>
+            
+          
+</div>
+<p class="ltx_p">essa aplicação linear é única quando existe e é dada por:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="T(v)=\lim_{t\to 0}\frac{\phi(x+tv)-\phi(x)}{t}\stackrel{{\scriptstyle\text{def%
+}}}{{=}}\frac{\partial\phi}{\partial v}(x)," display="block"><semantics><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mfrac><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>t</mi><mo>⁢</mo><mi>v</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mi>t</mi></mfrac></mrow><mover><mo>=</mo><mtext>def</mtext></mover><mrow><mfrac><mrow><mo rspace="0em">∂</mo><mi>ϕ</mi></mrow><mrow><mo rspace="0em">∂</mo><mi>v</mi></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">T(v)=\lim_{t\to 0}\frac{\phi(x+tv)-\phi(x)}{t}\stackrel{{\scriptstyle\text{def%
+}}}{{=}}\frac{\partial\phi}{\partial v}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="p1.m7" class="ltx_Math" alttext="v\in\mathds{R}^{m}" display="inline"><semantics><mrow><mi>v</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">v\in\mathds{R}^{m}</annotation></semantics></math>. A aplicação linear <math id="p1.m8" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é chamada a
+<span class="ltx_text ltx_font_italic">diferencial</span>
+de <math id="p1.m9" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> no ponto <math id="p1.m10" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e é denotada por <math id="p1.m11" class="ltx_Math" alttext="\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)</annotation></semantics></math>. A matriz que representa
+a diferencial <math id="p1.m13" class="ltx_Math" alttext="\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)</annotation></semantics></math> com respeito às bases canônicas é chamada a
+<span class="ltx_text ltx_font_italic">matriz Jacobiana</span>
+de <math id="p1.m14" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> no ponto <math id="p1.m15" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. No que segue, <span class="ltx_text ltx_font_italic">usaremos a mesma notação para a diferencial <math id="p1.m16" class="ltx_Math" alttext="\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)</annotation></semantics></math> e para a
+matriz Jacobiana de <math id="p1.m17" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> no ponto <math id="p1.m18" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math></span>. Temos:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\mathrm{d}\phi(x)=\begin{pmatrix}\frac{\partial\phi_{1}}{\partial x_{1}}(x)&amp;%
+\cdots&amp;\frac{\partial\phi_{1}}{\partial x_{m}}(x)\\
+\vdots&amp;\ddots&amp;\vdots\\
+\frac{\partial\phi_{n}}{\partial x_{1}}(x)&amp;\cdots&amp;\frac{\partial\phi_{n}}{%
+\partial x_{m}}(x)\end{pmatrix}," display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>(</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd><mrow><mstyle displaystyle="false"><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mn>1</mn></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mrow><mstyle displaystyle="false"><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mn>1</mn></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mi>m</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr><mtr><mtd><mi mathvariant="normal">⋮</mi></mtd><mtd><mi mathvariant="normal">⋱</mi></mtd><mtd><mi mathvariant="normal">⋮</mi></mtd></mtr><mtr><mtd><mrow><mstyle displaystyle="false"><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mi>n</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd><mtd><mi mathvariant="normal">⋯</mi></mtd><mtd><mrow><mstyle displaystyle="false"><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mi>n</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mi>m</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mtd></mtr></mtable><mo>)</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)=\begin{pmatrix}\frac{\partial\phi_{1}}{\partial x_{1}}(x)&amp;%
+\cdots&amp;\frac{\partial\phi_{1}}{\partial x_{m}}(x)\\
+\vdots&amp;\ddots&amp;\vdots\\
+\frac{\partial\phi_{n}}{\partial x_{1}}(x)&amp;\cdots&amp;\frac{\partial\phi_{n}}{%
+\partial x_{m}}(x)\end{pmatrix},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde <math id="p1.m19" class="ltx_Math" alttext="\phi=(\phi_{1},\ldots,\phi_{n})" display="inline"><semantics><mrow><mi>ϕ</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϕ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϕ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi=(\phi_{1},\ldots,\phi_{n})</annotation></semantics></math> e <math id="p1.m20" class="ltx_Math" alttext="\frac{\partial\phi_{i}}{\partial x_{j}}(x)" display="inline"><semantics><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mi>i</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{\partial\phi_{i}}{\partial x_{j}}(x)</annotation></semantics></math> denota a derivada parcial
+no ponto <math id="p1.m21" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> da função coordenada <math id="p1.m22" class="ltx_Math" alttext="\phi_{i}" display="inline"><semantics><msub><mi>ϕ</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\phi_{i}</annotation></semantics></math> com respeito à <math id="p1.m23" class="ltx_Math" alttext="j" display="inline"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>-ésima variável.
+Se uma aplicação <math id="p1.m24" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é diferenciável num ponto <math id="p1.m25" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> então <math id="p1.m26" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é contínua nesse ponto.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Intuitivamente, (<a href="#E1" title="In 3.4. Apêndice à Seção 3.3: recordação de Cálculo no ℝ^𝑛 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.1</span></a>) diz que <math id="p2.m1" class="ltx_Math" alttext="T=\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">T=\mathrm{d}\phi(x)</annotation></semantics></math> é uma “boa aproximação linear” para <math id="p2.m2" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> numa vizinhança
+de <math id="p2.m3" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Mais explicitamente, quando o ponto <math id="p2.m4" class="ltx_Math" alttext="x\in\mathds{R}^{m}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">x\in\mathds{R}^{m}</annotation></semantics></math> sofre um deslocamento (vetorial) <math id="p2.m5" class="ltx_Math" alttext="\Delta x" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\Delta x</annotation></semantics></math>
+então o ponto <math id="p2.m6" class="ltx_Math" alttext="y=\phi(x)\in\mathds{R}^{n}" display="inline"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">y=\phi(x)\in\mathds{R}^{n}</annotation></semantics></math> sofre um deslocamento (vetorial) <math id="p2.m7" class="ltx_Math" alttext="\Delta y=\phi(x+\Delta x)-\phi(x)" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>y</mi></mrow><mo>=</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\Delta y=\phi(x+\Delta x)-\phi(x)</annotation></semantics></math> e a diferenciabilidade
+de <math id="p2.m8" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> no ponto <math id="p2.m9" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> nos diz que <math id="p2.m10" class="ltx_Math" alttext="\Delta y" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\Delta y</annotation></semantics></math> é aproximadamente uma função linear de <math id="p2.m11" class="ltx_Math" alttext="\Delta x" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">\Delta x</annotation></semantics></math>; mais precisamente,
+existe uma aplicação linear <math id="p2.m12" class="ltx_Math" alttext="\mathrm{d}\phi(x)\stackrel{{\scriptstyle\text{def}}}{{=}}T" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mover><mo>=</mo><mtext>def</mtext></mover><mi>T</mi></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)\stackrel{{\scriptstyle\text{def}}}{{=}}T</annotation></semantics></math>, tal que <math id="p2.m13" class="ltx_Math" alttext="\Delta y" display="inline"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">\Delta y</annotation></semantics></math> difere de <math id="p2.m14" class="ltx_Math" alttext="T(\Delta x)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(\Delta x)</annotation></semantics></math>
+por uma quantidade que vai a zero mais rápido que <math id="p2.m15" class="ltx_Math" alttext="\|\Delta x\|_{\infty}" display="inline"><semantics><msub><mrow><mo stretchy="false">‖</mo><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><annotation encoding="application/x-tex">\|\Delta x\|_{\infty}</annotation></semantics></math>, quando <math id="p2.m16" class="ltx_Math" alttext="\Delta x\to 0" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">→</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Delta x\to 0</annotation></semantics></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Quando uma aplicação <math id="p3.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> definida num aberto <math id="p3.m2" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> de <math id="p3.m3" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math> é diferenciável em todos os pontos de <math id="p3.m4" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+dizemos simplesmente que ela é <span class="ltx_text ltx_font_italic">diferenciável</span> em <math id="p3.m5" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>; dizemos que <math id="p3.m6" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é
+<span class="ltx_text ltx_font_italic">de classe <math id="p3.m7" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math></span>
+em <math id="p3.m10" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> se <math id="p3.m11" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é diferenciável em <math id="p3.m12" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> e se a função <math id="p3.m13" class="ltx_Math" alttext="U\ni x\mapsto\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi>U</mi><mo>∋</mo><mi>x</mi><mo stretchy="false">↦</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">U\ni x\mapsto\mathrm{d}\phi(x)</annotation></semantics></math> é contínua. Sabe-se
+que <span class="ltx_text ltx_font_italic">uma função <math id="p3.m14" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é de classe <math id="p3.m15" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math> num aberto <math id="p3.m16" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> se e somente se as derivadas parciais <math id="p3.m17" class="ltx_Math" alttext="\frac{\partial\phi_{i}}{\partial x_{j}}(x)" display="inline"><semantics><mrow><mfrac><mrow><mo rspace="0em">∂</mo><msub><mi>ϕ</mi><mi>i</mi></msub></mrow><mrow><mo rspace="0em">∂</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{\partial\phi_{i}}{\partial x_{j}}(x)</annotation></semantics></math>,
+<math id="p3.m18" class="ltx_Math" alttext="i=1,\ldots,n" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\ldots,n</annotation></semantics></math>, <math id="p3.m19" class="ltx_Math" alttext="j=1,\ldots,m" display="inline"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>m</mi></mrow></mrow><annotation encoding="application/x-tex">j=1,\ldots,m</annotation></semantics></math>, existem e são contínuas em todos os pontos <math id="p3.m20" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math></span>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Enunciamos agora alguns teoremas básicos de Cálculo no <math id="p4.m1" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> que usamos na Seção <a href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.3</span></a>.</p>
+</div>
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.1 Teorema</span></span><span class="ltx_text ltx_font_bold"> </span>(regra da cadeia)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math>, <math id="Thmteo1.p1.m2" class="ltx_Math" alttext="\psi:V\to\mathds{R}^{p}" display="inline"><semantics><mrow><mi>ψ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>V</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>p</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\psi:V\to\mathds{R}^{p}</annotation></semantics></math> funções tais que <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="\phi(U)\subset V" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">\phi(U)\subset V</annotation></semantics></math>, onde <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> é um aberto de <math id="Thmteo1.p1.m5" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math>
+e <math id="Thmteo1.p1.m6" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> é um aberto de <math id="Thmteo1.p1.m7" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>. Se <math id="Thmteo1.p1.m8" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é diferenciável num ponto <math id="Thmteo1.p1.m9" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math> e <math id="Thmteo1.p1.m10" class="ltx_Math" alttext="\psi" display="inline"><semantics><mi>ψ</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math> é diferenciável no ponto
+<math id="Thmteo1.p1.m11" class="ltx_Math" alttext="\phi(x)" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(x)</annotation></semantics></math> então a função composta <math id="Thmteo1.p1.m12" class="ltx_Math" alttext="\psi\circ\phi" display="inline"><semantics><mrow><mi>ψ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">\psi\circ\phi</annotation></semantics></math> é diferenciável no ponto <math id="Thmteo1.p1.m13" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e sua diferencial é dada por:</span></p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\mathrm{d}(\psi\circ\phi)(x)=\mathrm{d}\psi\big{(}\phi(x)\big{)}\circ\mathrm{d%
+}\phi(x)." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ψ</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ψ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.055em">)</mo></mrow></mrow><mo rspace="0.222em">∘</mo><mi mathvariant="normal">d</mi></mrow><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(\psi\circ\phi)(x)=\mathrm{d}\psi\big{(}\phi(x)\big{)}\circ\mathrm{d%
+}\phi(x).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">Segue diretamente da definição de diferenciabilidade que toda aplicação linear <math id="p5.m1" class="ltx_Math" alttext="T:\mathds{R}^{m}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>m</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{m}\to\mathds{R}^{n}</annotation></semantics></math>
+é diferenciável em <math id="p5.m2" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math> e <math id="p5.m3" class="ltx_Math" alttext="\mathrm{d}T(x)=T" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">\mathrm{d}T(x)=T</annotation></semantics></math>, para todo <math id="p5.m4" class="ltx_Math" alttext="x\in\mathds{R}^{m}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">x\in\mathds{R}^{m}</annotation></semantics></math>. Dessa observação e da regra da cadeia obtemos:</p>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.2 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo2.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num aberto <math id="Thmteo2.p1.m2" class="ltx_Math" alttext="U\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{m}</annotation></semantics></math>, diferenciável num ponto <math id="Thmteo2.p1.m3" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math>. Se
+<math id="Thmteo2.p1.m4" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{p}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>p</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{p}</annotation></semantics></math> é uma aplicação linear então <math id="Thmteo2.p1.m5" class="ltx_Math" alttext="T\circ\phi" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">T\circ\phi</annotation></semantics></math> é diferenciável no ponto <math id="Thmteo2.p1.m6" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> e sua diferencial é
+dada por:</span></p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="\mathrm{d}(T\circ\phi)(x)=T\circ\mathrm{d}\phi(x)." display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>T</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi mathvariant="normal">d</mi></mrow><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{d}(T\circ\phi)(x)=T\circ\mathrm{d}\phi(x).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right"><span class="ltx_text ltx_markedasmath ltx_font_italic">∎</span></span>
+            
+</div>
+</div>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Para o teorema a seguir,
+o leitor deve recordar a Notação <a href="Ch3.S1.html#Thmteo1" title="3.1.1 Notação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.1</span></a> e a Observação <a href="Ch3.S1.html#Thmteo7" title="3.1.7 Observação. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.7</span></a>, onde definimos a norma de uma
+aplicação linear.</p>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.3 Teorema</span></span><span class="ltx_text ltx_font_bold"> </span>(desigualdade do valor médio)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo3.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num aberto <math id="Thmteo3.p1.m2" class="ltx_Math" alttext="U\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{m}</annotation></semantics></math> e sejam fixados dois pontos <math id="Thmteo3.p1.m3" class="ltx_Math" alttext="x,y\in U" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x,y\in U</annotation></semantics></math>. Suponha
+que a função <math id="Thmteo3.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é contínua em todos os pontos do <span class="ltx_text ltx_font_normal">segmento de reta fechado</span>:</span></p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="[x,y]=\big{\{}x+\theta(y-x):0\leq\theta\leq 1\big{\}}" display="block"><semantics><mrow><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mi>x</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.278em">:</mo><mrow><mn>0</mn><mo>≤</mo><mi>θ</mi><mo>≤</mo><mn>1</mn></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">[x,y]=\big{\{}x+\theta(y-x):0\leq\theta\leq 1\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">e é diferenciável em todos os pontos do <span class="ltx_text ltx_font_normal">segmento de reta aberto</span>:</span></p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\left]x,y\right[=\big{\{}x+\theta(y-x):0&lt;\theta&lt;1\big{\}}." display="block"><semantics><mrow><mrow><mrow><mo rspace="0em" stretchy="true">]</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo lspace="0em" rspace="0.1389em" stretchy="true">[</mo></mrow><mo lspace="0.1389em">=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mi>x</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.278em">:</mo><mrow><mn>0</mn><mo>&lt;</mo><mi>θ</mi><mo>&lt;</mo><mn>1</mn></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\left]x,y\right[=\big{\{}x+\theta(y-x):0&lt;\theta&lt;1\big{\}}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Então existe <math id="Thmteo3.p1.m7" class="ltx_math_unparsed" alttext="\theta\in\left]0,1\right[" display="inline"><semantics><mrow><mi>θ</mi><mo rspace="0.1389em">∈</mo><mrow><mo lspace="0.1389em" rspace="0em" stretchy="true">]</mo><mn>0,1</mn><mo lspace="0em" stretchy="true">[</mo></mrow></mrow><annotation encoding="application/x-tex">\theta\in\left]0,1\right[</annotation></semantics></math> tal que vale a desigualdade:</span></p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\|\phi(y)-\phi(x)\|_{\infty}\leq\big{\|}\mathrm{d}\phi\big{(}x+\theta(y-x)\big%
+{)}\big{\|}\|y-x\|_{\infty}." display="block"><semantics><mrow><mrow><msub><mrow><mo stretchy="false">‖</mo><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub><mo>≤</mo><mrow><mrow><mo maxsize="120%" minsize="120%">‖</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>x</mi><mo>+</mo><mrow><mi>θ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">‖</mo></mrow><mo>⁢</mo><msub><mrow><mo stretchy="false">‖</mo><mrow><mi>y</mi><mo>−</mo><mi>x</mi></mrow><mo stretchy="false">‖</mo></mrow><mi mathvariant="normal">∞</mi></msub></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\|\phi(y)-\phi(x)\|_{\infty}\leq\big{\|}\mathrm{d}\phi\big{(}x+\theta(y-x)\big%
+{)}\big{\|}\|y-x\|_{\infty}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Recorde que um subconjunto <math id="p7.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="p7.m2" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> é dito <span class="ltx_text ltx_font_italic">convexo</span>
+se para todos <math id="p7.m3" class="ltx_Math" alttext="x,y\in X" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x,y\in X</annotation></semantics></math> o segmento de reta <math id="p7.m4" class="ltx_Math" alttext="[x,y]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[x,y]</annotation></semantics></math> está contido em <math id="p7.m5" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+</div>
+<div id="Thmteo4" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.4 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Sejam <math id="Thmteo4.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num aberto <math id="Thmteo4.p1.m2" class="ltx_Math" alttext="U\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{m}</annotation></semantics></math> e suponha que <math id="Thmteo4.p1.m3" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é diferenciável em todos
+os pontos de um subconjunto convexo <math id="Thmteo4.p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Thmteo4.p1.m5" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>. Se existe <math id="Thmteo4.p1.m6" class="ltx_Math" alttext="k\geq 0" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k\geq 0</annotation></semantics></math> tal que <math id="Thmteo4.p1.m7" class="ltx_Math" alttext="\|\mathrm{d}\phi(x)\|\leq k" display="inline"><semantics><mrow><mrow><mo stretchy="false">‖</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow><mo>≤</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">\|\mathrm{d}\phi(x)\|\leq k</annotation></semantics></math>, para todo <math id="Thmteo4.p1.m8" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>
+então a função <math id="Thmteo4.p1.m9" class="ltx_Math" alttext="\phi|_{X}" display="inline"><semantics><msub><mrow><mi>ϕ</mi><mo stretchy="false">|</mo></mrow><mi>X</mi></msub><annotation encoding="application/x-tex">\phi|_{X}</annotation></semantics></math> é Lipschitziana com constante de Lipschitz <math id="Thmteo4.p1.m10" class="ltx_Math" alttext="k" display="inline"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.∎</span></p>
+</div>
+</div>
+<div id="Thmteo5" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.5 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Uma função <math id="Thmteo5.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> de classe <math id="Thmteo5.p1.m2" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math> num aberto <math id="Thmteo5.p1.m3" class="ltx_Math" alttext="U\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{m}</annotation></semantics></math> é localmente Lipschitziana.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Segue do Corolário <a href="#Thmteo4" title="3.4.4 Corolário. ‣ 3.4. Apêndice à Seção 3.3: recordação de Cálculo no ℝ^𝑛 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.4.4</span></a>, observando que a função <math id="p8.m1" class="ltx_Math" alttext="x\mapsto\|\mathrm{d}\phi(x)\|" display="inline"><semantics><mrow><mi>x</mi><mo stretchy="false">↦</mo><mrow><mo stretchy="false">‖</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">‖</mo></mrow></mrow><annotation encoding="application/x-tex">x\mapsto\|\mathrm{d}\phi(x)\|</annotation></semantics></math> é contínua e portanto
+limitada numa bola suficientemente pequena centrada num ponto dado <math id="p8.m2" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math>.
+∎</p>
+</div>
+</div>
+<div id="Thmteo6" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.6 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo6.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Thmteo6.p1.m1" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>, <math id="Thmteo6.p1.m2" class="ltx_Math" alttext="V\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>V</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">V\subset\mathds{R}^{n}</annotation></semantics></math> são abertos então um <span class="ltx_text ltx_font_italic">difeomorfismo</span>
+de <math id="Thmteo6.p1.m3" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math> para <math id="Thmteo6.p1.m4" class="ltx_Math" alttext="V" display="inline"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math> é uma bijeção diferenciável
+<math id="Thmteo6.p1.m5" class="ltx_Math" alttext="\phi:U\to V" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><mi>V</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to V</annotation></semantics></math> cuja inversa <math id="Thmteo6.p1.m6" class="ltx_Math" alttext="\phi^{-1}:V\to U" display="inline"><semantics><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>V</mi><mo stretchy="false">→</mo><mi>U</mi></mrow></mrow><annotation encoding="application/x-tex">\phi^{-1}:V\to U</annotation></semantics></math> também é diferenciável. Dizemos que <math id="Thmteo6.p1.m7" class="ltx_Math" alttext="\phi:U\to V" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><mi>V</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to V</annotation></semantics></math> é um <span class="ltx_text ltx_font_italic">difeomorfismo <math id="Thmteo6.p1.m8" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math></span>
+se <math id="Thmteo6.p1.m9" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é bijetora e se <math id="Thmteo6.p1.m10" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> e <math id="Thmteo6.p1.m11" class="ltx_Math" alttext="\phi^{-1}" display="inline"><semantics><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\phi^{-1}</annotation></semantics></math> são ambas de classe <math id="Thmteo6.p1.m12" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Se <math id="p9.m1" class="ltx_Math" alttext="\phi:U\to V" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><mi>V</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to V</annotation></semantics></math> é um difeomorfismo então segue da regra da cadeia que para todo <math id="p9.m2" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math> a diferencial
+<math id="p9.m3" class="ltx_Math" alttext="\mathrm{d}\phi(x):\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="0.278em" stretchy="false">)</mo></mrow></mrow><mo rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x):\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é um isomorfismo de <math id="p9.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> cujo inverso é dado por:</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\big{(}\mathrm{d}\phi(x)\big{)}^{-1}=\mathrm{d}(\phi^{-1})\big{(}\phi(x)\big{)}." display="block"><semantics><mrow><mrow><msup><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>=</mo><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\big{(}\mathrm{d}\phi(x)\big{)}^{-1}=\mathrm{d}(\phi^{-1})\big{(}\phi(x)\big{)}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.4.2)</span>
+            
+          
+</div>
+<p class="ltx_p">Temos a seguinte recíproca para essa afirmação:</p>
+</div>
+<div id="Thmteo7" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.4.7 Teorema</span></span><span class="ltx_text ltx_font_bold"> </span>(da função inversa)<span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo7.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo7.p1.m1" class="ltx_Math" alttext="\phi:U\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>U</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:U\to\mathds{R}^{n}</annotation></semantics></math> uma função de classe <math id="Thmteo7.p1.m2" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math> definida num aberto <math id="Thmteo7.p1.m3" class="ltx_Math" alttext="U\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>U</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">U\subset\mathds{R}^{n}</annotation></semantics></math>. Se <math id="Thmteo7.p1.m4" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math> é tal que a diferencial
+<math id="Thmteo7.p1.m5" class="ltx_Math" alttext="\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)</annotation></semantics></math> é um isomorfismo de <math id="Thmteo7.p1.m6" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> então existe uma vizinhança aberta <math id="Thmteo7.p1.m7" class="ltx_Math" alttext="U_{0}" display="inline"><semantics><msub><mi>U</mi><mn>0</mn></msub><annotation encoding="application/x-tex">U_{0}</annotation></semantics></math> de <math id="Thmteo7.p1.m8" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> contida em <math id="Thmteo7.p1.m9" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+tal que <math id="Thmteo7.p1.m10" class="ltx_Math" alttext="\phi(U_{0})" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(U_{0})</annotation></semantics></math> é aberto em <math id="Thmteo7.p1.m11" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> e <math id="Thmteo7.p1.m12" class="ltx_Math" alttext="\phi|_{U_{0}}:U_{0}\to\phi(U_{0})" display="inline"><semantics><mrow><msub><mrow><mi>ϕ</mi><mo stretchy="false">|</mo></mrow><msub><mi>U</mi><mn>0</mn></msub></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>U</mi><mn>0</mn></msub><mo stretchy="false">→</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi|_{U_{0}}:U_{0}\to\phi(U_{0})</annotation></semantics></math> é um difeomorfismo <math id="Thmteo7.p1.m13" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math>. Além do mais,
+se <math id="Thmteo7.p1.m14" class="ltx_Math" alttext="\mathrm{d}\phi(x)" display="inline"><semantics><mrow><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{d}\phi(x)</annotation></semantics></math> é um isomorfismo de <math id="Thmteo7.p1.m15" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> para todo <math id="Thmteo7.p1.m16" class="ltx_Math" alttext="x\in U" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">x\in U</annotation></semantics></math> então:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.i1.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é uma </span><span class="ltx_text ltx_font_normal">aplicação aberta</span><span class="ltx_text ltx_font_italic">,
+i.e., </span><math id="I1.i1.p1.m2" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math><span class="ltx_text ltx_font_italic"> leva subconjuntos abertos de </span><math id="I1.i1.p1.m3" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math><span class="ltx_text ltx_font_italic"> em subconjuntos abertos de </span><math id="I1.i1.p1.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I1.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">se </span><math id="I1.i2.p1.m1" class="ltx_Math" alttext="U_{0}" display="inline"><semantics><msub><mi>U</mi><mn>0</mn></msub><annotation encoding="application/x-tex">U_{0}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é um aberto qualquer contido em </span><math id="I1.i2.p1.m2" class="ltx_Math" alttext="U" display="inline"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tal que </span><math id="I1.i2.p1.m3" class="ltx_Math" alttext="\phi|_{U_{0}}" display="inline"><semantics><msub><mrow><mi>ϕ</mi><mo stretchy="false">|</mo></mrow><msub><mi>U</mi><mn>0</mn></msub></msub><annotation encoding="application/x-tex">\phi|_{U_{0}}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é injetora então </span><math id="I1.i2.p1.m4" class="ltx_Math" alttext="\phi|_{U_{0}}:U_{0}\to\phi(U_{0})" display="inline"><semantics><mrow><msub><mrow><mi>ϕ</mi><mo stretchy="false">|</mo></mrow><msub><mi>U</mi><mn>0</mn></msub></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msub><mi>U</mi><mn>0</mn></msub><mo stretchy="false">→</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi|_{U_{0}}:U_{0}\to\phi(U_{0})</annotation></semantics></math><span class="ltx_text ltx_font_italic">
+é um difeomorfismo </span><math id="I1.i2.p1.m5" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math><span class="ltx_text ltx_font_italic">.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.S3.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.Sx1.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

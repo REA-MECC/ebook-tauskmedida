@@ -1,0 +1,495 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch1.S4.html" title="1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch1.S6.html" title="1.6. Conjuntos não Mensuráveis ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S1.html" title="1.1. Aritmética na Reta Estendida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S2.html" title="1.2. O Problema da Medida ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S3.html" title="1.3. Volume de Blocos Retangulares ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S4.html" title="1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.S6.html" title="1.6. Conjuntos não Mensuráveis ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch1.Sx1.html" title="Exercícios para o Capítulo 1 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , Cantor, conjunto, conjunto de, de Cantor">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="1.1" data-path="Ch1.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S1.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.1 </span></b>Aritmética na Reta Estendida</a></li>
+<li data-level="1.2" data-path="Ch1.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S2.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.2 </span></b>O Problema da Medida</a></li>
+<li data-level="1.3" data-path="Ch1.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S3.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.3 </span></b>Volume de Blocos Retangulares</a></li>
+<li data-level="1.4" data-path="Ch1.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S4.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.4 </span></b>Medida de Lebesgue em <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="1.5" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.5 </span></b>Conjuntos de Cantor</a></li>
+<li data-level="1.6" data-path="Ch1.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.S6.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1.6 </span></b>Conjuntos não Mensuráveis</a></li>
+<li data-level="" data-path="Ch1.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch1.Sx1.html" title="In Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">1</span></a></li>
+</ol>
+</li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Conjuntos de Cantor</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">1.5</span>. Conjuntos de Cantor</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="p1.m1" class="ltx_Math" alttext="I=[a,b]" display="inline"><semantics><mrow><mi>I</mi><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow><annotation encoding="application/x-tex">I=[a,b]</annotation></semantics></math>, <math id="p1.m2" class="ltx_Math" alttext="a&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;b</annotation></semantics></math>, um intervalo fechado e limitado de comprimento positivo.
+Dado um escalar <math id="p1.m3" class="ltx_Math" alttext="\alpha&gt;0" display="inline"><semantics><mrow><mi>α</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha&gt;0</annotation></semantics></math>, <math id="p1.m4" class="ltx_Math" alttext="\alpha&lt;b-a=|I|" display="inline"><semantics><mrow><mi>α</mi><mo>&lt;</mo><mrow><mi>b</mi><mo>−</mo><mi>a</mi></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha&lt;b-a=|I|</annotation></semantics></math>, consideramos o intervalo aberto <math id="p1.m5" class="ltx_Math" alttext="J" display="inline"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math> de comprimento <math id="p1.m6" class="ltx_Math" alttext="\alpha" display="inline"><semantics><mi>α</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+que possui o mesmo centro que <math id="p1.m7" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>; denotamos então por <math id="p1.m8" class="ltx_Math" alttext="\lambda(I,\alpha;0)" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda(I,\alpha;0)</annotation></semantics></math> e <math id="p1.m9" class="ltx_Math" alttext="\lambda(I,\alpha;1)" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda(I,\alpha;1)</annotation></semantics></math> os dois
+intervalos remanescentes após remover <math id="p1.m10" class="ltx_Math" alttext="J" display="inline"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math> de <math id="p1.m11" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>. Mais precisamente, sejam <math id="p1.m12" class="ltx_Math" alttext="c=\frac{1}{2}(a+b-\alpha)" display="inline"><semantics><mrow><mi>c</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>+</mo><mi>b</mi></mrow><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">c=\frac{1}{2}(a+b-\alpha)</annotation></semantics></math> e <math id="p1.m13" class="ltx_Math" alttext="d=\frac{1}{2}(a+b+\alpha)" display="inline"><semantics><mrow><mi>d</mi><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>a</mi><mo>+</mo><mi>b</mi><mo>+</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d=\frac{1}{2}(a+b+\alpha)</annotation></semantics></math>,
+de modo que <math id="p1.m14" class="ltx_Math" alttext="J=\left]c,d\right[" display="inline"><semantics><mrow><mi>J</mi><mo rspace="0.1389em">=</mo><mrow><mo lspace="0.1389em" rspace="0em" stretchy="true">]</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo lspace="0em" stretchy="true">[</mo></mrow></mrow><annotation encoding="application/x-tex">J=\left]c,d\right[</annotation></semantics></math>; definimos:</p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\lambda(I,\alpha;0)=[a,c],\quad\lambda(I,\alpha;1)=[d,b]." display="block"><semantics><mrow><mrow><mrow><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>c</mi><mo stretchy="false">]</mo></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><mi>d</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lambda(I,\alpha;0)=[a,c],\quad\lambda(I,\alpha;1)=[d,b].</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.1)</span>
+            
+          
+</div>
+<p class="ltx_p">Note que <math id="p1.m15" class="ltx_Math" alttext="a&lt;c&lt;d&lt;b" display="inline"><semantics><mrow><mi>a</mi><mo>&lt;</mo><mi>c</mi><mo>&lt;</mo><mi>d</mi><mo>&lt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a&lt;c&lt;d&lt;b</annotation></semantics></math>, de modo que <math id="p1.m16" class="ltx_Math" alttext="\lambda(I,\alpha;0)" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda(I,\alpha;0)</annotation></semantics></math> e <math id="p1.m17" class="ltx_Math" alttext="\lambda(I,\alpha;1)" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda(I,\alpha;1)</annotation></semantics></math> são dois intervalos
+fechados e limitados disjuntos de comprimento positivo contidos em <math id="p1.m18" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>; mais especificamente:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\big{|}\lambda(I,\alpha;0)\big{|}=\big{|}\lambda(I,\alpha;1)\big{|}=\frac{1}{2%
+}\,(|I|-\alpha)." display="block"><semantics><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>I</mi><mo>,</mo><mi>α</mi><mo>;</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo>−</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\big{|}\lambda(I,\alpha;0)\big{|}=\big{|}\lambda(I,\alpha;1)\big{|}=\frac{1}{2%
+}\,(|I|-\alpha).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Dados um intervalo fechado e limitado <math id="p1.m19" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> de comprimento positivo, um inteiro
+<math id="p1.m20" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>, escalares positivos <math id="p1.m21" class="ltx_Math" alttext="\alpha_{1}" display="inline"><semantics><msub><mi>α</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\alpha_{1}</annotation></semantics></math>, …, <math id="p1.m22" class="ltx_Math" alttext="\alpha_{n}" display="inline"><semantics><msub><mi>α</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\alpha_{n}</annotation></semantics></math> com <math id="p1.m23" class="ltx_Math" alttext="\sum_{i=1}^{n}\alpha_{i}&lt;|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n}\alpha_{i}&lt;|I|</annotation></semantics></math>
+e <math id="p1.m24" class="ltx_Math" alttext="\epsilon_{1},\ldots,\epsilon_{n}\in\{0,1\}" display="inline"><semantics><mrow><mrow><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub></mrow><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\epsilon_{1},\ldots,\epsilon_{n}\in\{0,1\}</annotation></semantics></math>, vamos definir um intervalo limitado e fechado
+<math id="p1.m25" class="ltx_Math" alttext="\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}</annotation></semantics></math> tal que:</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="\Big{|}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}%
+\Big{|}=\frac{1}{2^{n}}\Big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\Big{)}&gt;0." display="block"><semantics><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Big{|}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}%
+\Big{|}=\frac{1}{2^{n}}\Big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\Big{)}&gt;0.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.2)</span>
+            
+          
+</div>
+<p class="ltx_p">A definição será feita recursivamente. Para <math id="p1.m27" class="ltx_Math" alttext="n=1" display="inline"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=1</annotation></semantics></math>, a definição já foi dada em (<a href="#E1" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.1</span></a>).
+Dados um intervalo fechado e limitado <math id="p1.m28" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> de comprimento positivo, escalares positivos
+<math id="p1.m29" class="ltx_Math" alttext="\alpha_{1}" display="inline"><semantics><msub><mi>α</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\alpha_{1}</annotation></semantics></math>, …, <math id="p1.m30" class="ltx_Math" alttext="\alpha_{n+1}" display="inline"><semantics><msub><mi>α</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">\alpha_{n+1}</annotation></semantics></math> com <math id="p1.m31" class="ltx_Math" alttext="\sum_{i=1}^{n+1}\alpha_{i}&lt;|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n+1}\alpha_{i}&lt;|I|</annotation></semantics></math>
+e <math id="p1.m32" class="ltx_Math" alttext="\epsilon_{1},\ldots,\epsilon_{n+1}\in\{0,1\}" display="inline"><semantics><mrow><mrow><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">\epsilon_{1},\ldots,\epsilon_{n+1}\in\{0,1\}</annotation></semantics></math>, definimos:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big{)}=%
+\lambda\Big{(}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}%
+\big{)},\frac{\alpha_{n+1}}{2^{n}};\epsilon_{n+1}\Big{)}." display="block"><semantics><mrow><mrow><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>,</mo><mfrac><msub><mi>α</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>;</mo><msub><mi>ϵ</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big{)}=%
+\lambda\Big{(}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}%
+\big{)},\frac{\alpha_{n+1}}{2^{n}};\epsilon_{n+1}\Big{)}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Assumindo (<a href="#E2" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.2</span></a>), é fácil ver que <math id="p1.m33" class="ltx_Math" alttext="\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big{)}" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big{)}</annotation></semantics></math>
+está bem definido e que:</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\Big{|}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big%
+{)}\Big{|}=\frac{1}{2^{n+1}}\Big{(}|I|-\sum_{i=1}^{n+1}\alpha_{i}\Big{)}&gt;0." display="block"><semantics><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>&gt;</mo><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Big{|}\lambda\big{(}I,(\alpha_{i})_{i=1}^{n+1};(\epsilon_{i})_{i=1}^{n+1}\big%
+{)}\Big{|}=\frac{1}{2^{n+1}}\Big{(}|I|-\sum_{i=1}^{n+1}\alpha_{i}\Big{)}&gt;0.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Segue então por indução que temos uma família de intervalos fechados e limitados
+<math id="p1.m34" class="ltx_Math" alttext="\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda\big{(}I,(\alpha_{i})_{i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}</annotation></semantics></math> satisfazendo (<a href="#E2" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.2</span></a>).</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Fixemos então um intervalo fechado e limitado <math id="p2.m1" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> de comprimento positivo e uma seqüência
+<math id="p2.m2" class="ltx_Math" alttext="(\alpha_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\alpha_{i})_{i\geq 1}</annotation></semantics></math> de escalares positivos tal que <math id="p2.m3" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}\leq|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}\leq|I|</annotation></semantics></math>.
+Note que <math id="p2.m4" class="ltx_Math" alttext="\sum_{i=1}^{n}\alpha_{i}&lt;|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n}\alpha_{i}&lt;|I|</annotation></semantics></math>, para todo <math id="p2.m5" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>. Para simplificar a notação,
+escrevemos:
+</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="I(\epsilon)=I(\epsilon_{1},\ldots,\epsilon_{n})=\lambda\big{(}I,(\alpha_{i})_{%
+i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)}," display="block"><semantics><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>I</mi><mo>,</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>;</mo><msubsup><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">I(\epsilon)=I(\epsilon_{1},\ldots,\epsilon_{n})=\lambda\big{(}I,(\alpha_{i})_{%
+i=1}^{n};(\epsilon_{i})_{i=1}^{n}\big{)},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="p2.m7" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math> e todo <math id="p2.m8" class="ltx_Math" alttext="\epsilon=(\epsilon_{1},\ldots,\epsilon_{n})\in\{0,1\}^{n}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon=(\epsilon_{1},\ldots,\epsilon_{n})\in\{0,1\}^{n}</annotation></semantics></math>. Dada
+uma seqüência <math id="p2.m9" class="ltx_Math" alttext="(\epsilon_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\epsilon_{i})_{i\geq 1}</annotation></semantics></math> em <math id="p2.m10" class="ltx_Math" alttext="\{0,1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math> obtemos uma seqüência decrescente
+de intervalos fechados e limitados:</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="I\supset I(\epsilon_{1})\supset I(\epsilon_{1},\epsilon_{2})\supset\cdots%
+\supset I(\epsilon_{1},\ldots,\epsilon_{n})\supset\cdots" display="block"><semantics><mrow><mi>I</mi><mo>⊃</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊃</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><msub><mi>ϵ</mi><mn>2</mn></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊃</mo><mi mathvariant="normal">⋯</mi><mo>⊃</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>⊃</mo><mi mathvariant="normal">⋯</mi></mrow><annotation encoding="application/x-tex">I\supset I(\epsilon_{1})\supset I(\epsilon_{1},\epsilon_{2})\supset\cdots%
+\supset I(\epsilon_{1},\ldots,\epsilon_{n})\supset\cdots</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.3)</span>
+            
+          
+</div>
+<p class="ltx_p">Afirmamos que, para todo <math id="p2.m11" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>, os intervalos <math id="p2.m12" class="ltx_Math" alttext="I(\epsilon)" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(\epsilon)</annotation></semantics></math>, <math id="p2.m13" class="ltx_Math" alttext="\epsilon\in\{0,1\}^{n}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon\in\{0,1\}^{n}</annotation></semantics></math>, são dois a dois disjuntos.
+De fato, sejam dados <math id="p2.m14" class="ltx_Math" alttext="\epsilon,\epsilon^{\prime}\in\{0,1\}^{n}" display="inline"><semantics><mrow><mrow><mi>ϵ</mi><mo>,</mo><msup><mi>ϵ</mi><mo>′</mo></msup></mrow><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon,\epsilon^{\prime}\in\{0,1\}^{n}</annotation></semantics></math>, com <math id="p2.m15" class="ltx_Math" alttext="\epsilon\neq\epsilon^{\prime}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>≠</mo><msup><mi>ϵ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">\epsilon\neq\epsilon^{\prime}</annotation></semantics></math>. Seja
+<math id="p2.m16" class="ltx_Math" alttext="k\in\{1,\ldots,n\}" display="inline"><semantics><mrow><mi>k</mi><mo>∈</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow><annotation encoding="application/x-tex">k\in\{1,\ldots,n\}</annotation></semantics></math> o menor índice tal que <math id="p2.m17" class="ltx_Math" alttext="\epsilon_{k}\neq\epsilon^{\prime}_{k}" display="inline"><semantics><mrow><msub><mi>ϵ</mi><mi>k</mi></msub><mo>≠</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup></mrow><annotation encoding="application/x-tex">\epsilon_{k}\neq\epsilon^{\prime}_{k}</annotation></semantics></math>. Temos
+<math id="p2.m18" class="ltx_Math" alttext="I(\epsilon)\subset I(\epsilon_{1},\ldots,\epsilon_{k})" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">I(\epsilon)\subset I(\epsilon_{1},\ldots,\epsilon_{k})</annotation></semantics></math>, <math id="p2.m19" class="ltx_Math" alttext="I(\epsilon^{\prime})\subset I(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{%
+k})" display="inline"><semantics><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><mo>⊂</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>ϵ</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">I(\epsilon^{\prime})\subset I(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{%
+k})</annotation></semantics></math>,
+<math id="p2.m20" class="ltx_Math" alttext="J=I(\epsilon_{1},\ldots,\epsilon_{k-1})=I(\epsilon^{\prime}_{1},\ldots,%
+\epsilon^{\prime}_{k-1})" display="inline"><semantics><mrow><mi>J</mi><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>ϵ</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msubsup><mi>ϵ</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow><mo>′</mo></msubsup><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">J=I(\epsilon_{1},\ldots,\epsilon_{k-1})=I(\epsilon^{\prime}_{1},\ldots,%
+\epsilon^{\prime}_{k-1})</annotation></semantics></math> e:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="I(\epsilon_{1},\ldots,\epsilon_{k})=\lambda\Big{(}J,\frac{\alpha_{k}}{2^{k-1}}%
+;\epsilon_{k}\Big{)},\quad I(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{k%
+})=\lambda\Big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon^{\prime}_{k}\Big{)}." display="block"><semantics><mrow><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mi>J</mi><mo>,</mo><mfrac><msub><mi>α</mi><mi>k</mi></msub><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac><mo>;</mo><msub><mi>ϵ</mi><mi>k</mi></msub><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msubsup><mi>ϵ</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mi>J</mi><mo>,</mo><mfrac><msub><mi>α</mi><mi>k</mi></msub><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac><mo>;</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">I(\epsilon_{1},\ldots,\epsilon_{k})=\lambda\Big{(}J,\frac{\alpha_{k}}{2^{k-1}}%
+;\epsilon_{k}\Big{)},\quad I(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{k%
+})=\lambda\Big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon^{\prime}_{k}\Big{)}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Como <math id="p2.m21" class="ltx_Math" alttext="\epsilon_{k}\neq\epsilon^{\prime}_{k}" display="inline"><semantics><mrow><msub><mi>ϵ</mi><mi>k</mi></msub><mo>≠</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup></mrow><annotation encoding="application/x-tex">\epsilon_{k}\neq\epsilon^{\prime}_{k}</annotation></semantics></math>, os intervalos <math id="p2.m22" class="ltx_Math" alttext="\lambda\big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon_{k}\big{)}" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>J</mi><mo>,</mo><mfrac><msub><mi>α</mi><mi>k</mi></msub><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac><mo>;</mo><msub><mi>ϵ</mi><mi>k</mi></msub><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda\big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon_{k}\big{)}</annotation></semantics></math>
+e <math id="p2.m23" class="ltx_Math" alttext="\lambda\big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon^{\prime}_{k}\big{)}" display="inline"><semantics><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>J</mi><mo>,</mo><mfrac><msub><mi>α</mi><mi>k</mi></msub><msup><mn>2</mn><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup></mfrac><mo>;</mo><msubsup><mi>ϵ</mi><mi>k</mi><mo>′</mo></msubsup><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda\big{(}J,\frac{\alpha_{k}}{2^{k-1}};\epsilon^{\prime}_{k}\big{)}</annotation></semantics></math> são disjuntos e portanto também
+<math id="p2.m24" class="ltx_Math" alttext="I(\epsilon)\cap I(\epsilon^{\prime})=\emptyset" display="inline"><semantics><mrow><mrow><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∩</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mi>∅︀</mi></mrow><annotation encoding="application/x-tex">I(\epsilon)\cap I(\epsilon^{\prime})=\emptyset</annotation></semantics></math>. Para cada <math id="p2.m25" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math> definimos:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="K_{n}=\!\!\!\bigcup_{\epsilon\in\{0,1\}^{n}}\!\!I(\epsilon)." display="block"><semantics><mrow><mrow><msub><mi>K</mi><mi>n</mi></msub><mpadded width="0.556em"><mo>=</mo></mpadded><mrow><munder><mo movablelimits="false">⋃</mo><mrow><mi>ϵ</mi><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow></munder><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">K_{n}=\!\!\!\bigcup_{\epsilon\in\{0,1\}^{n}}\!\!I(\epsilon).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Note que cada <math id="p2.m26" class="ltx_Math" alttext="K_{n}" display="inline"><semantics><msub><mi>K</mi><mi>n</mi></msub><annotation encoding="application/x-tex">K_{n}</annotation></semantics></math> é uma união disjunta de <math id="p2.m27" class="ltx_Math" alttext="2^{n}" display="inline"><semantics><msup><mn>2</mn><mi>n</mi></msup><annotation encoding="application/x-tex">2^{n}</annotation></semantics></math> intervalos fechados e limitados
+de comprimento <math id="p2.m28" class="ltx_Math" alttext="\frac{1}{2^{n}}\big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\big{)}" display="inline"><semantics><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{2^{n}}\big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\big{)}</annotation></semantics></math>. Em particular,
+cada <math id="p2.m29" class="ltx_Math" alttext="K_{n}" display="inline"><semantics><msub><mi>K</mi><mi>n</mi></msub><annotation encoding="application/x-tex">K_{n}</annotation></semantics></math> é compacto e sua medida de Lebesgue é dada por:</p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="\mathfrak{m}(K_{n})=|I|-\sum_{i=1}^{n}\alpha_{i}." display="block"><semantics><mrow><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>K</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}(K_{n})=|I|-\sum_{i=1}^{n}\alpha_{i}.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.4)</span>
+            
+          
+</div>
+</div>
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.5.1 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p">O conjunto <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="K=\bigcap_{n=1}^{\infty}K_{n}" display="inline"><semantics><mrow><mi>K</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>⋂</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>K</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">K=\bigcap_{n=1}^{\infty}K_{n}</annotation></semantics></math> é chamado o <span class="ltx_text ltx_font_italic">conjunto de Cantor</span>
+determinado pelo intervalo fechado e limitado <math id="Thmteo1.p1.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> e pela seqüência <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="(\alpha_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\alpha_{i})_{i\geq 1}</annotation></semantics></math>
+de escalares positivos com <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}\leq|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}\leq|I|</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Para cada seqüência <math id="p3.m1" class="ltx_Math" alttext="(\epsilon_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\epsilon_{i})_{i\geq 1}</annotation></semantics></math> em <math id="p3.m2" class="ltx_Math" alttext="\{0,1\}" display="inline"><semantics><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><annotation encoding="application/x-tex">\{0,1\}</annotation></semantics></math> temos que (<a href="#E3" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.3</span></a>)
+é uma seqüência decrescente de intervalos fechados e limitados cujos comprimentos tendem
+a zero; de fato:</p>
+<div id="E5" class="ltx_equation ltx_eqn_div">
+<span><math id="E5.m1" class="ltx_Math" alttext="\big{|}I(\epsilon_{1},\ldots,\epsilon_{n})\big{|}=\frac{1}{2^{n}}\Big{(}|I|-%
+\sum_{i=1}^{n}\alpha_{i}\Big{)}\leq\frac{1}{2^{n}}\,|I|\xrightarrow[\;n\to%
+\infty\;]{}0." display="block"><semantics><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><munderover accent="true" accentunder="true"><mo stretchy="false">→</mo><mrow><mi mathsize="142%">n</mi><mo mathsize="142%" stretchy="false">→</mo><mi mathsize="142%" mathvariant="normal">∞</mi></mrow><mi></mi></munderover><mn>0</mn></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\big{|}I(\epsilon_{1},\ldots,\epsilon_{n})\big{|}=\frac{1}{2^{n}}\Big{(}|I|-%
+\sum_{i=1}^{n}\alpha_{i}\Big{)}\leq\frac{1}{2^{n}}\,|I|\xrightarrow[\;n\to%
+\infty\;]{}0.</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.5)</span>
+            
+          
+</div>
+<p class="ltx_p">Pelo princípio dos intervalos encaixantes, existe exatamente um ponto pertencente à interseção
+de todos os intervalos em (<a href="#E3" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.3</span></a>). Definimos então uma aplicação:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\phi:\{0,1\}^{\infty}=\prod_{i=1}^{\infty}\{0,1\}\ni\epsilon=(\epsilon_{i})_{i%
+\geq 1}\longmapsto\phi(\epsilon)\in K," display="block"><semantics><mrow><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi mathvariant="normal">∞</mi></msup><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∏</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow></mrow><mo>∋</mo><mi>ϵ</mi><mo>=</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><mo stretchy="false">⟼</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>K</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi:\{0,1\}^{\infty}=\prod_{i=1}^{\infty}\{0,1\}\ni\epsilon=(\epsilon_{i})_{i%
+\geq 1}\longmapsto\phi(\epsilon)\in K,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">de modo que:</p>
+<div id="E6" class="ltx_equation ltx_eqn_div">
+<span><math id="E6.m1" class="ltx_Math" alttext="\bigcap_{n=1}^{\infty}I(\epsilon_{1},\ldots,\epsilon_{n})=\big{\{}\phi(%
+\epsilon)\big{\}}," display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">⋂</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\bigcap_{n=1}^{\infty}I(\epsilon_{1},\ldots,\epsilon_{n})=\big{\{}\phi(%
+\epsilon)\big{\}},</annotation></semantics></math></span>
+            <span class="ltx_tag ltx_tag_equation ltx_align_right">(1.5.6)</span>
+            
+          
+</div>
+<p class="ltx_p">para todo <math id="p3.m3" class="ltx_Math" alttext="\epsilon=(\epsilon_{i})_{i\geq 1}\in\{0,1\}^{\infty}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>=</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi mathvariant="normal">∞</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon=(\epsilon_{i})_{i\geq 1}\in\{0,1\}^{\infty}</annotation></semantics></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">As principais propriedades do conjunto <math id="p4.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> podem ser sumarizadas no seguinte:</p>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.5.2 Teorema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo2.p1.m1" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> um intervalo fechado e limitado de comprimento positivo e seja <math id="Thmteo2.p1.m2" class="ltx_Math" alttext="(\alpha_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\alpha_{i})_{i\geq 1}</annotation></semantics></math>
+uma seqüência de escalares positivos tal que:</span></p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}\leq|I|." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>≤</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}\leq|I|.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo2.p1.m3" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> o conjunto de Cantor determinado por <math id="Thmteo2.p1.m4" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> e por <math id="Thmteo2.p1.m5" class="ltx_Math" alttext="(\alpha_{i})_{i\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(\alpha_{i})_{i\geq 1}</annotation></semantics></math>. Então:</span></p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix1.p1.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é um subconjunto compacto de </span><math id="I1.ix1.p1.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">a medida de Lebesgue de </span><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> é </span><math id="I1.ix2.p1.m2" class="ltx_Math" alttext="\mathfrak{m}(K)=|I|-\sum_{i=1}^{\infty}\alpha_{i}" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathfrak{m}(K)=|I|-\sum_{i=1}^{\infty}\alpha_{i}</annotation></semantics></math><span class="ltx_text ltx_font_italic">;</span></p>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I1.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix3.p1.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tem interior vazio;</span></p>
+</div>
+</li>
+<li id="I1.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I1.ix4.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix4.p1.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> tem a mesma cardinalidade que a reta </span><math id="I1.ix4.p1.m2" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math><span class="ltx_text ltx_font_italic"> (e é portanto não enumerável);</span></p>
+</div>
+</li>
+<li id="I1.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I1.ix5.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix5.p1.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math><span class="ltx_text ltx_font_italic"> não tem pontos isolados.</span></p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p5" class="ltx_para">
+<ul class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i1.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (a).</p>
+</div>
+<div id="I2.i1.p2" class="ltx_para">
+<p class="ltx_p">Basta observar que <math id="I2.i1.p2.m1" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> é uma interseção de subconjuntos compactos de <math id="I2.i1.p2.m2" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i2.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (b).</p>
+</div>
+<div id="I2.i2.p2" class="ltx_para">
+<p class="ltx_p">Segue de (<a href="#E4" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.4</span></a>) e do Lema <a href="Ch1.S4.html#Thmteo48" title="1.4.48 Lema. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.48</span></a>, observando que
+<math id="I2.i2.p2.m1" class="ltx_Math" alttext="K_{n}\searrow K" display="inline"><semantics><mrow><msub><mi>K</mi><mi>n</mi></msub><mo>↘</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">K_{n}\searrow K</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i3.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (c).</p>
+</div>
+<div id="I2.i3.p2" class="ltx_para">
+<p class="ltx_p">Um intervalo contido em <math id="I2.i3.p2.m1" class="ltx_Math" alttext="K_{n}" display="inline"><semantics><msub><mi>K</mi><mi>n</mi></msub><annotation encoding="application/x-tex">K_{n}</annotation></semantics></math> deve estar contido em algum dos intervalos <math id="I2.i3.p2.m2" class="ltx_Math" alttext="I(\epsilon)" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(\epsilon)</annotation></semantics></math>, <math id="I2.i3.p2.m3" class="ltx_Math" alttext="\epsilon\in\{0,1\}^{n}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon\in\{0,1\}^{n}</annotation></semantics></math>,
+e portanto deve ter comprimento menor ou igual a <math id="I2.i3.p2.m4" class="ltx_Math" alttext="\frac{1}{2^{n}}\big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\big{)}" display="inline"><semantics><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{2^{n}}\big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\big{)}</annotation></semantics></math>.
+Segue de (<a href="#E5" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.5</span></a>) que nenhum intervalo de comprimento positivo pode estar contido
+em <math id="I2.i3.p2.m5" class="ltx_Math" alttext="K_{n}" display="inline"><semantics><msub><mi>K</mi><mi>n</mi></msub><annotation encoding="application/x-tex">K_{n}</annotation></semantics></math> para todo <math id="I2.i3.p2.m6" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>. Logo <math id="I2.i3.p2.m7" class="ltx_Math" alttext="K=\bigcap_{n=1}^{\infty}K_{n}" display="inline"><semantics><mrow><mi>K</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>⋂</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>K</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">K=\bigcap_{n=1}^{\infty}K_{n}</annotation></semantics></math> não pode conter um intervalo
+aberto não vazio.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i4.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i4.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (d).</p>
+</div>
+<div id="I2.i4.p2" class="ltx_para">
+<p class="ltx_p">É fácil ver que a função <math id="I2.i4.p2.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> definida em (<a href="#E6" title="In 1.5. Conjuntos de Cantor ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.5.6</span></a>) é bijetora.
+A conclusão segue do fato bem conhecido que <math id="I2.i4.p2.m2" class="ltx_Math" alttext="\{0,1\}^{\infty}" display="inline"><semantics><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi mathvariant="normal">∞</mi></msup><annotation encoding="application/x-tex">\{0,1\}^{\infty}</annotation></semantics></math> tem a mesma cardinalidade de <math id="I2.i4.p2.m3" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I2.i5" class="ltx_item" style="list-style-type:none;padding-top:10.0pt;">
+<span class="ltx_tag ltx_tag_item"><math id="I2.i5.m1" class="ltx_Math" alttext="\bullet" display="inline"><semantics><mo>∙</mo><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></span><div id="I2.i5.p1" class="ltx_para">​<p class="ltx_p"><span class="ltx_text ltx_font_italic">Prova de</span> (e).</p>
+</div>
+<div id="I2.i5.p2" class="ltx_para">
+<p class="ltx_p">Seja <math id="I2.i5.p2.m1" class="ltx_Math" alttext="x\in K" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">x\in K</annotation></semantics></math>. Como <math id="I2.i5.p2.m2" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é bijetora, existe <math id="I2.i5.p2.m3" class="ltx_Math" alttext="\epsilon\in\{0,1\}^{\infty}" display="inline"><semantics><mrow><mi>ϵ</mi><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi mathvariant="normal">∞</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon\in\{0,1\}^{\infty}</annotation></semantics></math> tal que
+<math id="I2.i5.p2.m4" class="ltx_Math" alttext="x=\phi(\epsilon)" display="inline"><semantics><mrow><mi>x</mi><mo>=</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ϵ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">x=\phi(\epsilon)</annotation></semantics></math>. Escolhendo <math id="I2.i5.p2.m5" class="ltx_Math" alttext="\epsilon^{\prime}\in\{0,1\}^{\infty}" display="inline"><semantics><mrow><msup><mi>ϵ</mi><mo>′</mo></msup><mo>∈</mo><msup><mrow><mo stretchy="false">{</mo><mn>0,1</mn><mo stretchy="false">}</mo></mrow><mi mathvariant="normal">∞</mi></msup></mrow><annotation encoding="application/x-tex">\epsilon^{\prime}\in\{0,1\}^{\infty}</annotation></semantics></math> com <math id="I2.i5.p2.m6" class="ltx_Math" alttext="\epsilon^{\prime}\neq\epsilon" display="inline"><semantics><mrow><msup><mi>ϵ</mi><mo>′</mo></msup><mo>≠</mo><mi>ϵ</mi></mrow><annotation encoding="application/x-tex">\epsilon^{\prime}\neq\epsilon</annotation></semantics></math>
+e <math id="I2.i5.p2.m7" class="ltx_Math" alttext="(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{n})=(\epsilon_{1},\ldots,%
+\epsilon_{n})" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><msubsup><mi>ϵ</mi><mn>1</mn><mo>′</mo></msubsup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msubsup><mi>ϵ</mi><mi>n</mi><mo>′</mo></msubsup><mo stretchy="false">)</mo></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">(\epsilon^{\prime}_{1},\ldots,\epsilon^{\prime}_{n})=(\epsilon_{1},\ldots,%
+\epsilon_{n})</annotation></semantics></math> então
+<math id="I2.i5.p2.m8" class="ltx_Math" alttext="\phi(\epsilon^{\prime})" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(\epsilon^{\prime})</annotation></semantics></math> é um ponto de <math id="I2.i5.p2.m9" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> distinto de <math id="I2.i5.p2.m10" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>. Além do mais,
+<math id="I2.i5.p2.m11" class="ltx_Math" alttext="\phi(\epsilon^{\prime})" display="inline"><semantics><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\phi(\epsilon^{\prime})</annotation></semantics></math> e <math id="I2.i5.p2.m12" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> ambos pertencem ao intervalo <math id="I2.i5.p2.m13" class="ltx_Math" alttext="I(\epsilon_{1},\ldots,\epsilon_{n})" display="inline"><semantics><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">I(\epsilon_{1},\ldots,\epsilon_{n})</annotation></semantics></math>
+e portanto:</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\big{|}x-\phi(\epsilon^{\prime})\big{|}\leq\big{|}I(\epsilon_{1},\ldots,%
+\epsilon_{n})\big{|}=\frac{1}{2^{n}}\Big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\Big{)}%
+\leq\frac{1}{2^{n}}\,|I|." display="block"><semantics><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi>x</mi><mo>−</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ϵ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>≤</mo><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mi>I</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>ϵ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>ϵ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo rspace="0.055em">−</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>≤</mo><mrow><mfrac><mn>1</mn><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\big{|}x-\phi(\epsilon^{\prime})\big{|}\leq\big{|}I(\epsilon_{1},\ldots,%
+\epsilon_{n})\big{|}=\frac{1}{2^{n}}\Big{(}|I|-\sum_{i=1}^{n}\alpha_{i}\Big{)}%
+\leq\frac{1}{2^{n}}\,|I|.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Concluímos que toda vizinhança de <math id="I2.i5.p2.m14" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> contém um ponto de <math id="I2.i5.p2.m15" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> distinto de <math id="I2.i5.p2.m16" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>, i.e., <math id="I2.i5.p2.m17" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> é um
+ponto de acumulação de <math id="I2.i5.p2.m18" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.∎</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.5.3 Exemplo</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p">Escolhendo os escalares <math id="Thmteo3.p1.m1" class="ltx_Math" alttext="\alpha_{i}" display="inline"><semantics><msub><mi>α</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\alpha_{i}</annotation></semantics></math> com <math id="Thmteo3.p1.m2" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}=|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>=</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}=|I|</annotation></semantics></math> então
+o conjunto de Cantor <math id="Thmteo3.p1.m3" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> correspondente nos fornece um exemplo de um subconjunto
+não enumerável de <math id="Thmteo3.p1.m4" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math> (com a mesma cardinalidade de <math id="Thmteo3.p1.m5" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math>) e com medida de Lebesgue zero.</p>
+</div>
+</div>
+<div id="Thmteo4" class="ltx_theorem ltx_theorem_example">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">1.5.4 Exemplo</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo4.p1" class="ltx_para">
+<p class="ltx_p">Escolhendo os escalares <math id="Thmteo4.p1.m1" class="ltx_Math" alttext="\alpha_{i}" display="inline"><semantics><msub><mi>α</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\alpha_{i}</annotation></semantics></math> com <math id="Thmteo4.p1.m2" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}&lt;|I|" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}&lt;|I|</annotation></semantics></math> então o conjunto
+de Cantor <math id="Thmteo4.p1.m3" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> correspondente nos fornece um exemplo de um subconjunto compacto de <math id="Thmteo4.p1.m4" class="ltx_Math" alttext="\mathds{R}" display="inline"><semantics><mi>ℝ</mi><annotation encoding="application/x-tex">\mathds{R}</annotation></semantics></math>
+com interior vazio e medida de Lebesgue positiva. Na verdade, para todo <math id="Thmteo4.p1.m5" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>
+podemos escolher os escalares <math id="Thmteo4.p1.m6" class="ltx_Math" alttext="\alpha_{i}" display="inline"><semantics><msub><mi>α</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\alpha_{i}</annotation></semantics></math> com <math id="Thmteo4.p1.m7" class="ltx_Math" alttext="\sum_{i=1}^{\infty}\alpha_{i}&lt;\varepsilon" display="inline"><semantics><mrow><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>α</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\alpha_{i}&lt;\varepsilon</annotation></semantics></math>
+e daí o conjunto de Cantor <math id="Thmteo4.p1.m8" class="ltx_Math" alttext="K" display="inline"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math> correspondente nos fornece um exemplo de um subconjunto
+compacto do intervalo <math id="Thmteo4.p1.m9" class="ltx_Math" alttext="I" display="inline"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math> com interior vazio e <math id="Thmteo4.p1.m10" class="ltx_Math" alttext="\mathfrak{m}(K)&gt;|I|-\varepsilon" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>K</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mrow><mo stretchy="false">|</mo><mi>I</mi><mo stretchy="false">|</mo></mrow><mo>−</mo><mi>ε</mi></mrow></mrow><annotation encoding="application/x-tex">\mathfrak{m}(K)&gt;|I|-\varepsilon</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch1.S4.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch1.S6.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

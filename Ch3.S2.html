@@ -1,0 +1,430 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch3.S1.html" title="3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S1.html" title="3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S3.html" title="3.3. O Teorema de Mudança de Variáveis ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.S4.html" title="3.4. Apêndice à Seção 3.3: recordação de Cálculo no ℝ^𝑛 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch3.Sx1.html" title="Exercícios para o Capítulo 3 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , , , aplicação linear, determinante, elementar, escalonamento, transformação">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="3.1" data-path="Ch3.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S1.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.1 </span></b>Aplicações Lipschitzianas</a></li>
+<li data-level="3.2" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.2 </span></b>Aplicações Lineares</a></li>
+<li data-level="3.3" data-path="Ch3.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S3.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.3 </span></b>O Teorema de Mudança de Variáveis</a></li>
+<li data-level="3.4" data-path="Ch3.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.S4.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3.4 </span></b>recordação de Cálculo no <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="" data-path="Ch3.Sx1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch3.Sx1.html" title="In Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">3</span></a></li>
+</ol>
+</li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>O Efeito de Aplicações Lineares sobre a Medida de Lebesgue</h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section header-section-number">3.2</span>. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue</h1>
+
+<div id="p1" class="ltx_para">
+<p class="ltx_p">O objetivo desta seção é provar o seguinte:</p>
+</div>
+<div id="Thmteo1" class="ltx_theorem ltx_theorem_teo">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.2.1 Teorema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Seja <math id="Thmteo1.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> uma aplicação linear. Para todo subconjunto mensurável <math id="Thmteo1.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="Thmteo1.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>
+temos que <math id="Thmteo1.p1.m4" class="ltx_Math" alttext="T(A)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math> é mensurável e:</span></p>
+<div id="E1" class="ltx_equation ltx_eqn_div">
+<span><math id="E1.m1" class="ltx_Math" alttext="\mathfrak{m}\big{(}T(A)\big{)}=|\det T|\,\mathfrak{m}(A)." display="block"><semantics><mrow><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">det</mo><mi>T</mi></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathfrak{m}\big{(}T(A)\big{)}=|\det T|\,\mathfrak{m}(A).</annotation></semantics></math></span>
+              <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2.1)</span>
+              
+            
+</div>
+</div>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">Em (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) denotamos por <math id="p2.m1" class="ltx_Math" alttext="\det T" display="inline"><semantics><mrow><mo rspace="0.167em">det</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">\det T</annotation></semantics></math> o <span class="ltx_text ltx_font_italic">determinante</span> de <math id="p2.m3" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>, ou seja,
+o determinante da matriz que representa <math id="p2.m4" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> na base canônica de <math id="p2.m5" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>. No que segue, <span class="ltx_text ltx_font_italic">sempre identificaremos
+aplicações lineares de <math id="p2.m6" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math> em <math id="p2.m7" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> com as respectivas matrizes <math id="p2.m8" class="ltx_Math" alttext="n\times m" display="inline"><semantics><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n\times m</annotation></semantics></math> que as representam com respeito às bases
+canônicas</span>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">O restante da seção é dedicado à demonstração do Teorema <a href="#Thmteo1" title="3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>.
+Note que a mensurabilidade de <math id="p3.m1" class="ltx_Math" alttext="T(A)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math> já é garantida pelo Corolário <a href="Ch3.S1.html#Thmteo13" title="3.1.13 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.13</span></a>.
+Note também que se <math id="p3.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> não é inversível então o Teorema <a href="#Thmteo1" title="3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a> segue do Corolário <a href="Ch3.S1.html#Thmteo9" title="3.1.9 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.9</span></a>,
+já que a imagem de <math id="p3.m3" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é um subespaço próprio de <math id="p3.m4" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> e <math id="p3.m5" class="ltx_Math" alttext="\det T=0" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">det</mo><mi>T</mi></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\det T=0</annotation></semantics></math>.
+Se <math id="p3.m6" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é inversível, a estratégia da prova
+do Teorema <a href="#Thmteo1" title="3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a> é a seguinte. Inicialmente, observamos que se <math id="p3.m7" class="ltx_Math" alttext="T_{1}:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><msub><mi>T</mi><mn>1</mn></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T_{1}:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> e <math id="p3.m8" class="ltx_Math" alttext="T_{2}:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><msub><mi>T</mi><mn>2</mn></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T_{2}:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math>
+são aplicações lineares tais que a igualdade (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) vale para <math id="p3.m9" class="ltx_Math" alttext="T=T_{1}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">T=T_{1}</annotation></semantics></math> e para <math id="p3.m10" class="ltx_Math" alttext="T=T_{2}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">T=T_{2}</annotation></semantics></math>, para todo subconjunto
+mensurável <math id="p3.m11" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="p3.m12" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>, então a igualdade (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) também vale para <math id="p3.m13" class="ltx_Math" alttext="T=T_{1}T_{2}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>T</mi><mn>2</mn></msub></mrow></mrow><annotation encoding="application/x-tex">T=T_{1}T_{2}</annotation></semantics></math>; de fato, dado <math id="p3.m14" class="ltx_Math" alttext="A\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">A\subset\mathds{R}^{n}</annotation></semantics></math>
+mensurável, temos:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="p3.m15" class="ltx_Math" alttext="\mathfrak{m}\big{(}(T_{1}T_{2})(A)\big{)}=|\det T_{1}|\,\mathfrak{m}\big{(}T_{%
+2}(A)\big{)}=|\det T_{1}|\,|\det T_{2}|\,\mathfrak{m}(A)\\
+=|\det(T_{1}T_{2})|\,\mathfrak{m}(A)." display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">det</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msub><mi>T</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">det</mo><msub><mi>T</mi><mn>1</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo stretchy="false">|</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0.167em">det</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mrow><mo lspace="0em" movablelimits="false" rspace="0em">det</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>T</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>T</mi><mn>2</mn></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\mathfrak{m}\big{(}(T_{1}T_{2})(A)\big{)}=|\det T_{1}|\,\mathfrak{m}\big{(}T_{%
+2}(A)\big{)}=|\det T_{1}|\,|\det T_{2}|\,\mathfrak{m}(A)\\
+=|\det(T_{1}T_{2})|\,\mathfrak{m}(A).</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">A seguir, selecionamos alguns tipos de aplicações lineares que chamaremos de <span class="ltx_text ltx_font_italic">elementares</span>; mostraremos então
+que a igualdade (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) vale para aplicações lineares elementares e que toda aplicação linear inversível pode
+ser escrita como um produto de aplicações lineares elementares.</p>
+</div>
+<div id="Thmteo2" class="ltx_theorem ltx_theorem_defin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.2.2 Definição</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo2.p1" class="ltx_para">
+<p class="ltx_p">Uma aplicação linear <math id="Thmteo2.p1.m1" class="ltx_Math" alttext="E:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>E</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">E:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é dita <span class="ltx_text ltx_font_italic">elementar</span>
+quando é de um dos seguintes tipos:</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">tipo 1.</span></span><div id="I1.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix1.p1.m1" class="ltx_Math" alttext="E=L_{i,j;c}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">E=L_{i,j;c}</annotation></semantics></math>, onde <math id="I1.ix1.p1.m3" class="ltx_Math" alttext="i,j=1,\ldots,n" display="inline"><semantics><mrow><mrow><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i,j=1,\ldots,n</annotation></semantics></math> são distintos, <math id="I1.ix1.p1.m4" class="ltx_Math" alttext="c\in\mathds{R}" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">c\in\mathds{R}</annotation></semantics></math> e:</p>
+<div id="E2" class="ltx_equation ltx_eqn_div">
+<span><math id="E2.m1" class="ltx_Math" alttext="L_{i,j;c}(x_{1},\ldots,x_{i},\ldots,x_{j},\ldots,x_{n})=(x_{1},\ldots,x_{i}+cx%
+_{j},\ldots,x_{j},\ldots,x_{n});" display="block"><semantics><mrow><mrow><mrow><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">L_{i,j;c}(x_{1},\ldots,x_{i},\ldots,x_{j},\ldots,x_{n})=(x_{1},\ldots,x_{i}+cx%
+_{j},\ldots,x_{j},\ldots,x_{n});</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2.2)</span>
+                    
+                  
+</div>
+</div>
+</li>
+<li id="I1.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">tipo 2.</span></span><div id="I1.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix2.p1.m1" class="ltx_Math" alttext="E=\widehat{\sigma}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mover accent="true"><mi>σ</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">E=\widehat{\sigma}</annotation></semantics></math>,
+onde <math id="I1.ix2.p1.m3" class="ltx_Math" alttext="\sigma:\{1,\ldots,n\}\to\{1,\ldots,n\}" display="inline"><semantics><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sigma:\{1,\ldots,n\}\to\{1,\ldots,n\}</annotation></semantics></math> é uma bijeção e:</p>
+<div id="E3" class="ltx_equation ltx_eqn_div">
+<span><math id="E3.m1" class="ltx_Math" alttext="\widehat{\sigma}(x_{1},\ldots,x_{n})=(x_{\sigma(1)},\ldots,x_{\sigma(n)});" display="block"><semantics><mrow><mrow><mrow><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\widehat{\sigma}(x_{1},\ldots,x_{n})=(x_{\sigma(1)},\ldots,x_{\sigma(n)});</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2.3)</span>
+                    
+                  
+</div>
+</div>
+</li>
+<li id="I1.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item"><span class="ltx_text ltx_font_bold">tipo 3.</span></span><div id="I1.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I1.ix3.p1.m1" class="ltx_Math" alttext="E=D_{\lambda}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><msub><mi>D</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">E=D_{\lambda}</annotation></semantics></math>,
+onde <math id="I1.ix3.p1.m3" class="ltx_Math" alttext="\lambda=(\lambda_{1},\ldots,\lambda_{n})\in\mathds{R}^{n}" display="inline"><semantics><mrow><mi>λ</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>λ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>λ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\lambda=(\lambda_{1},\ldots,\lambda_{n})\in\mathds{R}^{n}</annotation></semantics></math>, <math id="I1.ix3.p1.m4" class="ltx_Math" alttext="\lambda_{i}\neq 0" display="inline"><semantics><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda_{i}\neq 0</annotation></semantics></math> para <math id="I1.ix3.p1.m5" class="ltx_Math" alttext="i=1,\ldots,n" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\ldots,n</annotation></semantics></math> e:</p>
+<div id="E4" class="ltx_equation ltx_eqn_div">
+<span><math id="E4.m1" class="ltx_Math" alttext="D_{\lambda}(x_{1},\ldots,x_{n})=(\lambda_{1}x_{1},\ldots,\lambda_{n}x_{n})." display="block"><semantics><mrow><mrow><mrow><msub><mi>D</mi><mi>λ</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">D_{\lambda}(x_{1},\ldots,x_{n})=(\lambda_{1}x_{1},\ldots,\lambda_{n}x_{n}).</annotation></semantics></math></span>
+                    <span class="ltx_tag ltx_tag_equation ltx_align_right">(3.2.4)</span>
+                    
+                  
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Obviamente as expressões (<a href="#E2" title="In item tipo 1. ‣ 3.2.2 Definição. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>), (<a href="#E3" title="In item tipo 2. ‣ 3.2.2 Definição. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a>) e (<a href="#E4" title="In item tipo 3. ‣ 3.2.2 Definição. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a>) definem isomorfismos lineares
+de <math id="p4.m1" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>; em (<a href="#E2" title="In item tipo 1. ‣ 3.2.2 Definição. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.2</span></a>) escrevemos a definição de <math id="p4.m2" class="ltx_Math" alttext="L_{i,j;c}" display="inline"><semantics><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub><annotation encoding="application/x-tex">L_{i,j;c}</annotation></semantics></math> assumindo que <math id="p4.m3" class="ltx_Math" alttext="i&lt;j" display="inline"><semantics><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i&lt;j</annotation></semantics></math>, mas obviamente uma fórmula
+análoga define <math id="p4.m4" class="ltx_Math" alttext="L_{i,j;c}" display="inline"><semantics><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub><annotation encoding="application/x-tex">L_{i,j;c}</annotation></semantics></math> se <math id="p4.m5" class="ltx_Math" alttext="i&gt;j" display="inline"><semantics><mrow><mi>i</mi><mo>&gt;</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i&gt;j</annotation></semantics></math>. O efeito da multiplicação à esquerda de uma matriz <math id="p4.m6" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> por uma matriz que representa
+uma aplicação linear elementar <math id="p4.m7" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> nos dá o que chamamos de uma
+<span class="ltx_text ltx_font_italic">transformação elementar</span>
+de matrizes; mais explicitamente, se <math id="p4.m8" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é uma matriz <math id="p4.m9" class="ltx_Math" alttext="n\times n" display="inline"><semantics><mrow><mi>n</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n\times n</annotation></semantics></math> cujas linhas são vetores <math id="p4.m10" class="ltx_Math" alttext="\ell_{1},\ldots,\ell_{n}\in\mathds{R}^{n}" display="inline"><semantics><mrow><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>n</mi></msub></mrow><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\ell_{1},\ldots,\ell_{n}\in\mathds{R}^{n}</annotation></semantics></math>
+e se <math id="p4.m11" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é uma aplicação linear elementar então <math id="p4.m12" class="ltx_Math" alttext="ET" display="inline"><semantics><mrow><mi>E</mi><mo>⁢</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">ET</annotation></semantics></math> é a matriz cujas linhas são:</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i1.p1.m1" class="ltx_Math" alttext="\ell_{1},\ldots,\ell_{i}+c\ell_{j},\ldots,\ell_{j},\ldots,\ell_{n}" display="inline"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi mathvariant="normal">ℓ</mi><mi>i</mi></msub><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mi>j</mi></msub></mrow></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>j</mi></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi mathvariant="normal">ℓ</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\ell_{1},\ldots,\ell_{i}+c\ell_{j},\ldots,\ell_{j},\ldots,\ell_{n}</annotation></semantics></math>, se <math id="I2.i1.p1.m2" class="ltx_Math" alttext="E=L_{i,j;c}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">E=L_{i,j;c}</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i2.p1.m1" class="ltx_Math" alttext="\ell_{\sigma(1)},\ldots,\ell_{\sigma(n)}" display="inline"><semantics><mrow><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi mathvariant="normal">ℓ</mi><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></msub></mrow><annotation encoding="application/x-tex">\ell_{\sigma(1)},\ldots,\ell_{\sigma(n)}</annotation></semantics></math>, se <math id="I2.i2.p1.m2" class="ltx_Math" alttext="E=\widehat{\sigma}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><mover accent="true"><mi>σ</mi><mo>^</mo></mover></mrow><annotation encoding="application/x-tex">E=\widehat{\sigma}</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I2.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I2.i3.p1.m1" class="ltx_Math" alttext="\lambda_{1}\ell_{1},\ldots,\lambda_{n}\ell_{n}" display="inline"><semantics><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mi>λ</mi><mi>n</mi></msub><mo>⁢</mo><msub><mi mathvariant="normal">ℓ</mi><mi>n</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\lambda_{1}\ell_{1},\ldots,\lambda_{n}\ell_{n}</annotation></semantics></math>, se <math id="I2.i3.p1.m2" class="ltx_Math" alttext="E=D_{\lambda}" display="inline"><semantics><mrow><mi>E</mi><mo>=</mo><msub><mi>D</mi><mi>λ</mi></msub></mrow><annotation encoding="application/x-tex">E=D_{\lambda}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">As transformações elementares de matrizes associadas à multicação à esquerda por uma aplicação elementar de tipos 1, 2 e 3
+serão respectivamente chamadas de <span class="ltx_text ltx_font_italic">transformações elementares de tipos 1, 2 e 3</span>.</p>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p">O seguinte resultado é padrão em textos elementares de Álgebra Linear.</p>
+</div>
+<div id="Thmteo3" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.2.3 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Thmteo3.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é uma aplicação linear inversível então existe uma seqüência finita de transformações
+elementares de matrizes que leva <math id="Thmteo3.p1.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> até a matriz identidade.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Fazemos uma descrição sucinta do algorítmo que é conhecido como <span class="ltx_text ltx_font_italic">escalonamento</span> de matrizes.
+Em primeiro lugar, como <math id="p6.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é inversível então algum elemento da primeira coluna de <math id="p6.m2" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é não nulo; realizando uma transformação
+elementar de tipo 2, podemos assumir que o elemento <math id="p6.m3" class="ltx_Math" alttext="T_{11}" display="inline"><semantics><msub><mi>T</mi><mn>11</mn></msub><annotation encoding="application/x-tex">T_{11}</annotation></semantics></math> é não nulo e depois realizando uma transformação
+elementar de tipo 3 podemos assumir que <math id="p6.m4" class="ltx_Math" alttext="T_{11}=1" display="inline"><semantics><mrow><msub><mi>T</mi><mn>11</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">T_{11}=1</annotation></semantics></math>. Agora, uma seqüência de <math id="p6.m5" class="ltx_Math" alttext="n-1" display="inline"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math> transformações
+elementares de tipo 1 nos permite anular os elementos <math id="p6.m6" class="ltx_Math" alttext="T_{j1}" display="inline"><semantics><msub><mi>T</mi><mrow><mi>j</mi><mo>⁢</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">T_{j1}</annotation></semantics></math>, com <math id="p6.m7" class="ltx_Math" alttext="j=2,\ldots,n" display="inline"><semantics><mrow><mi>j</mi><mo>=</mo><mrow><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">j=2,\ldots,n</annotation></semantics></math>. Nesse ponto, a primeira coluna de <math id="p6.m8" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+coincide com o primeiro vetor da base canônica de <math id="p6.m9" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>; daí a submatriz de <math id="p6.m10" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> obtida removendo a primeira linha e a
+primeira coluna é inversível e podemos portanto repetir o algorítmo recursivamente na mesma. Obteremos então uma matriz
+<math id="p6.m11" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> triangular superior em que todos os elementos da diagonal são iguais a <math id="p6.m12" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>. Podemos agora realizar uma seqüência
+de <math id="p6.m13" class="ltx_Math" alttext="\frac{n(n-1)}{2}" display="inline"><semantics><mfrac><mrow><mi>n</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></mrow><mn>2</mn></mfrac><annotation encoding="application/x-tex">\frac{n(n-1)}{2}</annotation></semantics></math> transformações elementares de tipo 1 para anular os elementos de <math id="p6.m14" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> que estão acima da diagonal,
+obtendo assim a matriz identidade.
+∎</p>
+</div>
+</div>
+<div id="Thmteo4" class="ltx_theorem ltx_theorem_cor">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.2.4 Corolário</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Toda aplicação linear inversível <math id="Thmteo4.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é um produto de aplicações lineares elementares.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p7" class="ltx_para">
+<p class="ltx_p">Segue do Lema <a href="#Thmteo3" title="3.2.3 Lema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.3</span></a> que existem
+aplicações lineares elementares <math id="p7.m1" class="ltx_Math" alttext="E_{1}" display="inline"><semantics><msub><mi>E</mi><mn>1</mn></msub><annotation encoding="application/x-tex">E_{1}</annotation></semantics></math>, …, <math id="p7.m2" class="ltx_Math" alttext="E_{k}" display="inline"><semantics><msub><mi>E</mi><mi>k</mi></msub><annotation encoding="application/x-tex">E_{k}</annotation></semantics></math> de modo que <math id="p7.m3" class="ltx_Math" alttext="E_{1}\cdots E_{k}T" display="inline"><semantics><mrow><msub><mi>E</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>E</mi><mi>k</mi></msub><mo>⁢</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">E_{1}\cdots E_{k}T</annotation></semantics></math> é igual à matriz identidade.
+Daí <math id="p7.m4" class="ltx_Math" alttext="T=E_{k}^{-1}\cdots E_{1}^{-1}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><msubsup><mi>E</mi><mi>k</mi><mrow><mo>−</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msubsup><mi>E</mi><mn>1</mn><mrow><mo>−</mo><mn>1</mn></mrow></msubsup></mrow></mrow><annotation encoding="application/x-tex">T=E_{k}^{-1}\cdots E_{1}^{-1}</annotation></semantics></math>. A conclusão segue da observação simples de que a inversa de uma aplicação linear
+elementar é novamente uma aplicação linear elementar (de mesmo tipo).
+∎</p>
+</div>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">Em vista do Corolário <a href="#Thmteo4" title="3.2.4 Corolário. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.4</span></a> e das observações feitas anteriormente nesta seção, temos que
+a demonstração do Teorema <a href="#Thmteo1" title="3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a> ficará concluída assim que demonstrarmos o seguinte:</p>
+</div>
+<div id="Thmteo5" class="ltx_theorem ltx_theorem_lem">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">3.2.5 Lema</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Thmteo5.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Se <math id="Thmteo5.p1.m1" class="ltx_Math" alttext="T:\mathds{R}^{n}\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">T:\mathds{R}^{n}\to\mathds{R}^{n}</annotation></semantics></math> é uma aplicação linear elementar então a igualdade (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) vale para todo subconjunto
+mensurável <math id="Thmteo5.p1.m2" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> de <math id="Thmteo5.p1.m3" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math>.</span></p>
+</div>
+</div>
+<div class="ltx_proof">
+
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Demonstração.</h6>
+<div id="p9" class="ltx_para">
+<p class="ltx_p">Se <math id="p9.m1" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é de tipo 2 ou 3 então a tese do lema segue respectivamente dos resultados dos
+Exercícios <a href="Ch1.Sx1.html#Ch1.Thmexercise11" title="Exercício 1.11. ‣ Medida de Lebesgue em ℝ^𝑛 ‣ Exercícios para o Capítulo 1 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.11</span></a> e <a href="Ch1.Sx1.html#Ch1.Thmexercise12" title="Exercício 1.12. ‣ Medida de Lebesgue em ℝ^𝑛 ‣ Exercícios para o Capítulo 1 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.12</span></a> (note que as aplicações lineares elementares de tipo 2 tem determinante
+igual a <math id="p9.m2" class="ltx_Math" alttext="\pm 1" display="inline"><semantics><mrow><mo>±</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\pm 1</annotation></semantics></math>). Resta então considerar o caso em que <math id="p9.m3" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é uma aplicação linear elementar de tipo 1.
+É fácil verificar que se <math id="p9.m4" class="ltx_Math" alttext="\sigma:\{1,\ldots,n\}\to\{1,\ldots,n\}" display="inline"><semantics><mrow><mi>σ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi><mo stretchy="false">}</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sigma:\{1,\ldots,n\}\to\{1,\ldots,n\}</annotation></semantics></math> é uma bijeção então:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\widehat{\sigma}^{-1}L_{i,j;c}\,\widehat{\sigma}=L_{\sigma(i),\sigma(j);c}," display="block"><semantics><mrow><mrow><mrow><msup><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msub><mi>L</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>;</mo><mi>c</mi></mrow></msub><mo>⁢</mo><mover accent="true"><mi>σ</mi><mo>^</mo></mover></mrow><mo>=</mo><msub><mi>L</mi><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>i</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>j</mi><mo stretchy="false">)</mo></mrow></mrow><mo>;</mo><mi>c</mi></mrow></msub></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\widehat{\sigma}^{-1}L_{i,j;c}\,\widehat{\sigma}=L_{\sigma(i),\sigma(j);c},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="p9.m5" class="ltx_Math" alttext="i,j=1,\ldots,n" display="inline"><semantics><mrow><mrow><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><mo>=</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i,j=1,\ldots,n</annotation></semantics></math> distintos e todo <math id="p9.m6" class="ltx_Math" alttext="c\in\mathds{R}" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">c\in\mathds{R}</annotation></semantics></math>. Podemos então reduzir a demonstração do lema apenas ao caso
+em que <math id="p9.m7" class="ltx_Math" alttext="T=L_{n,1;c}" display="inline"><semantics><mrow><mi>T</mi><mo>=</mo><msub><mi>L</mi><mrow><mrow><mi>n</mi><mo>⁢</mo><mn>,1</mn></mrow><mo>;</mo><mi>c</mi></mrow></msub></mrow><annotation encoding="application/x-tex">T=L_{n,1;c}</annotation></semantics></math>, <math id="p9.m8" class="ltx_Math" alttext="c\in\mathds{R}" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">c\in\mathds{R}</annotation></semantics></math>. No que segue, identificamos <math id="p9.m9" class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math> com o produto <math id="p9.m10" class="ltx_Math" alttext="\mathds{R}^{n-1}\times\mathds{R}" display="inline"><semantics><mrow><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0.222em" rspace="0.222em">×</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\mathds{R}^{n-1}\times\mathds{R}</annotation></semantics></math> e usamos a notação
+da Seção <a href="Ch2.S8.html" title="2.8. O Teorema de Fubini em ℝ^𝑛 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8</span></a>; a aplicação <math id="p9.m11" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> escreve-se na forma:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="T(x,y)=(x,y+cx_{1}),\quad x\in\mathds{R}^{n-1},\ y\in\mathds{R}." display="block"><semantics><mrow><mrow><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mrow><mi>y</mi><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><mo rspace="0.717em">,</mo><mrow><mi>y</mi><mo>∈</mo><mi>ℝ</mi></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">T(x,y)=(x,y+cx_{1}),\quad x\in\mathds{R}^{n-1},\ y\in\mathds{R}.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Dado <math id="p9.m12" class="ltx_Math" alttext="A\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>A</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">A\subset\mathds{R}^{n}</annotation></semantics></math> então para todo <math id="p9.m13" class="ltx_Math" alttext="x\in\mathds{R}^{n-1}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">x\in\mathds{R}^{n-1}</annotation></semantics></math>, a fatia vertical <math id="p9.m14" class="ltx_Math" alttext="T(A)_{x}" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">T(A)_{x}</annotation></semantics></math> do conjunto <math id="p9.m15" class="ltx_Math" alttext="T(A)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+coincide com a translação <math id="p9.m16" class="ltx_Math" alttext="A_{x}+cx_{1}" display="inline"><semantics><mrow><msub><mi>A</mi><mi>x</mi></msub><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><annotation encoding="application/x-tex">A_{x}+cx_{1}</annotation></semantics></math> da fatia vertical <math id="p9.m17" class="ltx_Math" alttext="A_{x}" display="inline"><semantics><msub><mi>A</mi><mi>x</mi></msub><annotation encoding="application/x-tex">A_{x}</annotation></semantics></math> de <math id="p9.m18" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>. Se <math id="p9.m19" class="ltx_Math" alttext="A" display="inline"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math> é mensurável, temos que <math id="p9.m20" class="ltx_Math" alttext="T(A)" display="inline"><semantics><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math> também é
+mensurável (vide Corolário <a href="Ch3.S1.html#Thmteo13" title="3.1.13 Corolário. ‣ 3.1. O Efeito de Aplicações Lipschitzianas sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.1.13</span></a>); segue então da Proposição <a href="Ch2.S8.html#Thmteo3" title="2.8.3 Proposição. ‣ 2.8. O Teorema de Fubini em ℝ^𝑛 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.3</span></a> que:</p>
+<div class="ltx_equation ltx_eqn_div">
+<span><math id="p9.m21" class="ltx_Math" alttext="\mathfrak{m}\big{(}T(A)\big{)}=\int_{\mathds{R}^{n-1}}\mathfrak{m}\big{(}T(A)_%
+{x}\big{)}\,\mathrm{d}\mathfrak{m}(x)=\int_{\mathds{R}^{n-1}}\mathfrak{m}(A_{x%
+}+cx_{1})\,\mathrm{d}\mathfrak{m}(x)\\
+=\int_{\mathds{R}^{n-1}}\mathfrak{m}(A_{x})\,\mathrm{d}\mathfrak{m}(x)=%
+\mathfrak{m}(A)," display="block"><semantics><mtable displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></msub><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>T</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow><mi>x</mi></msub></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></msub><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>A</mi><mi>x</mi></msub><mo>+</mo><mrow><mi>c</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mtd></mtr><mtr><mtd class="ltx_align_right" columnalign="right"><mrow><mrow><mi></mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup></msub><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>x</mi></msub><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\mathfrak{m}\big{(}T(A)\big{)}=\int_{\mathds{R}^{n-1}}\mathfrak{m}\big{(}T(A)_%
+{x}\big{)}\,\mathrm{d}\mathfrak{m}(x)=\int_{\mathds{R}^{n-1}}\mathfrak{m}(A_{x%
+}+cx_{1})\,\mathrm{d}\mathfrak{m}(x)\\
+=\int_{\mathds{R}^{n-1}}\mathfrak{m}(A_{x})\,\mathrm{d}\mathfrak{m}(x)=%
+\mathfrak{m}(A),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde na terceira igualdade usamos o Lema <a href="Ch1.S4.html#Thmteo10" title="1.4.10 Lema. ‣ 1.4. Medida de Lebesgue em ℝ^𝑛 ‣ Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1.4.10</span></a>. Como <math id="p9.m22" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é uma matriz triangular com elementos
+da diagonal iguais a <math id="p9.m23" class="ltx_Math" alttext="1" display="inline"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>, temos que <math id="p9.m24" class="ltx_Math" alttext="\det T=1" display="inline"><semantics><mrow><mrow><mo rspace="0.167em">det</mo><mi>T</mi></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\det T=1</annotation></semantics></math> e portanto a igualdade (<a href="#E1" title="In 3.2.1 Teorema. ‣ 3.2. O Efeito de Aplicações Lineares sobre a Medida de Lebesgue ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.2.1</span></a>) fica demonstrada.
+∎</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch3.S1.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.S3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

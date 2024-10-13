@@ -1,0 +1,1129 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch2.S8.html" title="2.8. O Teorema de Fubini em ℝ^𝑛 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S1.html" title="2.1. Funções Mensuráveis ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S2.html" title="2.2. Integrando Funções Simples não Negativas ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S3.html" title="2.3. Integrando Funções Mensuráveis não Negativas ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S4.html" title="2.4. Definição da Integral: o Caso Geral ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S5.html" title="2.5. Teoremas de Convergência ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S6.html" title="2.6. Riemann x Lebesgue ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S7.html" title="2.7. Mais sobre Convergência de Seqüências de Funções ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch2.S8.html" title="2.8. O Teorema de Fubini em ℝ^𝑛 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , , , convergência, de contagem, de uma medida, fundamental do cálculo, função, função que, gráfico, gráfico de, imagem, imagem de, indefinida, integral, integração por partes, medida, padrão, preserva medida, que preserva medida, seqüência, simplexo, teorema, uniforme, uniformemente conver- gente">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="2.1" data-path="Ch2.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S1.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.1 </span></b>Funções Mensuráveis</a></li>
+<li data-level="2.2" data-path="Ch2.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S2.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.2 </span></b>Integrando Funções Simples não Negativas</a></li>
+<li data-level="2.3" data-path="Ch2.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S3.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.3 </span></b>Integrando Funções Mensuráveis não Negativas</a></li>
+<li data-level="2.4" data-path="Ch2.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S4.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.4 </span></b>Definição da Integral: o Caso Geral</a></li>
+<li data-level="2.5" data-path="Ch2.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S5.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.5 </span></b>Teoremas de Convergência</a></li>
+<li data-level="2.6" data-path="Ch2.S6.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S6.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.6 </span></b>Riemann x Lebesgue</a></li>
+<li data-level="2.7" data-path="Ch2.S7.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S7.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.7 </span></b>Mais sobre Convergência de Seqüências de Funções</a></li>
+<li data-level="2.8" data-path="Ch2.S8.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch2.S8.html" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2.8 </span></b>O Teorema de Fubini em <math class="ltx_Math" alttext="\mathds{R}^{n}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{n}</annotation></semantics></math></a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">2</span></a></li>
+</ol>
+</li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a></li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Exercícios para o Capítulo </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">Exercícios para o Capítulo <a href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>
+</h1>
+
+<section id="SSx1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Funções Mensuráveis</h2>
+
+<div id="Ch2.Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise1.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A})</annotation></semantics></math>, <math id="Ch2.Thmexercise1.p1.m2" class="ltx_Math" alttext="(X^{\prime},\mathcal{A}^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X^{\prime},\mathcal{A}^{\prime})</annotation></semantics></math> espaços mensuráveis arbitrários. Mostre que
+toda função constante <math id="Ch2.Thmexercise1.p1.m3" class="ltx_Math" alttext="f:X\to X^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">f:X\to X^{\prime}</annotation></semantics></math> é mensurável.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise2" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise2.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> um conjunto, <math id="Ch2.Thmexercise2.p1.m2" class="ltx_Math" alttext="\mathcal{A}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> uma <math id="Ch2.Thmexercise2.p1.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de partes de <math id="Ch2.Thmexercise2.p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="Ch2.Thmexercise2.p1.m5" class="ltx_Math" alttext="Y\subset X" display="inline"><semantics><mrow><mi>Y</mi><mo>⊂</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">Y\subset X</annotation></semantics></math>
+um subconjunto. Mostre que <math id="Ch2.Thmexercise2.p1.m6" class="ltx_Math" alttext="\mathcal{A}|_{Y}" display="inline"><semantics><msub><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">|</mo></mrow><mi>Y</mi></msub><annotation encoding="application/x-tex">\mathcal{A}|_{Y}</annotation></semantics></math> é uma <math id="Ch2.Thmexercise2.p1.m7" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de partes de <math id="Ch2.Thmexercise2.p1.m8" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise3" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise3.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise3.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> um conjunto e <math id="Ch2.Thmexercise3.p1.m2" class="ltx_Math" alttext="Y\subset X" display="inline"><semantics><mrow><mi>Y</mi><mo>⊂</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">Y\subset X</annotation></semantics></math> um subconjunto. Se <math id="Ch2.Thmexercise3.p1.m3" class="ltx_Math" alttext="\mathcal{C}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒞</mi><annotation encoding="application/x-tex">\mathcal{C}</annotation></semantics></math> é um conjunto de geradores
+para uma <math id="Ch2.Thmexercise3.p1.m4" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="Ch2.Thmexercise3.p1.m5" class="ltx_Math" alttext="\mathcal{A}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> de partes de <math id="Ch2.Thmexercise3.p1.m6" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>, mostre que o conjunto:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\mathcal{C}|_{Y}=\big{\{}E\cap Y:E\in\mathcal{C}\big{\}}" display="block"><semantics><mrow><msub><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">|</mo></mrow><mi>Y</mi></msub><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>E</mi><mo>∩</mo><mi>Y</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{C}|_{Y}=\big{\{}E\cap Y:E\in\mathcal{C}\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é um conjunto de geradores para a <math id="Ch2.Thmexercise3.p1.m7" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra <math id="Ch2.Thmexercise3.p1.m8" class="ltx_Math" alttext="\mathcal{A}|_{Y}" display="inline"><semantics><msub><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">|</mo></mrow><mi>Y</mi></msub><annotation encoding="application/x-tex">\mathcal{A}|_{Y}</annotation></semantics></math> de partes de <math id="Ch2.Thmexercise3.p1.m9" class="ltx_Math" alttext="Y" display="inline"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>; em símbolos:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="\sigma[\mathcal{C}]|_{Y}=\sigma[\mathcal{C}|_{Y}]." display="block"><semantics><mrow><mrow><msub><mrow><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">]</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mi>Y</mi></msub><mo>=</mo><mrow><mi>σ</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><msub><mrow><mi class="ltx_font_mathcaligraphic">𝒞</mi><mo stretchy="false">|</mo></mrow><mi>Y</mi></msub><mo stretchy="false">]</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sigma[\mathcal{C}]|_{Y}=\sigma[\mathcal{C}|_{Y}].</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise4" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.4</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise4.p1" class="ltx_para">
+<p class="ltx_p">Mostre que <math id="Ch2.Thmexercise4.p1.m1" class="ltx_Math" alttext="\mathcal{B}(\overline{\mathds{R}})|_{\mathds{R}}=\mathcal{B}(\mathds{R})" display="inline"><semantics><mrow><msub><mrow><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><mo>=</mo><mrow><mi class="ltx_font_mathcaligraphic">ℬ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mathcal{B}(\overline{\mathds{R}})|_{\mathds{R}}=\mathcal{B}(\mathds{R})</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise5" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.5</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise5.p1" class="ltx_para">
+<p class="ltx_p">Mostre que os intervalos <math id="Ch2.Thmexercise5.p1.m1" class="ltx_Math" alttext="[-\infty,c]" display="inline"><semantics><mrow><mo stretchy="false">[</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow><mo>,</mo><mi>c</mi><mo stretchy="false">]</mo></mrow><annotation encoding="application/x-tex">[-\infty,c]</annotation></semantics></math>, <math id="Ch2.Thmexercise5.p1.m2" class="ltx_Math" alttext="c\in\mathds{R}" display="inline"><semantics><mrow><mi>c</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">c\in\mathds{R}</annotation></semantics></math>, constituem um conjunto de geradores
+para a <math id="Ch2.Thmexercise5.p1.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de Borel de <math id="Ch2.Thmexercise5.p1.m4" class="ltx_Math" alttext="\overline{\mathds{R}}" display="inline"><semantics><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{\mathds{R}}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise6" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.6</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise6.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise6.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A})</annotation></semantics></math> um espaço mensurável e sejam <math id="Ch2.Thmexercise6.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math>, <math id="Ch2.Thmexercise6.p1.m3" class="ltx_Math" alttext="g:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">g:X\to\overline{\mathds{R}}</annotation></semantics></math>
+funções mensuráveis. Mostre que o conjunto:</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="\big{\{}x\in X:f(x)=g(x)\big{\}}" display="block"><semantics><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><annotation encoding="application/x-tex">\big{\{}x\in X:f(x)=g(x)\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é mensurável.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise7" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.7</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise7.p1" class="ltx_para">
+<p class="ltx_p">Mostre que a função <math id="Ch2.Thmexercise7.p1.m1" class="ltx_Math" alttext="f:\mathds{R}^{2}\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mn>2</mn></msup><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathds{R}^{2}\to\mathds{R}</annotation></semantics></math> definida por:</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="f(x,y)=\begin{cases}\hfil\cos\frac{x}{y},&amp;\text{se $y\geq 1$},\\[3.0pt]
+\sum_{n=1}^{\infty}\frac{y^{n}}{n^{2}},&amp;\text{se $-1&lt;y&lt;1$},\\
+\chi_{\lower 2.0pt\hbox{$\scriptstyle\mathbb{Q}$}}(x+y),&amp;\text{se $y\leq-1$},%
+\end{cases}" display="block"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mstyle displaystyle="false"><mfrac><mi>x</mi><mi>y</mi></mfrac></mstyle></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext>se </mtext><mrow><mi>y</mi><mo>≥</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mstyle displaystyle="false"><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup></mstyle><mstyle displaystyle="false"><mfrac><msup><mi>y</mi><mi>n</mi></msup><msup><mi>n</mi><mn>2</mn></msup></mfrac></mstyle></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext>se </mtext><mrow><mrow><mo>−</mo><mn>1</mn></mrow><mo>&lt;</mo><mi>y</mi><mo>&lt;</mo><mn>1</mn></mrow></mrow><mo>,</mo></mrow></mtd></mtr><mtr><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><msub><mi>χ</mi><mpadded voffset="-2.0pt"><mi mathsize="70%">ℚ</mi></mpadded></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo></mrow></mtd><mtd class="ltx_align_left" columnalign="left"><mrow><mrow><mtext>se </mtext><mrow><mi>y</mi><mo>≤</mo><mrow><mo>−</mo><mn>1</mn></mrow></mrow></mrow><mo>,</mo></mrow></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x,y)=\begin{cases}\hfil\cos\frac{x}{y},&amp;\text{se $y\geq 1$},\\[3.0pt]
+\sum_{n=1}^{\infty}\frac{y^{n}}{n^{2}},&amp;\text{se $-1&lt;y&lt;1$},\\
+\chi_{\lower 2.0pt\hbox{$\scriptstyle\mathbb{Q}$}}(x+y),&amp;\text{se $y\leq-1$},%
+\end{cases}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é Borel mensurável.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise8" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.8</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise8.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise8.p1.m1" class="ltx_Math" alttext="X\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>X</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">X\subset\mathds{R}^{n}</annotation></semantics></math> um subconjunto mensurável e <math id="Ch2.Thmexercise8.p1.m2" class="ltx_Math" alttext="(X^{\prime},\mathcal{A}^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X^{\prime},\mathcal{A}^{\prime})</annotation></semantics></math> um espaço mensurável.
+Dada uma função <math id="Ch2.Thmexercise8.p1.m3" class="ltx_Math" alttext="f:X\to X^{\prime}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">f:X\to X^{\prime}</annotation></semantics></math>, mostre que:</p>
+<ul id="I5" class="ltx_itemize">
+<li id="I5.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I5.ix1.p1" class="ltx_para">​<p class="ltx_p">se existe <math id="I5.ix1.p1.m1" class="ltx_Math" alttext="X_{1}\subset X" display="inline"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>⊂</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X_{1}\subset X</annotation></semantics></math> tal que <math id="I5.ix1.p1.m2" class="ltx_Math" alttext="X\setminus X_{1}" display="inline"><semantics><mrow><mi>X</mi><mo>∖</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">X\setminus X_{1}</annotation></semantics></math> tem medida nula e
+tal que <math id="I5.ix1.p1.m3" class="ltx_Math" alttext="f|_{X_{1}}" display="inline"><semantics><msub><mrow><mi>f</mi><mo stretchy="false">|</mo></mrow><msub><mi>X</mi><mn>1</mn></msub></msub><annotation encoding="application/x-tex">f|_{X_{1}}</annotation></semantics></math> é mensurável então <math id="I5.ix1.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é mensurável;</p>
+</div>
+</li>
+<li id="I5.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I5.ix2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I5.ix2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é mensurável e se <math id="I5.ix2.p1.m2" class="ltx_Math" alttext="g:X\to X^{\prime}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">g:X\to X^{\prime}</annotation></semantics></math> é igual a <math id="I5.ix2.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> quase sempre então <math id="I5.ix2.p1.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+também é mensurável;</p>
+</div>
+</li>
+<li id="I5.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I5.ix3.p1" class="ltx_para">​<p class="ltx_p">se <math id="I5.ix3.p1.m1" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math> é uma seqüência de funções mensuráveis <math id="I5.ix3.p1.m2" class="ltx_Math" alttext="f_{k}:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f_{k}:X\to\overline{\mathds{R}}</annotation></semantics></math>
+e se <math id="I5.ix3.p1.m3" class="ltx_Math" alttext="f_{k}\to g" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">→</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f_{k}\to g</annotation></semantics></math> q. s. então <math id="I5.ix3.p1.m5" class="ltx_Math" alttext="g:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">g:X\to\overline{\mathds{R}}</annotation></semantics></math> também é mensurável.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise9" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.9</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise9.p1" class="ltx_para">
+<p class="ltx_p">Denote por <math id="Ch2.Thmexercise9.p1.m1" class="ltx_Math" alttext="\pi:\mathds{R}^{m+n}\to\mathds{R}^{m}" display="inline"><semantics><mrow><mi>π</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>ℝ</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\pi:\mathds{R}^{m+n}\to\mathds{R}^{m}</annotation></semantics></math> a projeção nas <math id="Ch2.Thmexercise9.p1.m2" class="ltx_Math" alttext="m" display="inline"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math> primeiras coordenadas. Mostre que
+a função:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="\pi:\big{(}\mathds{R}^{m+n},\mathcal{M}(\mathds{R}^{m+n})\big{)}%
+\longrightarrow\big{(}\mathds{R}^{m},\mathcal{M}(\mathds{R}^{m})\big{)}," display="block"><semantics><mrow><mrow><mi>π</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mi>ℝ</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow><mo stretchy="false">⟶</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><msup><mi>ℝ</mi><mi>m</mi></msup><mo>,</mo><mrow><mi class="ltx_font_mathcaligraphic">ℳ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>m</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\pi:\big{(}\mathds{R}^{m+n},\mathcal{M}(\mathds{R}^{m+n})\big{)}%
+\longrightarrow\big{(}\mathds{R}^{m},\mathcal{M}(\mathds{R}^{m})\big{)},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é mensurável (note que não estamos seguindo a convenção <a href="Ch2.S1.html#Thmteo3" title="2.1.3 Convenção. ‣ 2.1. Funções Mensuráveis ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.1.3</span></a>).</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise10" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.10</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise10.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise10.p1.m1" class="ltx_Math" alttext="f:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num subconjunto <math id="Ch2.Thmexercise10.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Ch2.Thmexercise10.p1.m3" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math>. Recorde que o
+<span class="ltx_text ltx_font_italic">gráfico</span>
+de <math id="Ch2.Thmexercise10.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é o conjunto:</p>
+<div id="E10" class="ltx_equation ltx_eqn_div">
+<span><math id="E10.m1" class="ltx_Math" alttext="\mathrm{gr}(f)=\big{\{}\big{(}x,f(x)\big{)}:x\in X\big{\}}\subset\mathds{R}^{m%
++n}." display="block"><semantics><mrow><mrow><mrow><mi>gr</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mi>x</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%" rspace="0.278em">)</mo></mrow><mo rspace="0.278em">:</mo><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo>⊂</mo><msup><mi>ℝ</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathrm{gr}(f)=\big{\{}\big{(}x,f(x)\big{)}:x\in X\big{\}}\subset\mathds{R}^{m%
++n}.</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8.10)</span>
+                
+              
+</div>
+<p class="ltx_p">Mostre que:</p>
+<ul id="I6" class="ltx_itemize">
+<li id="I6.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I6.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I6.i1.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é Boreleano e <math id="I6.i1.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é Borel mensurável então <math id="I6.i1.p1.m3" class="ltx_Math" alttext="\mathrm{gr}(f)" display="inline"><semantics><mrow><mi>gr</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{gr}(f)</annotation></semantics></math> é Boreleano;</p>
+</div>
+</li>
+<li id="I6.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I6.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I6.i2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é mensurável e <math id="I6.i2.p1.m2" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é mensurável então <math id="I6.i2.p1.m3" class="ltx_Math" alttext="\mathrm{gr}(f)" display="inline"><semantics><mrow><mi>gr</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{gr}(f)</annotation></semantics></math> é mensurável.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Definição da Integral</h2>
+
+<div id="Ch2.Thmexercise11" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.11</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise11.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise11.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise11.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> uma função mensurável.
+Mostre que:</p>
+<ul id="I7" class="ltx_itemize">
+<li id="I7.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I7.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I7.ix1.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é integrável se e somente se <math id="I7.ix1.p1.m2" class="ltx_Math" alttext="|f|" display="inline"><semantics><mrow><mo stretchy="false">|</mo><mi>f</mi><mo stretchy="false">|</mo></mrow><annotation encoding="application/x-tex">|f|</annotation></semantics></math> é integrável;</p>
+</div>
+</li>
+<li id="I7.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I7.ix2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I7.ix2.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável então:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\Big{|}\int_{X}f\,\mathrm{d}\mu\Big{|}\leq\int_{X}|f|\,\mathrm{d}\mu." display="block"><semantics><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><msub><mo lspace="0em">∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mo rspace="0.111em">≤</mo><mrow><msub><mo rspace="0em">∫</mo><mi>X</mi></msub><mrow><mrow><mo stretchy="false">|</mo><mi>f</mi><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Big{|}\int_{X}f\,\mathrm{d}\mu\Big{|}\leq\int_{X}|f|\,\mathrm{d}\mu.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise12" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.12</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise12.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise12.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e seja <math id="Ch2.Thmexercise12.p1.m2" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math> uma seqüência de funções
+mensuráveis <math id="Ch2.Thmexercise12.p1.m3" class="ltx_Math" alttext="f_{k}:X\to[0,+\infty]" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f_{k}:X\to[0,+\infty]</annotation></semantics></math>. Se <math id="Ch2.Thmexercise12.p1.m4" class="ltx_Math" alttext="f(x)=\sum_{k=1}^{\infty}f_{k}(x)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=\sum_{k=1}^{\infty}f_{k}(x)</annotation></semantics></math>, mostre que:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{X}f_{k}\,\mathrm{d}\mu." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{X}f_{k}\,\mathrm{d}\mu.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise13" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.13</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise13.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise13.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida. Dada uma função mensurável <math id="Ch2.Thmexercise13.p1.m2" class="ltx_Math" alttext="f:X\to[0,+\infty]" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f:X\to[0,+\infty]</annotation></semantics></math>,
+mostre que a aplicação <math id="Ch2.Thmexercise13.p1.m3" class="ltx_Math" alttext="\nu_{f}:\mathcal{A}\to[0,+\infty]" display="inline"><semantics><mrow><msub><mi>ν</mi><mi>f</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\nu_{f}:\mathcal{A}\to[0,+\infty]</annotation></semantics></math> definida por:</p>
+<div id="Ex8" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex8.m1" class="ltx_Math" alttext="\nu_{f}(E)=\int_{E}f\,\mathrm{d}\mu,\quad E\in\mathcal{A}," display="block"><semantics><mrow><mrow><mrow><mrow><msub><mi>ν</mi><mi>f</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>E</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mi>E</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\nu_{f}(E)=\int_{E}f\,\mathrm{d}\mu,\quad E\in\mathcal{A},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é uma medida (a medida <math id="Ch2.Thmexercise13.p1.m4" class="ltx_Math" alttext="\nu_{f}" display="inline"><semantics><msub><mi>ν</mi><mi>f</mi></msub><annotation encoding="application/x-tex">\nu_{f}</annotation></semantics></math> é chamada a <span class="ltx_text ltx_font_italic">integral indefinida</span>
+de <math id="Ch2.Thmexercise13.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> e é denotada por <math id="Ch2.Thmexercise13.p1.m6" class="ltx_Math" alttext="\nu_{f}=\int f\,\mathrm{d}\mu" display="inline"><semantics><mrow><msub><mi>ν</mi><mi>f</mi></msub><mo rspace="0.111em">=</mo><mrow><mo>∫</mo><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\nu_{f}=\int f\,\mathrm{d}\mu</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise14" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.14</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise14.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise14.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise14.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> uma função
+quase integrável. Mostre que:</p>
+<ul id="I8" class="ltx_itemize">
+<li id="I8.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I8.ix1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I8.ix1.p1.m1" class="ltx_Math" alttext="(A_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{k})_{k\geq 1}</annotation></semantics></math> é uma seqüência de conjuntos mensuráveis dois a dois disjuntos
+e se <math id="I8.ix1.p1.m2" class="ltx_Math" alttext="A=\bigcup_{k=1}^{\infty}A_{k}" display="inline"><semantics><mrow><mi>A</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>A</mi><mi>k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">A=\bigcup_{k=1}^{\infty}A_{k}</annotation></semantics></math> então:</p>
+<div id="Ex9" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex9.m1" class="ltx_Math" alttext="\int_{A}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{A_{k}}f\,\mathrm{d}\mu%
+\stackrel{{\scriptstyle\text{def}}}{{=}}\lim_{r\to\infty}\sum_{k=1}^{r}\int_{A%
+_{k}}f\,\mathrm{d}\mu;" display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mo>∫</mo><msub><mi>A</mi><mi>k</mi></msub></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mover><mo rspace="0.1389em">=</mo><mtext>def</mtext></mover><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>r</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>r</mi></munderover><mrow><msub><mo>∫</mo><msub><mi>A</mi><mi>k</mi></msub></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\int_{A}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{A_{k}}f\,\mathrm{d}\mu%
+\stackrel{{\scriptstyle\text{def}}}{{=}}\lim_{r\to\infty}\sum_{k=1}^{r}\int_{A%
+_{k}}f\,\mathrm{d}\mu;</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I8.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I8.ix2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I8.ix2.p1.m1" class="ltx_Math" alttext="(A_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{k})_{k\geq 1}</annotation></semantics></math> é uma seqüência de conjuntos mensuráveis e <math id="I8.ix2.p1.m2" class="ltx_Math" alttext="A_{k}\nearrow A" display="inline"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>↗</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{k}\nearrow A</annotation></semantics></math> então:</p>
+<div id="E11" class="ltx_equation ltx_eqn_div">
+<span><math id="E11.m1" class="ltx_Math" alttext="\int_{A}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{A_{k}}f\,\mathrm{d}\mu;" display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>A</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo>∫</mo><msub><mi>A</mi><mi>k</mi></msub></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\int_{A}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{A_{k}}f\,\mathrm{d}\mu;</annotation></semantics></math></span>
+                      <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8.11)</span>
+                      
+                    
+</div>
+</div>
+</li>
+<li id="I8.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I8.ix3.p1" class="ltx_para">​<p class="ltx_p">se <math id="I8.ix3.p1.m1" class="ltx_Math" alttext="(A_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{k})_{k\geq 1}</annotation></semantics></math> é uma seqüência de conjuntos mensuráveis, <math id="I8.ix3.p1.m2" class="ltx_Math" alttext="A_{k}\searrow A" display="inline"><semantics><mrow><msub><mi>A</mi><mi>k</mi></msub><mo>↘</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A_{k}\searrow A</annotation></semantics></math>
+e se <math id="I8.ix3.p1.m3" class="ltx_Math" alttext="f|_{A_{1}}" display="inline"><semantics><msub><mrow><mi>f</mi><mo stretchy="false">|</mo></mrow><msub><mi>A</mi><mn>1</mn></msub></msub><annotation encoding="application/x-tex">f|_{A_{1}}</annotation></semantics></math> é integrável então vale a igualdade (<a href="#E11" title="In item (b) ‣ Exercício 2.14. ‣ Definição da Integral ‣ Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.11</span></a>).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexdefin1" class="ltx_theorem ltx_theorem_exdefin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexdefin1.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexdefin1.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> e <math id="Ch2.Thmexdefin1.p1.m2" class="ltx_Math" alttext="(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo>,</mo><msup><mi>μ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})</annotation></semantics></math> espaços de medida. Dizemos que uma função
+<math id="Ch2.Thmexdefin1.p1.m3" class="ltx_Math" alttext="\phi:X\to X^{\prime}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to X^{\prime}</annotation></semantics></math> <span class="ltx_text ltx_font_italic">preserva medida</span>
+se <math id="Ch2.Thmexdefin1.p1.m4" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é mensurável e se <math id="Ch2.Thmexdefin1.p1.m5" class="ltx_Math" alttext="\mu\big{(}\phi^{-1}(A)\big{)}=\mu^{\prime}(A)" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>μ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu\big{(}\phi^{-1}(A)\big{)}=\mu^{\prime}(A)</annotation></semantics></math>, para todo <math id="Ch2.Thmexdefin1.p1.m6" class="ltx_Math" alttext="A\in\mathcal{A}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}^{\prime}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise15" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.15</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise15.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise15.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise15.p1.m2" class="ltx_Math" alttext="(X^{\prime},\mathcal{A}^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X^{\prime},\mathcal{A}^{\prime})</annotation></semantics></math> um espaço mensurável e <math id="Ch2.Thmexercise15.p1.m3" class="ltx_Math" alttext="\phi:X\to X^{\prime}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to X^{\prime}</annotation></semantics></math> uma aplicação
+mensurável. Mostre que:</p>
+<ul id="I9" class="ltx_itemize">
+<li id="I9.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I9.ix1.p1" class="ltx_para">​<p class="ltx_p">a aplicação <math id="I9.ix1.p1.m1" class="ltx_Math" alttext="(\phi_{*}\mu):\mathcal{A}^{\prime}\to[0,+\infty]" display="inline"><semantics><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϕ</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><mo rspace="0.278em" stretchy="false">)</mo></mrow><mo rspace="0.278em">:</mo><mrow><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">(\phi_{*}\mu):\mathcal{A}^{\prime}\to[0,+\infty]</annotation></semantics></math> definida por:</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="(\phi_{*}\mu)(A)=\mu\big{(}\phi^{-1}(A)\big{)}," display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ϕ</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mi>ϕ</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">(\phi_{*}\mu)(A)=\mu\big{(}\phi^{-1}(A)\big{)},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I9.ix1.p1.m3" class="ltx_Math" alttext="A\in\mathcal{A}^{\prime}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}^{\prime}</annotation></semantics></math>, é uma medida em <math id="I9.ix1.p1.m4" class="ltx_Math" alttext="\mathcal{A}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{A}^{\prime}</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I9.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I9.ix2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I9.ix2.p1.m1" class="ltx_Math" alttext="\mu^{\prime}" display="inline"><semantics><msup><mi>μ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mu^{\prime}</annotation></semantics></math> é uma medida em <math id="I9.ix2.p1.m2" class="ltx_Math" alttext="\mathcal{A}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{A}^{\prime}</annotation></semantics></math> então <math id="I9.ix2.p1.m3" class="ltx_Math" alttext="\phi:(X,\mathcal{A},\mu)\to(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo>,</mo><msup><mi>μ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi:(X,\mathcal{A},\mu)\to(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})</annotation></semantics></math> preserva
+medida se e somente se <math id="I9.ix2.p1.m4" class="ltx_Math" alttext="\phi_{*}\mu=\mu^{\prime}" display="inline"><semantics><mrow><mrow><msub><mi>ϕ</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><mo>=</mo><msup><mi>μ</mi><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">\phi_{*}\mu=\mu^{\prime}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Dizemos que <math id="Ch2.Thmexercise15.p1.m4" class="ltx_Math" alttext="\phi_{*}\mu" display="inline"><semantics><mrow><msub><mi>ϕ</mi><mo>∗</mo></msub><mo>⁢</mo><mi>μ</mi></mrow><annotation encoding="application/x-tex">\phi_{*}\mu</annotation></semantics></math> é a <span class="ltx_text ltx_font_italic">imagem</span> da medida <math id="Ch2.Thmexercise15.p1.m5" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+pela aplicação mensurável <math id="Ch2.Thmexercise15.p1.m6" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise16" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.16</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise16.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise16.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> e <math id="Ch2.Thmexercise16.p1.m2" class="ltx_Math" alttext="(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msup><mi>X</mi><mo>′</mo></msup><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo>,</mo><msup><mi>μ</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X^{\prime},\mathcal{A}^{\prime},\mu^{\prime})</annotation></semantics></math> espaços de medida e seja <math id="Ch2.Thmexercise16.p1.m3" class="ltx_Math" alttext="\phi:X\to X^{\prime}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>X</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to X^{\prime}</annotation></semantics></math>
+uma função que preserva medida. Dada uma função mensurável <math id="Ch2.Thmexercise16.p1.m4" class="ltx_Math" alttext="f:X^{\prime}\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><msup><mi>X</mi><mo>′</mo></msup><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X^{\prime}\to\overline{\mathds{R}}</annotation></semantics></math>, mostre
+que <math id="Ch2.Thmexercise16.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável se e somente se <math id="Ch2.Thmexercise16.p1.m6" class="ltx_Math" alttext="f\circ\phi" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">f\circ\phi</annotation></semantics></math> é quase integrável e, nesse caso:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\int_{X^{\prime}}f\,\mathrm{d}\mu^{\prime}=\int_{X}f\circ\phi\,\mathrm{d}\mu." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><msup><mi>X</mi><mo>′</mo></msup></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><msup><mi>μ</mi><mo>′</mo></msup></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mi>f</mi><mo lspace="0.222em" rspace="0.222em">∘</mo><mi>ϕ</mi></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X^{\prime}}f\,\mathrm{d}\mu^{\prime}=\int_{X}f\circ\phi\,\mathrm{d}\mu.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise17" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.17</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise17.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise17.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise17.p1.m2" class="ltx_Math" alttext="\mathcal{A}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{A}^{\prime}</annotation></semantics></math> uma <math id="Ch2.Thmexercise17.p1.m3" class="ltx_Math" alttext="\sigma" display="inline"><semantics><mi>σ</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-álgebra de partes de <math id="Ch2.Thmexercise17.p1.m4" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> contida
+em <math id="Ch2.Thmexercise17.p1.m5" class="ltx_Math" alttext="\mathcal{A}" display="inline"><semantics><mi class="ltx_font_mathcaligraphic">𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math> e <math id="Ch2.Thmexercise17.p1.m6" class="ltx_Math" alttext="\mu^{\prime}" display="inline"><semantics><msup><mi>μ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mu^{\prime}</annotation></semantics></math> a restrição de <math id="Ch2.Thmexercise17.p1.m7" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> a <math id="Ch2.Thmexercise17.p1.m8" class="ltx_Math" alttext="\mathcal{A}^{\prime}" display="inline"><semantics><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mathcal{A}^{\prime}</annotation></semantics></math>. Dada uma função mensurável
+<math id="Ch2.Thmexercise17.p1.m9" class="ltx_Math" alttext="f:(X,\mathcal{A}^{\prime})\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><msup><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:(X,\mathcal{A}^{\prime})\to\overline{\mathds{R}}</annotation></semantics></math>, mostre que <math id="Ch2.Thmexercise17.p1.m10" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável com respeito a <math id="Ch2.Thmexercise17.p1.m11" class="ltx_Math" alttext="\mu" display="inline"><semantics><mi>μ</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math> se e somente se
+<math id="Ch2.Thmexercise17.p1.m12" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável com respeito a <math id="Ch2.Thmexercise17.p1.m13" class="ltx_Math" alttext="\mu^{\prime}" display="inline"><semantics><msup><mi>μ</mi><mo>′</mo></msup><annotation encoding="application/x-tex">\mu^{\prime}</annotation></semantics></math> e, nesse caso <math id="Ch2.Thmexercise17.p1.m14" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\int_{X}f\,\mathrm{d}\mu^{\prime}" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><msup><mi>μ</mi><mo>′</mo></msup></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\int_{X}f\,\mathrm{d}\mu^{\prime}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexdefin2" class="ltx_theorem ltx_theorem_exdefin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 2.2</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch2.Thmexdefin2.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexdefin2.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> um conjunto. A aplicação <math id="Ch2.Thmexdefin2.p1.m2" class="ltx_Math" alttext="\mu:\wp(X)\to[0,+\infty]" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu:\wp(X)\to[0,+\infty]</annotation></semantics></math> definida por:</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_Math" alttext="\mu(E)=\text{número de elementos do conjunto $E$},\quad E\subset X," display="block"><semantics><mrow><mrow><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mtext>número de elementos do conjunto </mtext><mi>E</mi></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mi>E</mi><mo>⊂</mo><mi>X</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\mu(E)=\text{número de elementos do conjunto $E$},\quad E\subset X,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é chamada a <span class="ltx_text ltx_font_italic">medida de contagem</span>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise18" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.18</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise18.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise18.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> o conjunto dos números inteiros positivos e seja <math id="Ch2.Thmexercise18.p1.m2" class="ltx_Math" alttext="\mu:\wp(X)\to[0,+\infty]" display="inline"><semantics><mrow><mi>μ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mi mathvariant="normal">℘</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\mu:\wp(X)\to[0,+\infty]</annotation></semantics></math> a medida
+de contagem. Mostre que:</p>
+<ul id="I10" class="ltx_itemize">
+<li id="I10.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i1.p1" class="ltx_para">​<p class="ltx_p">dada uma função <math id="I10.i1.p1.m1" class="ltx_Math" alttext="f:X\to[0,+\infty]" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f:X\to[0,+\infty]</annotation></semantics></math> então:</p>
+<div id="E12" class="ltx_equation ltx_eqn_div">
+<span><math id="E12.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\sum_{n=1}^{\infty}f(n);" display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\sum_{n=1}^{\infty}f(n);</annotation></semantics></math></span>
+                      <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8.12)</span>
+                      
+                    
+</div>
+</div>
+</li>
+<li id="I10.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i2.p1" class="ltx_para">​<p class="ltx_p">uma função <math id="I10.i2.p1.m1" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> é integrável se e somente se
+a série <math id="I10.i2.p1.m2" class="ltx_Math" alttext="\sum_{n=1}^{\infty}f(n)" display="inline"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}f(n)</annotation></semantics></math> é absolutamente convergente
+e nesse caso vale a identidade (<a href="#E12" title="In 1st item ‣ Exercício 2.18. ‣ Definição da Integral ‣ Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.12</span></a>).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise19" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.19</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise19.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise19.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise19.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> uma função quase integrável.
+Mostre que:</p>
+<ul id="I11" class="ltx_itemize">
+<li id="I11.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I11.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I11.i1.p1.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu&lt;+\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu&lt;+\infty</annotation></semantics></math> então <math id="I11.i1.p1.m2" class="ltx_Math" alttext="f(x)&lt;+\infty" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)&lt;+\infty</annotation></semantics></math> para quase todo <math id="I11.i1.p1.m3" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I11.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I11.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I11.i2.p1.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu&gt;-\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&gt;</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu&gt;-\infty</annotation></semantics></math> então <math id="I11.i2.p1.m2" class="ltx_Math" alttext="f(x)&gt;-\infty" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&gt;</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)&gt;-\infty</annotation></semantics></math> para quase todo <math id="I11.i2.p1.m3" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I11.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I11.i3.p1" class="ltx_para">​<p class="ltx_p">se <math id="I11.i3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é integrável então <math id="I11.i3.p1.m2" class="ltx_Math" alttext="f(x)\in\mathds{R}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">f(x)\in\mathds{R}</annotation></semantics></math> para quase todo <math id="I11.i3.p1.m3" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise20" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.20</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise20.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise20.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise20.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math>, <math id="Ch2.Thmexercise20.p1.m3" class="ltx_Math" alttext="g:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">g:X\to\overline{\mathds{R}}</annotation></semantics></math> funções mensuráveis,
+com <math id="Ch2.Thmexercise20.p1.m4" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> quase integrável. Mostre que:</p>
+<ul id="I12" class="ltx_itemize">
+<li id="I12.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I12.i1.p1" class="ltx_para">​<p class="ltx_p">se <math id="I12.i1.p1.m1" class="ltx_Math" alttext="\int_{X}g\,\mathrm{d}\mu&gt;-\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&gt;</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}g\,\mathrm{d}\mu&gt;-\infty</annotation></semantics></math> e <math id="I12.i1.p1.m2" class="ltx_Math" alttext="f\geq g" display="inline"><semantics><mrow><mi>f</mi><mo>≥</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\geq g</annotation></semantics></math> q. s. então <math id="I12.i1.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável e <math id="I12.i1.p1.m5" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu&gt;-\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&gt;</mo><mrow><mo>−</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu&gt;-\infty</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I12.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I12.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I12.i2.p1.m1" class="ltx_Math" alttext="\int_{X}g\,\mathrm{d}\mu&lt;+\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}g\,\mathrm{d}\mu&lt;+\infty</annotation></semantics></math> e <math id="I12.i2.p1.m2" class="ltx_Math" alttext="f\leq g" display="inline"><semantics><mrow><mi>f</mi><mo>≤</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\leq g</annotation></semantics></math> q. s. então <math id="I12.i2.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é quase integrável e <math id="I12.i2.p1.m5" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu&lt;+\infty" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu&lt;+\infty</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I12.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I12.i3.p1" class="ltx_para">​<p class="ltx_p">se <math id="I12.i3.p1.m1" class="ltx_Math" alttext="g" display="inline"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math> é integrável e <math id="I12.i3.p1.m2" class="ltx_Math" alttext="|f|\leq g" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mi>f</mi><mo stretchy="false">|</mo></mrow><mo>≤</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">|f|\leq g</annotation></semantics></math> q. s. então <math id="I12.i3.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é integrável.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise21" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.21</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise21.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise21.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida. Dada uma função mensurável
+<math id="Ch2.Thmexercise21.p1.m2" class="ltx_Math" alttext="f:X\to[0,+\infty]" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">]</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f:X\to[0,+\infty]</annotation></semantics></math>, mostre que <math id="Ch2.Thmexercise21.p1.m3" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=0" display="inline"><semantics><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=0</annotation></semantics></math> se e somente se <math id="Ch2.Thmexercise21.p1.m4" class="ltx_Math" alttext="f=0" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f=0</annotation></semantics></math> quase sempre.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise22" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.22</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise22.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise22.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida. Dadas funções integráveis
+<math id="Ch2.Thmexercise22.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math>, <math id="Ch2.Thmexercise22.p1.m3" class="ltx_Math" alttext="g:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">g:X\to\overline{\mathds{R}}</annotation></semantics></math> tais que <math id="Ch2.Thmexercise22.p1.m4" class="ltx_Math" alttext="f\leq g" display="inline"><semantics><mrow><mi>f</mi><mo>≤</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f\leq g</annotation></semantics></math> e:</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\int_{X}g\,\mathrm{d}\mu," display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\int_{X}g\,\mathrm{d}\mu,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">mostre que <math id="Ch2.Thmexercise22.p1.m5" class="ltx_Math" alttext="f=g" display="inline"><semantics><mrow><mi>f</mi><mo>=</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f=g</annotation></semantics></math> quase sempre.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise23" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.23</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise23.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise23.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise23.p1.m2" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> uma função
+integrável. Mostre que para todo <math id="Ch2.Thmexercise23.p1.m3" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math> existe um <math id="Ch2.Thmexercise23.p1.m4" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math> tal que para
+todo conjunto mensurável <math id="Ch2.Thmexercise23.p1.m5" class="ltx_Math" alttext="A\in\mathcal{A}" display="inline"><semantics><mrow><mi>A</mi><mo>∈</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi></mrow><annotation encoding="application/x-tex">A\in\mathcal{A}</annotation></semantics></math> com <math id="Ch2.Thmexercise23.p1.m6" class="ltx_Math" alttext="\mu(A)&lt;\delta" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>A</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mi>δ</mi></mrow><annotation encoding="application/x-tex">\mu(A)&lt;\delta</annotation></semantics></math> temos:</p>
+<div id="Ex14" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex14.m1" class="ltx_Math" alttext="\Big{|}\int_{A}f\,\mathrm{d}\mu\Big{|}&lt;\varepsilon." display="block"><semantics><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">|</mo><mrow><msub><mo lspace="0em">∫</mo><mi>A</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">|</mo></mrow><mo>&lt;</mo><mi>ε</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Big{|}\int_{A}f\,\mathrm{d}\mu\Big{|}&lt;\varepsilon.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise24" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.24</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise24.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise24.p1.m1" class="ltx_Math" alttext="f:I\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>I</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:I\to\overline{\mathds{R}}</annotation></semantics></math> uma função integrável definida num intervalo <math id="Ch2.Thmexercise24.p1.m2" class="ltx_Math" alttext="I\subset\mathds{R}" display="inline"><semantics><mrow><mi>I</mi><mo>⊂</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">I\subset\mathds{R}</annotation></semantics></math>.
+Fixado <math id="Ch2.Thmexercise24.p1.m3" class="ltx_Math" alttext="t_{0}\in I" display="inline"><semantics><mrow><msub><mi>t</mi><mn>0</mn></msub><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">t_{0}\in I</annotation></semantics></math>, considere a função <math id="Ch2.Thmexercise24.p1.m4" class="ltx_Math" alttext="F:I\to\mathds{R}" display="inline"><semantics><mrow><mi>F</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>I</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">F:I\to\mathds{R}</annotation></semantics></math> definida por:</p>
+<div id="Ex15" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex15.m1" class="ltx_Math" alttext="F(t)=\int_{t_{0}}^{t}f\,\mathrm{d}\mathfrak{m}," display="block"><semantics><mrow><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><msub><mi>t</mi><mn>0</mn></msub><mi>t</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">F(t)=\int_{t_{0}}^{t}f\,\mathrm{d}\mathfrak{m},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="Ch2.Thmexercise24.p1.m5" class="ltx_Math" alttext="t\in I" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">t\in I</annotation></semantics></math>. Mostre que:</p>
+<ul id="I13" class="ltx_itemize">
+<li id="I13.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I13.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I13.ix1.p1.m1" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é contínua;</p>
+</div>
+</li>
+<li id="I13.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I13.ix2.p1" class="ltx_para">​<p class="ltx_p">dado <math id="I13.ix2.p1.m1" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>, existe <math id="I13.ix2.p1.m2" class="ltx_Math" alttext="\delta&gt;0" display="inline"><semantics><mrow><mi>δ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math> tal que dados <math id="I13.ix2.p1.m3" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math> e
+intervalos abertos dois a dois disjuntos <math id="I13.ix2.p1.m4" class="ltx_Math" alttext="\left]x_{i},y_{i}\right[\subset I" display="inline"><semantics><mrow><mrow><mo rspace="0em" stretchy="true">]</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo lspace="0em" rspace="0.1389em" stretchy="true">[</mo></mrow><mo lspace="0.1389em">⊂</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\left]x_{i},y_{i}\right[\subset I</annotation></semantics></math>, <math id="I13.ix2.p1.m5" class="ltx_Math" alttext="i=1,\ldots,n" display="inline"><semantics><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow><annotation encoding="application/x-tex">i=1,\ldots,n</annotation></semantics></math>,
+então:</p>
+<div id="Ex16" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex16.m1" class="ltx_Math" alttext="\sum_{i=1}^{n}y_{i}-x_{i}&lt;\delta\Longrightarrow\sum_{i=1}^{n}|F(y_{i})-F(x_{i}%
+)|&lt;\varepsilon;" display="block"><semantics><mrow><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>y</mi><mi>i</mi></msub></mrow><mo>−</mo><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>&lt;</mo><mi>δ</mi><mo rspace="0.111em" stretchy="false">⟹</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mo stretchy="false">|</mo><mrow><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>F</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><mo>&lt;</mo><mi>ε</mi></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{n}y_{i}-x_{i}&lt;\delta\Longrightarrow\sum_{i=1}^{n}|F(y_{i})-F(x_{i}%
+)|&lt;\varepsilon;</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I13.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I13.ix3.p1" class="ltx_para">​<p class="ltx_p">se <math id="I13.ix3.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é limitada então <math id="I13.ix3.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é Lipschitziana com constante de Lipschitz igual a
+<math id="I13.ix3.p1.m3" class="ltx_Math" alttext="\sup_{t\in I}|f(t)|" display="inline"><semantics><mrow><msub><mo>sup</mo><mrow><mi>t</mi><mo>∈</mo><mi>I</mi></mrow></msub><mrow><mo lspace="0em" stretchy="false">|</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sup_{t\in I}|f(t)|</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I13.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I13.ix4.p1" class="ltx_para">​<p class="ltx_p">(<span class="ltx_text ltx_font_italic">teorema fundamental do cálculo</span>)
+se <math id="I13.ix4.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é contínua num ponto <math id="I13.ix4.p1.m2" class="ltx_Math" alttext="t\in I" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">t\in I</annotation></semantics></math> então <math id="I13.ix4.p1.m3" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> é derivável no ponto <math id="I13.ix4.p1.m4" class="ltx_Math" alttext="t" display="inline"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+e <math id="I13.ix4.p1.m5" class="ltx_Math" alttext="F^{\prime}(t)=f(t)" display="inline"><semantics><mrow><mrow><msup><mi>F</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">F^{\prime}(t)=f(t)</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I13.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I13.ix5.p1" class="ltx_para">​<p class="ltx_p">se <math id="I13.ix5.p1.m1" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é contínua e <math id="I13.ix5.p1.m2" class="ltx_Math" alttext="G:I\to\mathds{R}" display="inline"><semantics><mrow><mi>G</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>I</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">G:I\to\mathds{R}</annotation></semantics></math> é uma primitiva qualquer de <math id="I13.ix5.p1.m3" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> (i.e., <math id="I13.ix5.p1.m4" class="ltx_Math" alttext="G^{\prime}=f" display="inline"><semantics><mrow><msup><mi>G</mi><mo>′</mo></msup><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">G^{\prime}=f</annotation></semantics></math>)
+então:</p>
+<div id="Ex17" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex17.m1" class="ltx_Math" alttext="\int_{a}^{b}f\,\mathrm{d}\mathfrak{m}=G(b)-G(a)," display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>G</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f\,\mathrm{d}\mathfrak{m}=G(b)-G(a),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="I13.ix5.p1.m5" class="ltx_Math" alttext="a,b\in I" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">a,b\in I</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise25" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.25</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise25.p1" class="ltx_para">
+<p class="ltx_p">(<span class="ltx_text ltx_font_italic">integração por partes</span>)
+Se <math id="Ch2.Thmexercise25.p1.m1" class="ltx_Math" alttext="f:[a,b]\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:[a,b]\to\mathds{R}</annotation></semantics></math>, <math id="Ch2.Thmexercise25.p1.m2" class="ltx_Math" alttext="g:[a,b]\to\mathds{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:[a,b]\to\mathds{R}</annotation></semantics></math> são funções de classe <math id="Ch2.Thmexercise25.p1.m3" class="ltx_Math" alttext="C^{1}" display="inline"><semantics><msup><mi>C</mi><mn>1</mn></msup><annotation encoding="application/x-tex">C^{1}</annotation></semantics></math>, mostre que:</p>
+<div id="Ex18" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex18.m1" class="ltx_Math" alttext="\int_{a}^{b}f(x)g^{\prime}(x)\,\mathrm{d}\mathfrak{m}(x)=f(b)g(b)-f(a)g(a)-%
+\int_{a}^{b}f^{\prime}(x)g(x)\,\mathrm{d}\mathfrak{m}(x)." display="block"><semantics><mrow><mrow><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi>g</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mi>a</mi><mi>b</mi></msubsup><mrow><msup><mi>f</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{a}^{b}f(x)g^{\prime}(x)\,\mathrm{d}\mathfrak{m}(x)=f(b)g(b)-f(a)g(a)-%
+\int_{a}^{b}f^{\prime}(x)g(x)\,\mathrm{d}\mathfrak{m}(x).</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Teoremas de Convergência</h2>
+
+<div id="Ch2.Thmexercise26" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.26</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise26.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise26.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise26.p1.m2" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math> uma seqüência
+de funções integráveis (resp., quase integráveis) <math id="Ch2.Thmexercise26.p1.m3" class="ltx_Math" alttext="f_{k}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{k}:X\to\mathds{R}</annotation></semantics></math>. Suponha que <math id="Ch2.Thmexercise26.p1.m4" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math>
+<span class="ltx_text ltx_font_italic">converge uniformemente</span> para uma função <math id="Ch2.Thmexercise26.p1.m5" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math>, i.e.,
+para todo <math id="Ch2.Thmexercise26.p1.m6" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math> existe <math id="Ch2.Thmexercise26.p1.m7" class="ltx_Math" alttext="k_{0}\geq 1" display="inline"><semantics><mrow><msub><mi>k</mi><mn>0</mn></msub><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k_{0}\geq 1</annotation></semantics></math> tal que
+<math id="Ch2.Thmexercise26.p1.m8" class="ltx_Math" alttext="|f_{k}(x)-f(x)|&lt;\varepsilon" display="inline"><semantics><mrow><mrow><mo stretchy="false">|</mo><mrow><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>−</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo stretchy="false">|</mo></mrow><mo>&lt;</mo><mi>ε</mi></mrow><annotation encoding="application/x-tex">|f_{k}(x)-f(x)|&lt;\varepsilon</annotation></semantics></math>, para todo <math id="Ch2.Thmexercise26.p1.m9" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math> e todo <math id="Ch2.Thmexercise26.p1.m10" class="ltx_Math" alttext="k\geq k_{0}" display="inline"><semantics><mrow><mi>k</mi><mo>≥</mo><msub><mi>k</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">k\geq k_{0}</annotation></semantics></math>. Se <math id="Ch2.Thmexercise26.p1.m11" class="ltx_Math" alttext="\mu(X)&lt;+\infty" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\mu(X)&lt;+\infty</annotation></semantics></math>, mostre que <math id="Ch2.Thmexercise26.p1.m12" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> também é
+integrável (resp., quase integrável) e que:</p>
+<div id="Ex19" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex19.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{X}f_{k}\,\mathrm{d}\mu." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{X}f_{k}\,\mathrm{d}\mu.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise27" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.27</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise27.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise27.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise27.p1.m2" class="ltx_Math" alttext="(f_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{k})_{k\geq 1}</annotation></semantics></math> uma seqüência
+de funções integráveis <math id="Ch2.Thmexercise27.p1.m3" class="ltx_Math" alttext="f_{k}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{k}:X\to\mathds{R}</annotation></semantics></math> tal que:</p>
+<div id="Ex20" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex20.m1" class="ltx_Math" alttext="\sum_{k=1}^{\infty}\int_{X}|f_{k}|\,\mathrm{d}\mu&lt;+\infty." display="block"><semantics><mrow><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mo lspace="0.167em" rspace="0em">∫</mo><mi>X</mi></msub><mrow><mrow><mo stretchy="false">|</mo><msub><mi>f</mi><mi>k</mi></msub><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\sum_{k=1}^{\infty}\int_{X}|f_{k}|\,\mathrm{d}\mu&lt;+\infty.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mostre que:</p>
+<ul id="I14" class="ltx_itemize">
+<li id="I14.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I14.i1.p1" class="ltx_para">​<p class="ltx_p">a série <math id="I14.i1.p1.m1" class="ltx_Math" alttext="\sum_{k=1}^{\infty}f_{k}(x)" display="inline"><semantics><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><mrow><msub><mi>f</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\sum_{k=1}^{\infty}f_{k}(x)</annotation></semantics></math> é absolutamente convergente para quase todo <math id="I14.i1.p1.m2" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I14.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I14.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I14.i2.p1.m1" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math> é uma função mensurável tal que <math id="I14.i2.p1.m2" class="ltx_Math" alttext="f=\sum_{k=1}^{\infty}f_{k}" display="inline"><semantics><mrow><mi>f</mi><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></msubsup><msub><mi>f</mi><mi>k</mi></msub></mrow></mrow><annotation encoding="application/x-tex">f=\sum_{k=1}^{\infty}f_{k}</annotation></semantics></math> q. s. então
+<math id="I14.i2.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é integrável e:</p>
+<div id="Ex21" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex21.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{X}f_{k}\,\mathrm{d}\mu\in%
+\mathds{R}." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.111em">=</mo><mrow><munderover><mo movablelimits="false" rspace="0em">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi mathvariant="normal">∞</mi></munderover><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><msub><mi>f</mi><mi>k</mi></msub><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow><mo>∈</mo><mi>ℝ</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\sum_{k=1}^{\infty}\int_{X}f_{k}\,\mathrm{d}\mu\in%
+\mathds{R}.</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise28" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.28</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise28.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise28.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise28.p1.m2" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math> uma função integrável.
+Mostre que para todo <math id="Ch2.Thmexercise28.p1.m3" class="ltx_Math" alttext="\varepsilon&gt;0" display="inline"><semantics><mrow><mi>ε</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math> existe uma função simples integrável <math id="Ch2.Thmexercise28.p1.m4" class="ltx_Math" alttext="\phi:X\to\mathds{R}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:X\to\mathds{R}</annotation></semantics></math>
+tal que:</p>
+<div id="Ex22" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex22.m1" class="ltx_Math" alttext="\int_{X}|f-\phi|\,\mathrm{d}\mu&lt;\varepsilon." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mrow><mo lspace="0em" stretchy="false">|</mo><mrow><mi>f</mi><mo>−</mo><mi>ϕ</mi></mrow><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo>&lt;</mo><mi>ε</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X}|f-\phi|\,\mathrm{d}\mu&lt;\varepsilon.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise29" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.29</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise29.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise29.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise29.p1.m2" class="ltx_Math" alttext="(A_{k})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(A_{k})_{k\geq 1}</annotation></semantics></math> uma seqüência de subconjuntos
+mensuráveis de <math id="Ch2.Thmexercise29.p1.m3" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> e <math id="Ch2.Thmexercise29.p1.m4" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math> uma função quase integrável. Assuma que para todo
+<math id="Ch2.Thmexercise29.p1.m5" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math> o conjunto:</p>
+<div id="Ex23" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex23.m1" class="ltx_Math" alttext="\big{\{}k\geq 1:x\not\in A_{k}\big{\}}" display="block"><semantics><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>∉</mo><msub><mi>A</mi><mi>k</mi></msub></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><annotation encoding="application/x-tex">\big{\{}k\geq 1:x\not\in A_{k}\big{\}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é finito. Mostre que:</p>
+<div id="Ex24" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex24.m1" class="ltx_Math" alttext="\int_{X}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{A_{k}}f\,\mathrm{d}\mu." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow><mo rspace="0.1389em">=</mo><mrow><munder><mo lspace="0.1389em" movablelimits="false" rspace="0em">lim</mo><mrow><mi>k</mi><mo stretchy="false">→</mo><mi mathvariant="normal">∞</mi></mrow></munder><mrow><msub><mo>∫</mo><msub><mi>A</mi><mi>k</mi></msub></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>μ</mi></mrow></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X}f\,\mathrm{d}\mu=\lim_{k\to\infty}\int_{A_{k}}f\,\mathrm{d}\mu.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise30" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.30</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise30.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise30.p1.m1" class="ltx_Math" alttext="f:\mathds{R}\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathds{R}\to\mathds{R}</annotation></semantics></math> uma função integrável. Mostre que as funções:</p>
+<div id="Ex25" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex25.m1" class="ltx_Math" alttext="g_{1}(t)=\int_{\mathds{R}}f(x)\cos(tx)\,\mathrm{d}\mathfrak{m}(x),\quad g_{2}(%
+t)=\int_{\mathds{R}}f(x)\mathrm{sen}(tx)\,\mathrm{d}\mathfrak{m}(x)," display="block"><semantics><mrow><mrow><mrow><mrow><msub><mi>g</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>ℝ</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="1.267em">,</mo><mrow><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>ℝ</mi></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>sen</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">g_{1}(t)=\int_{\mathds{R}}f(x)\cos(tx)\,\mathrm{d}\mathfrak{m}(x),\quad g_{2}(%
+t)=\int_{\mathds{R}}f(x)\mathrm{sen}(tx)\,\mathrm{d}\mathfrak{m}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">são contínuas e que:</p>
+<div id="Ex26" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex26.m1" class="ltx_Math" alttext="\lim_{t\to\pm\infty}g_{1}(t)=0,\quad\lim_{t\to\pm\infty}g_{2}(t)=0." display="block"><semantics><mrow><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><msub><mi>g</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><mo rspace="0.989em">,</mo><mrow><mrow><munder><mo movablelimits="false" rspace="0.167em">lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mrow><mo>±</mo><mi mathvariant="normal">∞</mi></mrow></mrow></munder><mrow><msub><mi>g</mi><mn>2</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\lim_{t\to\pm\infty}g_{1}(t)=0,\quad\lim_{t\to\pm\infty}g_{2}(t)=0.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise31" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.31</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise31.p1" class="ltx_para">
+<p class="ltx_p">Considere a função <math id="Ch2.Thmexercise31.p1.m1" class="ltx_Math" alttext="\phi:\mathds{R}\to\mathds{R}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:\mathds{R}\to\mathds{R}</annotation></semantics></math> definida por:</p>
+<div id="Ex27" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex27.m1" class="ltx_Math" alttext="\phi(t)=\int_{\mathds{R}}e^{-x^{2}}\cos(tx)\,\mathrm{d}\mathfrak{m}(x)," display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>ℝ</mi></msub><mrow><msup><mi>e</mi><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi(t)=\int_{\mathds{R}}e^{-x^{2}}\cos(tx)\,\mathrm{d}\mathfrak{m}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="Ch2.Thmexercise31.p1.m2" class="ltx_Math" alttext="t\in\mathds{R}" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">t\in\mathds{R}</annotation></semantics></math>.</p>
+<ul id="I15" class="ltx_itemize">
+<li id="I15.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I15.ix1.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I15.ix1.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é derivável e que:</p>
+<div id="Ex28" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex28.m1" class="ltx_Math" alttext="\phi^{\prime}(t)=-\frac{t}{2}\,\phi(t)," display="block"><semantics><mrow><mrow><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mrow><mfrac><mi>t</mi><mn>2</mn></mfrac><mo lspace="0.170em">⁢</mo><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi^{\prime}(t)=-\frac{t}{2}\,\phi(t),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I15.ix1.p1.m2" class="ltx_Math" alttext="t\in\mathds{R}" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">t\in\mathds{R}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I15.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I15.ix2.p1" class="ltx_para">​<p class="ltx_p">Mostre que
+<math id="I15.ix2.p1.m1" class="ltx_Math" alttext="\phi(t)=ce^{-\frac{t^{\hbox to0.0pt{$\scriptscriptstyle 2$\hskip 0.0pt minus 1%
+.0fil}}}{4}}" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>c</mi><mo>⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mfrac><msup><mi>t</mi><mpadded width="0.0pt"><mn mathsize="50%">2</mn></mpadded></msup><mn>4</mn></mfrac></mrow></msup></mrow></mrow><annotation encoding="application/x-tex">\phi(t)=ce^{-\frac{t^{\hbox to0.0pt{$\scriptscriptstyle 2$\hskip 0.0pt minus 1%
+.0fil}}}{4}}</annotation></semantics></math>,
+para todo <math id="I15.ix2.p1.m2" class="ltx_Math" alttext="t\in\mathds{R}" display="inline"><semantics><mrow><mi>t</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">t\in\mathds{R}</annotation></semantics></math>, onde:</p>
+<div id="E13" class="ltx_equation ltx_eqn_div">
+<span><math id="E13.m1" class="ltx_Math" alttext="c=\int_{\mathds{R}}e^{-x^{2}}\,\mathrm{d}\mathfrak{m}(x)." display="block"><semantics><mrow><mrow><mi>c</mi><mo rspace="0.111em">=</mo><mrow><msub><mo>∫</mo><mi>ℝ</mi></msub><mrow><msup><mi>e</mi><mrow><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">c=\int_{\mathds{R}}e^{-x^{2}}\,\mathrm{d}\mathfrak{m}(x).</annotation></semantics></math></span>
+                      <span class="ltx_tag ltx_tag_equation ltx_align_right">(2.8.13)</span>
+                      
+                    
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="SSx3.p1" class="ltx_para">
+<p class="ltx_p">No Exercício <a href="Ch3.Sx1.html#Ch3.Thmexercise5" title="Exercício 3.5. ‣ O Teorema de Mudança de Variáveis ‣ Exercícios para o Capítulo 3 ‣ Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3.5</span></a> pediremos ao leitor para calcular explicitamente a integral
+em (<a href="#E13" title="In item (b) ‣ Exercício 2.31. ‣ Teoremas de Convergência ‣ Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.13</span></a>).</p>
+</div>
+<div id="Ch2.Thmexercise32" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.32</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise32.p1" class="ltx_para">
+<p class="ltx_p">Considere a função <math id="Ch2.Thmexercise32.p1.m1" class="ltx_Math" alttext="\phi:\left]0,+\infty\right[\to\mathds{R}" display="inline"><semantics><mrow><mi>ϕ</mi><mo lspace="0.278em">:</mo><mrow><mrow><mo lspace="0.111em" rspace="0em" stretchy="true">]</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0em" rspace="0.1389em" stretchy="true">[</mo></mrow><mo lspace="0.1389em" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\phi:\left]0,+\infty\right[\to\mathds{R}</annotation></semantics></math> definida por:</p>
+<div id="Ex29" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex29.m1" class="ltx_Math" alttext="\phi(t)=\int_{0}^{+\infty}e^{-tx}\,\frac{\mathrm{sen}\,x}{x}\,\mathrm{d}%
+\mathfrak{m}(x)," display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.170em">⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi(t)=\int_{0}^{+\infty}e^{-tx}\,\frac{\mathrm{sen}\,x}{x}\,\mathrm{d}%
+\mathfrak{m}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="Ch2.Thmexercise32.p1.m2" class="ltx_Math" alttext="t&gt;0" display="inline"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.</p>
+<ul id="I16" class="ltx_itemize">
+<li id="I16.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I16.ix1.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I16.ix1.p1.m1" class="ltx_Math" alttext="\phi" display="inline"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math> é derivável e que <math id="I16.ix1.p1.m2" class="ltx_Math" alttext="\phi^{\prime}(t)=-\frac{1}{1+t^{2}}" display="inline"><semantics><mrow><mrow><msup><mi>ϕ</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo>−</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac></mrow></mrow><annotation encoding="application/x-tex">\phi^{\prime}(t)=-\frac{1}{1+t^{2}}</annotation></semantics></math>, para todo <math id="I16.ix1.p1.m3" class="ltx_Math" alttext="t&gt;0" display="inline"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I16.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I16.ix2.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I16.ix2.p1.m1" class="ltx_Math" alttext="\lim_{t\to+\infty}\phi(t)=0" display="inline"><semantics><mrow><mrow><msub><mo>lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow></msub><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim_{t\to+\infty}\phi(t)=0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I16.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I16.ix3.p1" class="ltx_para">​<p class="ltx_p">Conclua que <math id="I16.ix3.p1.m1" class="ltx_Math" alttext="\phi(t)=\frac{\pi}{2}-\arctan t" display="inline"><semantics><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mi>π</mi><mn>2</mn></mfrac><mo>−</mo><mrow><mi>arctan</mi><mo lspace="0.167em">⁡</mo><mi>t</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">\phi(t)=\frac{\pi}{2}-\arctan t</annotation></semantics></math>, para todo <math id="I16.ix3.p1.m2" class="ltx_Math" alttext="t&gt;0" display="inline"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I16.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I16.ix4.p1" class="ltx_para">​<p class="ltx_p">Usando integração por partes, verifique que:</p>
+<div id="Ex30" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex30.m1" class="ltx_Math" alttext="\phi(t)=\int_{0}^{1}e^{-tx}\,\frac{\mathrm{sen}\,x}{x}\,\mathrm{d}\mathfrak{m}%
+(x)+e^{-t}\cos 1-\int_{1}^{+\infty}\cos x\;e^{-tx}\,\frac{1+tx}{x^{2}}\,%
+\mathrm{d}\mathfrak{m}(x)," display="block"><semantics><mrow><mrow><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="0.111em">=</mo><mrow><mrow><mrow><msubsup><mo>∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.170em">⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>+</mo><mrow><msup><mi>e</mi><mrow><mo>−</mo><mi>t</mi></mrow></msup><mo lspace="0.167em">⁢</mo><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mn>1</mn></mrow></mrow></mrow><mo rspace="0.055em">−</mo><mrow><msubsup><mo>∫</mo><mn>1</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mrow><mrow><mi>cos</mi><mo lspace="0.167em">⁡</mo><mrow><mi>x</mi><mo lspace="0.280em">⁢</mo><msup><mi>e</mi><mrow><mo>−</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow></msup><mo>⁢</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mrow><mi>t</mi><mo>⁢</mo><mi>x</mi></mrow></mrow><msup><mi>x</mi><mn>2</mn></msup></mfrac><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">d</mi><mo>⁢</mo><mi>𝔪</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\phi(t)=\int_{0}^{1}e^{-tx}\,\frac{\mathrm{sen}\,x}{x}\,\mathrm{d}\mathfrak{m}%
+(x)+e^{-t}\cos 1-\int_{1}^{+\infty}\cos x\;e^{-tx}\,\frac{1+tx}{x^{2}}\,%
+\mathrm{d}\mathfrak{m}(x),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I16.ix4.p1.m1" class="ltx_Math" alttext="t&gt;0" display="inline"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I16.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I16.ix5.p1" class="ltx_para">​<p class="ltx_p">Mostre que:</p>
+<div id="Ex31" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex31.m1" class="ltx_Math" alttext="\lim_{t\to 0}\phi(t)=\raise 2.0pt\hbox{$\scriptstyle(R)$}\!\!\int_{0}^{+\infty%
+}f=\frac{\pi}{2}," display="block"><semantics><mrow><mrow><mrow><munder><mo movablelimits="false">lim</mo><mrow><mi>t</mi><mo stretchy="false">→</mo><mn>0</mn></mrow></munder><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mpadded voffset="2.0pt"><mo maxsize="70%" minsize="70%">(</mo><mi mathsize="70%">R</mi><mo maxsize="70%" minsize="70%">)</mo></mpadded><mo>⁢</mo><mrow><msubsup><mo>∫</mo><mn>0</mn><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></msubsup><mi>f</mi></mrow></mrow><mo>=</mo><mfrac><mi>π</mi><mn>2</mn></mfrac></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\lim_{t\to 0}\phi(t)=\raise 2.0pt\hbox{$\scriptstyle(R)$}\!\!\int_{0}^{+\infty%
+}f=\frac{\pi}{2},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">onde <math id="I16.ix5.p1.m1" class="ltx_Math" alttext="f:\left[0,+\infty\right[\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo>[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0em" rspace="0.1389em" stretchy="true">[</mo></mrow><mo lspace="0.1389em" stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\left[0,+\infty\right[\to\mathds{R}</annotation></semantics></math> é definida por <math id="I16.ix5.p1.m2" class="ltx_Math" alttext="f(x)=\frac{\mathrm{sen}\,x}{x}" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>sen</mi><mo lspace="0.170em">⁢</mo><mi>x</mi></mrow><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{\mathrm{sen}\,x}{x}</annotation></semantics></math>, para <math id="I16.ix5.p1.m3" class="ltx_Math" alttext="x&gt;0" display="inline"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>
+e <math id="I16.ix5.p1.m4" class="ltx_Math" alttext="f(0)=1" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(0)=1</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx4" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Mais sobre Convergência de Seqüências de Funções</h2>
+
+<div id="Ch2.Thmexercise33" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.33</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise33.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise33.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise33.p1.m2" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência de funções mensuráveis <math id="Ch2.Thmexercise33.p1.m3" class="ltx_Math" alttext="f_{n}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:X\to\mathds{R}</annotation></semantics></math>
+e <math id="Ch2.Thmexercise33.p1.m4" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math> uma função mensurável. Se <math id="Ch2.Thmexercise33.p1.m5" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> converge em medida para <math id="Ch2.Thmexercise33.p1.m6" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>, mostre que toda subseqüência
+de <math id="Ch2.Thmexercise33.p1.m7" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> também converge em medida para <math id="Ch2.Thmexercise33.p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise34" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.34</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise34.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise34.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida e <math id="Ch2.Thmexercise34.p1.m2" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência pontualmente de Cauchy quase sempre.
+Mostre que existe uma função <math id="Ch2.Thmexercise34.p1.m3" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math> tal que <math id="Ch2.Thmexercise34.p1.m4" class="ltx_Math" alttext="f_{n}\to f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\to f</annotation></semantics></math> pontualmente q. s.; se as funções <math id="Ch2.Thmexercise34.p1.m6" class="ltx_Math" alttext="f_{n}" display="inline"><semantics><msub><mi>f</mi><mi>n</mi></msub><annotation encoding="application/x-tex">f_{n}</annotation></semantics></math> são todas mensuráveis, mostre
+que podemos escolher a função <math id="Ch2.Thmexercise34.p1.m7" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> também mensurável.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise35" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.35</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise35.p1" class="ltx_para">
+<p class="ltx_p">Mostre que toda seqüência uniformemente de Cauchy quase sempre é quase uniformemente de Cauchy e que toda
+seqüência quase uniformemente de Cauchy é pontualmente de Cauchy quase sempre.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise36" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.36</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise36.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Ch2.Thmexercise36.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> é um conjunto, <math id="Ch2.Thmexercise36.p1.m2" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> é uma seqüência uniformemente de Cauchy de funções <math id="Ch2.Thmexercise36.p1.m3" class="ltx_Math" alttext="f_{n}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:X\to\mathds{R}</annotation></semantics></math>
+e <math id="Ch2.Thmexercise36.p1.m4" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math> é uma função tal que <math id="Ch2.Thmexercise36.p1.m5" class="ltx_Math" alttext="f_{n}\to f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\to f</annotation></semantics></math> pontualmente, mostre que <math id="Ch2.Thmexercise36.p1.m6" class="ltx_Math" alttext="f_{n}\xrightarrow{\;\mathrm{u}\;}f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mover accent="true"><mo stretchy="false">→</mo><mo>u</mo></mover><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\xrightarrow{\;\mathrm{u}\;}f</annotation></semantics></math>.
+Se <math id="Ch2.Thmexercise36.p1.m7" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> é um espaço de medida, <math id="Ch2.Thmexercise36.p1.m8" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> é uniformemente de Cauchy quase sempre
+(resp., quase uniformemente de Cauchy) e <math id="Ch2.Thmexercise36.p1.m9" class="ltx_Math" alttext="f_{n}\to f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">→</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\to f</annotation></semantics></math> pontualmente q. s., mostre que
+<math id="Ch2.Thmexercise36.p1.m11" class="ltx_Math" alttext="f_{n}\xrightarrow{\;\mathrm{u}\;}f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mover accent="true"><mo stretchy="false">→</mo><mo>u</mo></mover><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\xrightarrow{\;\mathrm{u}\;}f</annotation></semantics></math> q. s. (resp., que <math id="Ch2.Thmexercise36.p1.m13" class="ltx_Math" alttext="f_{n}\xrightarrow{\;\mathrm{qu}\;}f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mover accent="true"><mo stretchy="false">→</mo><mo>qu</mo></mover><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\xrightarrow{\;\mathrm{qu}\;}f</annotation></semantics></math>).</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise37" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.37</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise37.p1" class="ltx_para">
+<p class="ltx_p">Mostre que:</p>
+<ul id="I17" class="ltx_itemize">
+<li id="I17.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I17.i1.p1" class="ltx_para">​<p class="ltx_p">toda seqüência uniformemente convergente (resp., quase sempre) é uniformemente de Cauchy (resp., quase sempre);</p>
+</div>
+</li>
+<li id="I17.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I17.i2.p1" class="ltx_para">​<p class="ltx_p">toda seqüência quase uniformemente convergente é quase uniformemente de Cauchy;</p>
+</div>
+</li>
+<li id="I17.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I17.i3.p1" class="ltx_para">​<p class="ltx_p">toda seqüência de funções mensuráveis que é convergente em medida é de Cauchy em medida.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch2.Thmexercise38" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.38</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise38.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise38.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida com <math id="Ch2.Thmexercise38.p1.m2" class="ltx_Math" alttext="\mu(X)&lt;+\infty" display="inline"><semantics><mrow><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>&lt;</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow></mrow><annotation encoding="application/x-tex">\mu(X)&lt;+\infty</annotation></semantics></math> e seja <math id="Ch2.Thmexercise38.p1.m3" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência
+de funções mensuráveis <math id="Ch2.Thmexercise38.p1.m4" class="ltx_Math" alttext="f_{n}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:X\to\mathds{R}</annotation></semantics></math>. Mostre que se <math id="Ch2.Thmexercise38.p1.m5" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> é pontualmente de Cauchy quase sempre
+então <math id="Ch2.Thmexercise38.p1.m6" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> é quase uniformemente de Cauchy.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise39" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.39</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise39.p1" class="ltx_para">
+<p class="ltx_p">Mostre que se uma seqüência de funções mensuráveis é quase uniformemente de Cauchy então ela é de Cauchy em medida.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise40" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.40</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise40.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise40.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise40.p1.m2" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência de funções mensuráveis <math id="Ch2.Thmexercise40.p1.m3" class="ltx_Math" alttext="f_{n}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:X\to\mathds{R}</annotation></semantics></math>
+que é de Cauchy em medida e <math id="Ch2.Thmexercise40.p1.m4" class="ltx_Math" alttext="(f_{n_{k}})_{k\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><msub><mi>n</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow><mrow><mi>k</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n_{k}})_{k\geq 1}</annotation></semantics></math> uma subseqüência de <math id="Ch2.Thmexercise40.p1.m5" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> que converge em medida
+para uma função mensurável <math id="Ch2.Thmexercise40.p1.m6" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math>. Mostre que <math id="Ch2.Thmexercise40.p1.m7" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> também converge em medida para <math id="Ch2.Thmexercise40.p1.m8" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise41" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.41</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise41.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise41.p1.m1" class="ltx_Math" alttext="(X,\mathcal{A},\mu)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi class="ltx_font_mathcaligraphic">𝒜</mi><mo>,</mo><mi>μ</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(X,\mathcal{A},\mu)</annotation></semantics></math> um espaço de medida, <math id="Ch2.Thmexercise41.p1.m2" class="ltx_Math" alttext="(f_{n})_{n\geq 1}" display="inline"><semantics><msub><mrow><mo stretchy="false">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">(f_{n})_{n\geq 1}</annotation></semantics></math> uma seqüência de funções mensuráveis <math id="Ch2.Thmexercise41.p1.m3" class="ltx_Math" alttext="f_{n}:X\to\mathds{R}" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f_{n}:X\to\mathds{R}</annotation></semantics></math>
+e <math id="Ch2.Thmexercise41.p1.m4" class="ltx_Math" alttext="f:X\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}</annotation></semantics></math>, <math id="Ch2.Thmexercise41.p1.m5" class="ltx_Math" alttext="g:X\to\mathds{R}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">g:X\to\mathds{R}</annotation></semantics></math> funções mensuráveis. Se <math id="Ch2.Thmexercise41.p1.m6" class="ltx_Math" alttext="f_{n}\xrightarrow{\;\mathrm{\mu}\;}f" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mover accent="true"><mo stretchy="false">→</mo><mo>𝜇</mo></mover><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n}\xrightarrow{\;\mathrm{\mu}\;}f</annotation></semantics></math> e <math id="Ch2.Thmexercise41.p1.m7" class="ltx_Math" alttext="f_{n}\xrightarrow{\;\mathrm{\mu}\;}g" display="inline"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mover accent="true"><mo stretchy="false">→</mo><mo>𝜇</mo></mover><mi>g</mi></mrow><annotation encoding="application/x-tex">f_{n}\xrightarrow{\;\mathrm{\mu}\;}g</annotation></semantics></math>, mostre que <math id="Ch2.Thmexercise41.p1.m8" class="ltx_Math" alttext="f(x)=g(x)" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">f(x)=g(x)</annotation></semantics></math> para quase
+todo <math id="Ch2.Thmexercise41.p1.m9" class="ltx_Math" alttext="x\in X" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x\in X</annotation></semantics></math>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx5" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">O Teorema de Fubini em <math id="SSx5.m1" class="ltx_Math" alttext="{\mathds{R}^{n}}" display="inline"><semantics><msup><mi>ℝ</mi><mi>n</mi></msup><annotation encoding="application/x-tex">{\mathds{R}^{n}}</annotation></semantics></math>
+</h2>
+
+<div id="Ch2.Thmexercise42" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.42</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise42.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise42.p1.m1" class="ltx_Math" alttext="f:X\to\mathds{R}^{n}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{R}^{n}</annotation></semantics></math> uma função definida num subconjunto <math id="Ch2.Thmexercise42.p1.m2" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> de <math id="Ch2.Thmexercise42.p1.m3" class="ltx_Math" alttext="\mathds{R}^{m}" display="inline"><semantics><msup><mi>ℝ</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathds{R}^{m}</annotation></semantics></math>.
+Mostre que se o gráfico de <math id="Ch2.Thmexercise42.p1.m4" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> (recorde (<a href="#E10" title="In Exercício 2.10. ‣ Funções Mensuráveis ‣ Exercícios para o Capítulo 2 ‣ Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2.8.10</span></a>)) é mensurável então
+<math id="Ch2.Thmexercise42.p1.m5" class="ltx_Math" alttext="\mathfrak{m}\big{(}\mathrm{gr}(f)\big{)}=0" display="inline"><semantics><mrow><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><mi>gr</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathfrak{m}\big{(}\mathrm{gr}(f)\big{)}=0</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch2.Thmexercise43" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.43</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise43.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch2.Thmexercise43.p1.m1" class="ltx_Math" alttext="X\subset\mathds{R}^{m}" display="inline"><semantics><mrow><mi>X</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">X\subset\mathds{R}^{m}</annotation></semantics></math>, <math id="Ch2.Thmexercise43.p1.m2" class="ltx_Math" alttext="Y\subset\mathds{R}^{n}" display="inline"><semantics><mrow><mi>Y</mi><mo>⊂</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">Y\subset\mathds{R}^{n}</annotation></semantics></math> conjuntos mensuráveis e <math id="Ch2.Thmexercise43.p1.m3" class="ltx_Math" alttext="f:X\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">f:X\to\overline{\mathds{R}}</annotation></semantics></math>,
+<math id="Ch2.Thmexercise43.p1.m4" class="ltx_Math" alttext="g:Y\to\overline{\mathds{R}}" display="inline"><semantics><mrow><mi>g</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>Y</mi><mo stretchy="false">→</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">g:Y\to\overline{\mathds{R}}</annotation></semantics></math> funções integráveis. Mostre que a função:</p>
+<div id="Ex32" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex32.m1" class="ltx_Math" alttext="X\times Y\ni(x,y)\longmapsto f(x)g(y)\in\overline{\mathds{R}}" display="block"><semantics><mrow><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟼</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><mover accent="true"><mi>ℝ</mi><mo>¯</mo></mover></mrow><annotation encoding="application/x-tex">X\times Y\ni(x,y)\longmapsto f(x)g(y)\in\overline{\mathds{R}}</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é integrável e que sua integral é dada por:</p>
+<div id="Ex33" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex33.m1" class="ltx_Math" alttext="\int_{X\times Y}f(x)g(y)\,\mathrm{d}\mathfrak{m}(x,y)=\Big{(}\int_{X}f\,%
+\mathrm{d}\mathfrak{m}\Big{)}\Big{(}\int_{Y}g\,\mathrm{d}\mathfrak{m}\Big{)}." display="block"><semantics><mrow><mrow><mrow><msub><mo>∫</mo><mrow><mi>X</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>Y</mi></mrow></msub><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>=</mo><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>X</mi></msub><mrow><mi>f</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><msub><mo lspace="0em">∫</mo><mi>Y</mi></msub><mrow><mi>g</mi><mo lspace="0.170em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow></mrow></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\int_{X\times Y}f(x)g(y)\,\mathrm{d}\mathfrak{m}(x,y)=\Big{(}\int_{X}f\,%
+\mathrm{d}\mathfrak{m}\Big{)}\Big{(}\int_{Y}g\,\mathrm{d}\mathfrak{m}\Big{)}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch2.Thmexercise44" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 2.44</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch2.Thmexercise44.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch2.Thmexercise44.p1.m1" class="ltx_Math" alttext="\Delta_{n}" display="inline"><semantics><msub><mi mathvariant="normal">Δ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\Delta_{n}</annotation></semantics></math> o <span class="ltx_text ltx_font_italic">simplexo padrão <math id="Ch2.Thmexercise44.p1.m2" class="ltx_Math" alttext="n" display="inline"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensional</span>
+definido por:</p>
+<div id="Ex34" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex34.m1" class="ltx_Math" alttext="\Delta_{n}=\Big{\{}(x_{1},\ldots,x_{n})\in\left[0,+\infty\right[^{n}:\sum_{i=1%
+}^{n}x_{i}\leq 1\Big{\}}." display="block"><semantics><mrow><mrow><msub><mi mathvariant="normal">Δ</mi><mi>n</mi></msub><mo>=</mo><mrow><mo maxsize="160%" minsize="160%">{</mo><mrow><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mrow><mo>[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo lspace="0em" stretchy="true">[</mo></mrow><mi>n</mi></msup></mrow><mo rspace="0.111em">:</mo><mrow><mrow><munderover><mo movablelimits="false">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub></mrow><mo>≤</mo><mn>1</mn></mrow><mo maxsize="160%" minsize="160%">}</mo></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\Delta_{n}=\Big{\{}(x_{1},\ldots,x_{n})\in\left[0,+\infty\right[^{n}:\sum_{i=1%
+}^{n}x_{i}\leq 1\Big{\}}.</annotation></semantics></math></span>
+</div>
+<ul id="I18" class="ltx_itemize">
+<li id="I18.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I18.ix1.p1" class="ltx_para">​<p class="ltx_p">Mostre que <math id="I18.ix1.p1.m1" class="ltx_Math" alttext="\Delta_{n}" display="inline"><semantics><msub><mi mathvariant="normal">Δ</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\Delta_{n}</annotation></semantics></math> é mensurável para todo <math id="I18.ix1.p1.m2" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I18.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I18.ix2.p1" class="ltx_para">​<p class="ltx_p">Se <math id="I18.ix2.p1.m1" class="ltx_Math" alttext="a_{n}=\mathfrak{m}(\Delta_{n})" display="inline"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi mathvariant="normal">Δ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">a_{n}=\mathfrak{m}(\Delta_{n})</annotation></semantics></math>, mostre que:</p>
+<div id="Ex35" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex35.m1" class="ltx_Math" alttext="a_{n}=a_{n-1}\int_{0}^{1}(1-t)^{n-1}\,\mathrm{d}\mathfrak{m}(t)," display="block"><semantics><mrow><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>⁢</mo><mrow><msubsup><mo rspace="0em">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mn>1</mn><mo>−</mo><mi>t</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo lspace="0em">⁢</mo><mrow><mo rspace="0em">d</mo><mi>𝔪</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">a_{n}=a_{n-1}\int_{0}^{1}(1-t)^{n-1}\,\mathrm{d}\mathfrak{m}(t),</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todo <math id="I18.ix2.p1.m2" class="ltx_Math" alttext="n\geq 1" display="inline"><semantics><mrow><mi>n</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n\geq 1</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I18.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I18.ix3.p1" class="ltx_para">​<p class="ltx_p">Determine <math id="I18.ix3.p1.m1" class="ltx_Math" alttext="\mathfrak{m}(\Delta_{n})" display="inline"><semantics><mrow><mi>𝔪</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi mathvariant="normal">Δ</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathfrak{m}(\Delta_{n})</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch2.S8.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch3.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>

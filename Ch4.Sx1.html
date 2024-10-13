@@ -1,0 +1,749 @@
+<!DOCTYPE html><html lang="pt-BR">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração</title>
+<!--Generated on Sat Sep 14 19:41:56 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on 9 de agosto de 2004.-->
+<style>:root { --bml-ltx-font-size: 10.95; }</style>
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-table.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-search.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-bookdown.css" type="text/css">
+<link rel="stylesheet" href="bookml/gitbook/css/plugin-fontsettings.css" type="text/css">
+<link rel="stylesheet" href="ltx-book.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook,plain.css" type="text/css">
+<link rel="stylesheet" href="bookml/CSS/style.gitbook.css" type="text/css">
+<link rel="stylesheet" href="bmluser/colors.gitbook-NotasMedida.css" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6"></script>
+<link rel="up" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="up up" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="start" href="index.html" title="Notas Para o Curso de Medida e Integração">
+<link rel="prev" href="Ch4.S5.html" title="4.5. Apêndice à Seção 4.4: funções convexas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="next" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S1.html" title="4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S2.html" title="4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S3.html" title="4.3. Funcionais Lineares e o Espaço Dual ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S4.html" title="4.4. Espaços 𝐿^𝑝 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="section" href="Ch4.S5.html" title="4.5. Apêndice à Seção 4.4: funções convexas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Chx1.html" title="Licença e Créditos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch1.html" title="Capítulo 1 Medida de Lebesgue e Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch2.html" title="Capítulo 2 Integrando Funções em Espaços de Medida ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch3.html" title="Capítulo 3 O Teorema de Mudança de Variáveis para Integrais de Lebesgue ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch5.html" title="Capítulo 5 Construção de Medidas ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch6.html" title="Capítulo 6 Medidas Produto e o Teorema de Fubini ‣ Notas Para o Curso de Medida e Integração">
+<link rel="chapter" href="Ch7.html" title="Capítulo 7 Conjuntos Analíticos e o Teorema de Choquet ‣ Notas Para o Curso de Medida e Integração">
+<link rel="appendix" href="A1.html" title="Apêndice A Soluções para os Exercícios Propostos ‣ Notas Para o Curso de Medida e Integração">
+<link rel="bibliography" href="bib.html" title="Referências ‣ Notas Para o Curso de Medida e Integração">
+<link rel="index" href="idx.html" title="Índice Remissivo ‣ Notas Para o Curso de Medida e Integração">
+<meta name="keywords" lang="pt-BR" content=", , Pitágoras, conjugado, de Pitágoras, de polarização, de um espaço vetorial, espaço vetorial, fórmula, fórmula de, homogeneidade positiva, invariante por translações, invariância por translações, métrica, polarização, positivamente homogênea, quociente, realificação, teorema, teorema de">
+</head>
+<body>
+<div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+<a href="#bml-main-content" tabindex="0" class="bml-skip-to-content">Skip to content.</a>
+<div class="book-summary"><nav class="ltx_page_navbar">
+<ul class="ltx_toclist summary">
+<li>
+<a href="index.html" title="" class="ltx_ref" rel="start">Notas Para o Curso de Medida e Integração</a>
+</li>
+<li class="divider">
+<li data-level="" data-path="Chx1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Chx1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Licença e Créditos</a></li>
+<li data-level="1" data-path="Ch1.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">1 </span></b>Medida de Lebesgue e Espaços de Medida</a></li>
+<li data-level="2" data-path="Ch2.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch2.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">2 </span></b>Integrando Funções em Espaços de Medida</a></li>
+<li data-level="3" data-path="Ch3.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch3.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">3 </span></b>O Teorema de Mudança de Variáveis para Integrais de Lebesgue</a></li>
+<li data-level="4" data-path="Ch4.html" class="ltx_tocentry ltx_tocentry_chapter  chapter ">
+<a href="Ch4.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4 </span></b>Alguns Tópicos de Análise Funcional</a>
+<ol class="ltx_toclist ltx_toclist_chapter">
+<li data-level="4.1" data-path="Ch4.S1.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S1.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.1 </span></b>Espaços Normados e com Produto Interno</a></li>
+<li data-level="4.2" data-path="Ch4.S2.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S2.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.2 </span></b>Aplicações Lineares Contínuas</a></li>
+<li data-level="4.3" data-path="Ch4.S3.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S3.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.3 </span></b>Funcionais Lineares e o Espaço Dual</a></li>
+<li data-level="4.4" data-path="Ch4.S4.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S4.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.4 </span></b>Espaços <math class="ltx_Math" alttext="L^{p}" display="inline"><semantics><msup><mi>L</mi><mi>p</mi></msup><annotation encoding="application/x-tex">L^{p}</annotation></semantics></math></a></li>
+<li data-level="4.5" data-path="Ch4.S5.html" class="ltx_tocentry ltx_tocentry_section  chapter "><a href="Ch4.S5.html" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">4.5 </span></b>Funções Convexas</a></li>
+<li data-level="" data-path="" class="ltx_tocentry ltx_tocentry_section ltx_ref_self  chapter active"><a href="" title="In Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref">Exercícios para o Capítulo <span class="ltx_text ltx_ref_tag">4</span></a></li>
+</ol>
+</li>
+<li data-level="5" data-path="Ch5.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch5.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">5 </span></b>Construção de Medidas</a></li>
+<li data-level="6" data-path="Ch6.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch6.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">6 </span></b>Medidas Produto e o Teorema de Fubini</a></li>
+<li data-level="7" data-path="Ch7.html" class="ltx_tocentry ltx_tocentry_chapter  chapter "><a href="Ch7.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">7 </span></b>Conjuntos Analíticos e o Teorema de Choquet</a></li>
+<li class="appendix"><span><b>Appendix</b></span></li>
+<li data-level="A" data-path="A1.html" class="ltx_tocentry ltx_tocentry_appendix  chapter "><a href="A1.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref"><b><span class="ltx_tag ltx_tag_ref">A </span></b>Soluções para os Exercícios Propostos</a></li>
+<li data-level="" data-path="bib.html" class="ltx_tocentry ltx_tocentry_bibliography  chapter "><a href="bib.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Referências</a></li>
+<li data-level="" data-path="idx.html" class="ltx_tocentry ltx_tocentry_index  chapter "><a href="idx.html" title="In Notas Para o Curso de Medida e Integração" class="ltx_ref">Índice Remissivo</a></li>
+</ul>
+</nav></div>
+<div class="ltx_page_main book-body fixed">
+<div class="body-inner">
+<div class="book-header fixed" role="navigation"><h1>Exercícios para o Capítulo </h1></div>
+<div class="page-wrapper" tabindex="-1" role="main">
+<div class="ltx_page_content page-inner" id="bml-main-content">
+<section class="ltx_section normal" lang="pt-BR">
+<div class="section level1">
+
+<h1 class="ltx_title ltx_title_section">Exercícios para o Capítulo <a href="Ch4.html" title="Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>
+</h1>
+
+<section id="SSx1" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Espaços Normados e com Produto Interno</h2>
+
+<div id="Ch4.Thmexercise1" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.1</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise1.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise1.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial sobre <math id="Ch4.Thmexercise1.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e <math id="Ch4.Thmexercise1.p1.m3" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> uma semi-norma em <math id="Ch4.Thmexercise1.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>. Mostre que:</p>
+<div id="Ex1" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex1.m1" class="ltx_Math" alttext="\big{|}\|x\|-\|y\|\big{|}\leq\|x-y\|," display="block"><semantics><mrow><mrow><mrow><mo maxsize="120%" minsize="120%">|</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mo>−</mo><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow></mrow><mo maxsize="120%" minsize="120%">|</mo></mrow><mo>≤</mo><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\big{|}\|x\|-\|y\|\big{|}\leq\|x-y\|,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="Ch4.Thmexercise1.p1.m5" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>. Conclua que se <math id="Ch4.Thmexercise1.p1.m6" class="ltx_math_unparsed" alttext="(E,\|\cdot\|)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em" rspace="0.167em">∥</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|)</annotation></semantics></math> é um espaço normado
+então a norma <math id="Ch4.Thmexercise1.p1.m7" class="ltx_math_unparsed" alttext="\|\cdot\|:E\to\mathds{R}" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em" rspace="0.167em">∥</mo><mo rspace="0.278em">:</mo><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\|\cdot\|:E\to\mathds{R}</annotation></semantics></math> é uma aplicação Lipschitziana
+(e portanto uniformemente contínua), se <math id="Ch4.Thmexercise1.p1.m8" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é munido da métrica associada a <math id="Ch4.Thmexercise1.p1.m9" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise2" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.2</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise2.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise2.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em" rspace="0.167em">∥</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|)</annotation></semantics></math> um espaço normado sobre <math id="Ch4.Thmexercise2.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Se <math id="Ch4.Thmexercise2.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é munido da métrica associada a <math id="Ch4.Thmexercise2.p1.m4" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math>,
+mostre que as aplicações:</p>
+<div id="Ex2" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex2.m1" class="ltx_Math" alttext="E\times E\ni(x,y)\longmapsto x+y\in E,\quad\mathds{K}\times E\ni(\lambda,x)%
+\longmapsto\lambda x\in E," display="block"><semantics><mrow><mrow><mrow><mrow><mi>E</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟼</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><mo rspace="1.267em">,</mo><mrow><mrow><mi>𝕂</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟼</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∈</mo><mi>E</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">E\times E\ni(x,y)\longmapsto x+y\in E,\quad\mathds{K}\times E\ni(\lambda,x)%
+\longmapsto\lambda x\in E,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">são contínuas.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise3" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.3</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise3.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise3.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em" rspace="0.167em">∥</mo><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|)</annotation></semantics></math> um espaço normado sobre <math id="Ch4.Thmexercise3.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Mostre que a métrica <math id="Ch4.Thmexercise3.p1.m3" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> associada à norma <math id="Ch4.Thmexercise3.p1.m4" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> satisfaz
+as seguintes condições:</p>
+<ul id="I8" class="ltx_itemize">
+<li id="I8.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I8.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.ix1.p1.m1" class="ltx_Math" alttext="d(x+z,y+z)=d(x,y)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>z</mi></mrow><mo>,</mo><mrow><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(x+z,y+z)=d(x,y)</annotation></semantics></math>, para todos <math id="I8.ix1.p1.m2" class="ltx_Math" alttext="x,y,z\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y,z\in E</annotation></semantics></math> (<span class="ltx_text ltx_font_italic">invariância por translações</span>);</p>
+</div>
+</li>
+<li id="I8.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I8.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I8.ix2.p1.m1" class="ltx_Math" alttext="d(\lambda x,\lambda y)=|\lambda|\,d(x,y)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">|</mo><mi>λ</mi><mo stretchy="false">|</mo></mrow><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(\lambda x,\lambda y)=|\lambda|\,d(x,y)</annotation></semantics></math>, para todo <math id="I8.ix2.p1.m2" class="ltx_Math" alttext="\lambda\in\mathds{K}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>𝕂</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{K}</annotation></semantics></math> e todos <math id="I8.ix2.p1.m3" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Reciprocamente, se <math id="Ch4.Thmexercise3.p1.m5" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> é uma métrica num espaço vetorial <math id="Ch4.Thmexercise3.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> sobre <math id="Ch4.Thmexercise3.p1.m7" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> que satisfaz as condições (a) e (b) acima,
+mostre que existe uma única norma <math id="Ch4.Thmexercise3.p1.m8" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> em <math id="Ch4.Thmexercise3.p1.m9" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> tal que <math id="Ch4.Thmexercise3.p1.m10" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> é a métrica associada a <math id="Ch4.Thmexercise3.p1.m11" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise4" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.4</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise4.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise4.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial <span class="ltx_text ltx_font_italic">real</span>. Para que uma métrica <math id="Ch4.Thmexercise4.p1.m2" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> em <math id="Ch4.Thmexercise4.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> seja a métrica associada
+a uma norma em <math id="Ch4.Thmexercise4.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, mostre que é suficiente que <math id="Ch4.Thmexercise4.p1.m5" class="ltx_Math" alttext="d" display="inline"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math> satisfaça a condição (a) que está no enunciado do Exercício <a href="#Ch4.Thmexercise3" title="Exercício 4.3. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.3</span></a>
+e a condição:</p>
+<ul id="I9" class="ltx_itemize">
+<li id="I9.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b’)</span><div id="I9.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I9.ix1.p1.m1" class="ltx_Math" alttext="d(\lambda x,\lambda y)=\lambda\,d(x,y)" display="inline"><semantics><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo lspace="0.170em">⁢</mo><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">d(\lambda x,\lambda y)=\lambda\,d(x,y)</annotation></semantics></math>, para todo <math id="I9.ix1.p1.m2" class="ltx_Math" alttext="\lambda&gt;0" display="inline"><semantics><mrow><mi>λ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda&gt;0</annotation></semantics></math> e todos <math id="I9.ix1.p1.m3" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> (<span class="ltx_text ltx_font_italic">homogeneidade positiva</span>).</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexercise5" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.5</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise5.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise5.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial e <math id="Ch4.Thmexercise5.p1.m2" class="ltx_Math" alttext="S\subset E" display="inline"><semantics><mrow><mi>S</mi><mo>⊂</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">S\subset E</annotation></semantics></math> um subespaço vetorial de <math id="Ch4.Thmexercise5.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>. Mostre que:</p>
+<ul id="I10" class="ltx_itemize">
+<li id="I10.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i1.p1" class="ltx_para">​<p class="ltx_p">a relação binária <math id="I10.i1.p1.m1" class="ltx_Math" alttext="\sim" display="inline"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> em <math id="I10.i1.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> definida por:</p>
+<div id="Ex3" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex3.m1" class="ltx_Math" alttext="x\sim y\Longleftrightarrow x-y\in S,\quad x,y\in E," display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>∼</mo><mi>y</mi></mrow><mo stretchy="false">⟺</mo><mrow><mrow><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo>∈</mo><mrow><mi>S</mi><mo rspace="1.267em">,</mo><mi>x</mi></mrow></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><mi>E</mi></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">x\sim y\Longleftrightarrow x-y\in S,\quad x,y\in E,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é uma relação de equivalência em <math id="I10.i1.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I10.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i2.p1" class="ltx_para">​<p class="ltx_p">para todo <math id="I10.i2.p1.m1" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>, a classe de equivalência de <math id="I10.i2.p1.m2" class="ltx_Math" alttext="x" display="inline"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math> correspondente a <math id="I10.i2.p1.m3" class="ltx_Math" alttext="\sim" display="inline"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> é dada por:</p>
+<div id="Ex4" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex4.m1" class="ltx_Math" alttext="x+S=\big{\{}x+v:v\in S\big{\}};" display="block"><semantics><mrow><mrow><mrow><mi>x</mi><mo>+</mo><mi>S</mi></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>+</mo><mi>v</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>v</mi><mo>∈</mo><mi>S</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">x+S=\big{\{}x+v:v\in S\big{\}};</annotation></semantics></math></span>
+</div>
+</div>
+</li>
+<li id="I10.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I10.i3.p1" class="ltx_para">​<p class="ltx_p">existe uma única estrutura de espaço vetorial no conjunto quociente <math id="I10.i3.p1.m1" class="ltx_Math" alttext="E/S=\big{\{}x+S:x\in E\big{\}}" display="inline"><semantics><mrow><mrow><mi>E</mi><mo>/</mo><mi>S</mi></mrow><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>+</mo><mi>S</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">E/S=\big{\{}x+S:x\in E\big{\}}</annotation></semantics></math>
+tal que a aplicação quociente:</p>
+<div id="Ex5" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex5.m1" class="ltx_Math" alttext="q:E\ni x\longmapsto x+S\in E/S" display="block"><semantics><mrow><mi>q</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo>∋</mo><mi>x</mi><mo stretchy="false">⟼</mo><mrow><mi>x</mi><mo>+</mo><mi>S</mi></mrow><mo>∈</mo><mrow><mi>E</mi><mo>/</mo><mi>S</mi></mrow></mrow></mrow><annotation encoding="application/x-tex">q:E\ni x\longmapsto x+S\in E/S</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">é linear.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">O espaço vetorial <math id="Ch4.Thmexercise5.p1.m4" class="ltx_Math" alttext="E/S" display="inline"><semantics><mrow><mi>E</mi><mo>/</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">E/S</annotation></semantics></math> é chamado o
+<span class="ltx_text ltx_font_italic">espaço vetorial quociente</span>
+de <math id="Ch4.Thmexercise5.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> pelo subespaço <math id="Ch4.Thmexercise5.p1.m7" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise6" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.6</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise6.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise6.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial sobre <math id="Ch4.Thmexercise6.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e <math id="Ch4.Thmexercise6.p1.m3" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> uma semi-norma em <math id="Ch4.Thmexercise6.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>. Mostre que:</p>
+<ul id="I11" class="ltx_itemize">
+<li id="I11.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I11.i1.p1" class="ltx_para">​<p class="ltx_p">o conjunto <math id="I11.i1.p1.m1" class="ltx_Math" alttext="N=\big{\{}x\in E:\|x\|=0\big{\}}" display="inline"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mo>=</mo><mn>0</mn></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow></mrow><annotation encoding="application/x-tex">N=\big{\{}x\in E:\|x\|=0\big{\}}</annotation></semantics></math> é um subespaço de <math id="I11.i1.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I11.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I11.i2.p1" class="ltx_para">​<p class="ltx_p">existe uma única norma <math id="I11.i2.p1.m1" class="ltx_math_unparsed" alttext="\|\cdot\|^{\prime}" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msup><mo lspace="0em">∥</mo><mo>′</mo></msup></mrow><annotation encoding="application/x-tex">\|\cdot\|^{\prime}</annotation></semantics></math> no espaço quociente <math id="I11.i2.p1.m2" class="ltx_Math" alttext="E/N" display="inline"><semantics><mrow><mi>E</mi><mo>/</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">E/N</annotation></semantics></math> tal que
+<math id="I11.i2.p1.m3" class="ltx_Math" alttext="\|x+N\|^{\prime}=\|x\|" display="inline"><semantics><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>N</mi></mrow><mo stretchy="false">‖</mo></mrow><mo>′</mo></msup><mo>=</mo><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow></mrow><annotation encoding="application/x-tex">\|x+N\|^{\prime}=\|x\|</annotation></semantics></math>, para todo <math id="I11.i2.p1.m4" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexdefin1" class="ltx_theorem ltx_theorem_exdefin">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_bold">Definição 4.1</span></span><span class="ltx_text ltx_font_bold">.</span>
+</h6>
+<div id="Ch4.Thmexdefin1.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Ch4.Thmexdefin1.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é um espaço vetorial complexo então o espaço vetorial real <math id="Ch4.Thmexdefin1.p1.m2" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math> obtido de <math id="Ch4.Thmexdefin1.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> pela restrição
+da multiplicação por escalares <math id="Ch4.Thmexdefin1.p1.m5" class="ltx_Math" alttext="\mathds{C}\times E\ni(\lambda,x)\mapsto\lambda x\in E" display="inline"><semantics><mrow><mrow><mi>ℂ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">↦</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\mathds{C}\times E\ni(\lambda,x)\mapsto\lambda x\in E</annotation></semantics></math> a <math id="Ch4.Thmexdefin1.p1.m6" class="ltx_Math" alttext="\mathds{R}\times E" display="inline"><semantics><mrow><mi>ℝ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">\mathds{R}\times E</annotation></semantics></math> é chamado a
+<span class="ltx_text ltx_font_italic">realificação</span> de <math id="Ch4.Thmexdefin1.p1.m7" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise7" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.7</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise7.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Ch4.Thmexercise7.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é um espaço vetorial complexo e <math id="Ch4.Thmexercise7.p1.m2" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> é uma norma em <math id="Ch4.Thmexercise7.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, mostre que <math id="Ch4.Thmexercise7.p1.m4" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> também
+é uma norma na realificação <math id="Ch4.Thmexercise7.p1.m5" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math> de <math id="Ch4.Thmexercise7.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>. Dê exemplo de uma norma em <math id="Ch4.Thmexercise7.p1.m7" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math> que não é uma norma em <math id="Ch4.Thmexercise7.p1.m8" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise8" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.8</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise8.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Ch4.Thmexercise8.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é um espaço vetorial complexo e <math id="Ch4.Thmexercise8.p1.m2" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> é um produto interno em <math id="Ch4.Thmexercise8.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, mostre que:</p>
+<div id="Ex6" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex6.m1" class="ltx_Math" alttext="\langle x,y\rangle_{\mathds{R}}=\Re\langle x,y\rangle,\quad x,y\in E," display="block"><semantics><mrow><mrow><mrow><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><mo>=</mo><mrow><mrow><mi mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow><mo rspace="1.267em">,</mo><mi>x</mi></mrow></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><mi>E</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\langle x,y\rangle_{\mathds{R}}=\Re\langle x,y\rangle,\quad x,y\in E,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">define um produto interno <math id="Ch4.Thmexercise8.p1.m4" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle_{\mathds{R}}" display="inline"><semantics><msub><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle_{\mathds{R}}</annotation></semantics></math> em <math id="Ch4.Thmexercise8.p1.m5" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math>. Mostre também que:</p>
+<ul id="I12" class="ltx_itemize">
+<li id="I12.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I12.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I12.ix1.p1.m1" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> e <math id="I12.ix1.p1.m2" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle_{\mathds{R}}" display="inline"><semantics><msub><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle_{\mathds{R}}</annotation></semantics></math> determinam a mesma norma
+(conclua que <math id="I12.ix1.p1.m3" class="ltx_Math" alttext="(E,\langle\cdot,\cdot\rangle)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\langle\cdot,\cdot\rangle)</annotation></semantics></math> é um espaço de Hilbert complexo se e somente se
+<math id="I12.ix1.p1.m4" class="ltx_Math" alttext="(E|_{\mathds{R}},\langle\cdot,\cdot\rangle_{\mathds{R}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><mo>,</mo><msub><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E|_{\mathds{R}},\langle\cdot,\cdot\rangle_{\mathds{R}})</annotation></semantics></math> é um espaço de Hilbert real);</p>
+</div>
+</li>
+<li id="I12.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I12.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I12.ix2.p1.m1" class="ltx_Math" alttext="\langle ix,iy\rangle_{\mathds{R}}=\langle x,y\rangle_{\mathds{R}}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><mo>=</mo><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub></mrow><annotation encoding="application/x-tex">\langle ix,iy\rangle_{\mathds{R}}=\langle x,y\rangle_{\mathds{R}}</annotation></semantics></math> e <math id="I12.ix2.p1.m2" class="ltx_Math" alttext="\langle ix,y\rangle_{\mathds{R}}=-\langle x,iy\rangle_{\mathds{R}}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><mo>=</mo><mrow><mo>−</mo><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub></mrow></mrow><annotation encoding="application/x-tex">\langle ix,y\rangle_{\mathds{R}}=-\langle x,iy\rangle_{\mathds{R}}</annotation></semantics></math>, para todos <math id="I12.ix2.p1.m3" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I12.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I12.ix3.p1" class="ltx_para">​<p class="ltx_p"><math id="I12.ix3.p1.m1" class="ltx_Math" alttext="\langle x,y\rangle=\langle x,y\rangle_{\mathds{R}}-i\langle ix,y\rangle_{%
+\mathds{R}}" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub><mo>−</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mi>ℝ</mi></msub></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle x,y\rangle=\langle x,y\rangle_{\mathds{R}}-i\langle ix,y\rangle_{%
+\mathds{R}}</annotation></semantics></math>, para todos <math id="I12.ix3.p1.m2" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexercise9" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.9</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise9.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise9.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial complexo e <math id="Ch4.Thmexercise9.p1.m2" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle_{0}" display="inline"><semantics><msub><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle_{0}</annotation></semantics></math> um produto interno em <math id="Ch4.Thmexercise9.p1.m3" class="ltx_Math" alttext="E|_{\mathds{R}}" display="inline"><semantics><msub><mrow><mi>E</mi><mo stretchy="false">|</mo></mrow><mi>ℝ</mi></msub><annotation encoding="application/x-tex">E|_{\mathds{R}}</annotation></semantics></math>.
+Mostre que as duas seguintes condições são equivalentes:</p>
+<ul id="I13" class="ltx_itemize">
+<li id="I13.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(i)</span><div id="I13.ix1.p1" class="ltx_para">​<p class="ltx_p"><math id="I13.ix1.p1.m1" class="ltx_Math" alttext="\langle ix,iy\rangle_{0}=\langle x,y\rangle_{0}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub><mo>=</mo><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\langle ix,iy\rangle_{0}=\langle x,y\rangle_{0}</annotation></semantics></math>, para todos <math id="I13.ix1.p1.m2" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I13.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(ii)</span><div id="I13.ix2.p1" class="ltx_para">​<p class="ltx_p"><math id="I13.ix2.p1.m1" class="ltx_Math" alttext="\langle ix,y\rangle_{0}=-\langle x,iy\rangle_{0}" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub><mo>=</mo><mrow><mo>−</mo><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mrow><mi>i</mi><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub></mrow></mrow><annotation encoding="application/x-tex">\langle ix,y\rangle_{0}=-\langle x,iy\rangle_{0}</annotation></semantics></math>, para todos <math id="I13.ix2.p1.m2" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Assumindo que uma das (e portanto ambas as) condições acima são satisfeitas, mostre que:</p>
+<div id="Ex7" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex7.m1" class="ltx_Math" alttext="\langle x,y\rangle=\langle x,y\rangle_{0}-i\langle ix,y\rangle_{0},\quad x,y%
+\in E," display="block"><semantics><mrow><mrow><mrow><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mrow><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub><mo>−</mo><mrow><mi>i</mi><mo>⁢</mo><msub><mrow><mo stretchy="false">⟨</mo><mrow><mi>i</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub></mrow></mrow><mo rspace="1.267em">,</mo><mi>x</mi></mrow></mrow><mo>,</mo><mrow><mi>y</mi><mo>∈</mo><mi>E</mi></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\langle x,y\rangle=\langle x,y\rangle_{0}-i\langle ix,y\rangle_{0},\quad x,y%
+\in E,</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">define um produto interno <math id="Ch4.Thmexercise9.p1.m4" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> em <math id="Ch4.Thmexercise9.p1.m5" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> tal que
+<math id="Ch4.Thmexercise9.p1.m6" class="ltx_Math" alttext="\langle x,y\rangle_{0}=\Re\langle x,y\rangle" display="inline"><semantics><mrow><msub><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mn>0</mn></msub><mo>=</mo><mrow><mi mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle x,y\rangle_{0}=\Re\langle x,y\rangle</annotation></semantics></math>, para todos <math id="Ch4.Thmexercise9.p1.m7" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise10" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.10</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise10.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise10.p1.m1" class="ltx_Math" alttext="X" display="inline"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math> um conjunto com mais de um ponto. Mostre que a norma do supremo (Exemplo <a href="Ch4.S1.html#Thmteo3" title="4.1.3 Exemplo. ‣ 4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1.3</span></a>)
+definida no espaço vetorial <math id="Ch4.Thmexercise10.p1.m2" class="ltx_Math" alttext="\mathrm{Bd}(X,\mathds{K})" display="inline"><semantics><mrow><mi>Bd</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>𝕂</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Bd}(X,\mathds{K})</annotation></semantics></math>
+das funções limitadas <math id="Ch4.Thmexercise10.p1.m3" class="ltx_Math" alttext="f:X\to\mathds{K}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>X</mi><mo stretchy="false">→</mo><mi>𝕂</mi></mrow></mrow><annotation encoding="application/x-tex">f:X\to\mathds{K}</annotation></semantics></math> não satisfaz a identidade do paralelogramo (veja (<a href="Ch4.S1.html#E5" title="In 4.1.8 Lema (identidade do paralelogramo). ‣ 4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1.5</span></a>)).
+Conclua que essa norma não está associada a nenhum produto interno.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise11" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.11</span></span><span class="ltx_text ltx_font_italic"> </span>(fórmula de polarização)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise11.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise11.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial sobre <math id="Ch4.Thmexercise11.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e <math id="Ch4.Thmexercise11.p1.m3" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> um produto interno em <math id="Ch4.Thmexercise11.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>. Se <math id="Ch4.Thmexercise11.p1.m5" class="ltx_Math" alttext="\mathds{K}=\mathds{R}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{R}</annotation></semantics></math>,
+mostre que:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S2.EGx23" class="ltx_equationgroup ltx_eqn_gather ltx_eqn_table">
+
+<tbody id="E21"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E21.m1" class="ltx_Math" alttext="\displaystyle\langle x,y\rangle=\frac{1}{2}\big{(}\|x+y\|^{2}-\|x\|^{2}-\|y\|^%
+{2}\big{)}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\langle x,y\rangle=\frac{1}{2}\big{(}\|x+y\|^{2}-\|x\|^{2}-\|y\|^%
+{2}\big{)},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5.21)</span></td>
+</tr></tbody>
+<tbody id="E22"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="E22.m1" class="ltx_Math" alttext="\displaystyle\langle x,y\rangle=\frac{1}{4}\big{(}\|x+y\|^{2}-\|x-y\|^{2}\big{%
+)}," display="block"><semantics><mrow><mrow><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\langle x,y\rangle=\frac{1}{4}\big{(}\|x+y\|^{2}-\|x-y\|^{2}\big{%
+)},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5.22)</span></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">para todos <math id="Ch4.Thmexercise11.p1.m6" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>. Para <math id="Ch4.Thmexercise11.p1.m7" class="ltx_Math" alttext="\mathds{K}=\mathds{C}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{C}</annotation></semantics></math>, mostre que:</p>
+<div class="bml-overflow-wrapper">
+<table id="A1.S2.EGx24" class="ltx_equationgroup ltx_eqn_gather ltx_eqn_table">
+
+<tbody id="Ex8"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex8.m1" class="ltx_Math" alttext="\displaystyle\Re\langle x,y\rangle=\frac{1}{2}\big{(}\|x+y\|^{2}-\|x\|^{2}-\|y%
+\|^{2}\big{)}," display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Re\langle x,y\rangle=\frac{1}{2}\big{(}\|x+y\|^{2}-\|x\|^{2}-\|y%
+\|^{2}\big{)},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+<tbody id="Ex9"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Ex9.m1" class="ltx_Math" alttext="\displaystyle\Re\langle x,y\rangle=\frac{1}{4}\big{(}\|x+y\|^{2}-\|x-y\|^{2}%
+\big{)}," display="block"><semantics><mrow><mrow><mrow><mi mathvariant="normal">ℜ</mi><mo>⁡</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow><mo>=</mo><mrow><mfrac><mn>1</mn><mn>4</mn></mfrac><mo>⁢</mo><mrow><mo maxsize="120%" minsize="120%">(</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>−</mo><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow><mo maxsize="120%" minsize="120%">)</mo></mrow></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\displaystyle\Re\langle x,y\rangle=\frac{1}{4}\big{(}\|x+y\|^{2}-\|x-y\|^{2}%
+\big{)},</annotation></semantics></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr></tbody>
+</table>
+</div>
+<p class="ltx_p">para todos <math id="Ch4.Thmexercise11.p1.m8" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>. Use a fórmula que está no item (c) do Exercício <a href="#Ch4.Thmexercise8" title="Exercício 4.8. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.8</span></a> para
+concluir que, também no caso <math id="Ch4.Thmexercise11.p1.m9" class="ltx_Math" alttext="\mathds{K}=\mathds{C}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{C}</annotation></semantics></math>, podemos escrever uma fórmula para <math id="Ch4.Thmexercise11.p1.m10" class="ltx_Math" alttext="\langle x,y\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle x,y\rangle</annotation></semantics></math> usando
+apenas a norma <math id="Ch4.Thmexercise11.p1.m11" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise12" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.12</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise12.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise12.p1.m1" class="ltx_Math" alttext="(E,\langle\cdot,\cdot\rangle)" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\langle\cdot,\cdot\rangle)</annotation></semantics></math> um espaço pré-Hilbertiano sobre <math id="Ch4.Thmexercise12.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>. Se <math id="Ch4.Thmexercise12.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> é munido da métrica associada
+à norma associada a <math id="Ch4.Thmexercise12.p1.m4" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math>, mostre que o produto interno <math id="Ch4.Thmexercise12.p1.m5" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle:E\times E\to\mathds{K}" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0.278em" stretchy="false">⟩</mo></mrow><mo rspace="0.278em">:</mo><mrow><mrow><mi>E</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo stretchy="false">→</mo><mi>𝕂</mi></mrow></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle:E\times E\to\mathds{K}</annotation></semantics></math>
+é uma aplicação contínua.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise13" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.13</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise13.p1" class="ltx_para">
+<p class="ltx_p">Este exercício contém um resultado preparatório que será usado na resolução do Exercício <a href="#Ch4.Thmexercise14" title="Exercício 4.14. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.14</span></a>.
+Sejam <math id="Ch4.Thmexercise13.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, <math id="Ch4.Thmexercise13.p1.m2" class="ltx_Math" alttext="E^{\prime}" display="inline"><semantics><msup><mi>E</mi><mo>′</mo></msup><annotation encoding="application/x-tex">E^{\prime}</annotation></semantics></math> espaços vetoriais sobre <math id="Ch4.Thmexercise13.p1.m3" class="ltx_Math" alttext="\mathds{Q}" display="inline"><semantics><mi>ℚ</mi><annotation encoding="application/x-tex">\mathds{Q}</annotation></semantics></math> e seja <math id="Ch4.Thmexercise13.p1.m4" class="ltx_Math" alttext="T:E\to E^{\prime}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><msup><mi>E</mi><mo>′</mo></msup></mrow></mrow><annotation encoding="application/x-tex">T:E\to E^{\prime}</annotation></semantics></math> um homomorfismo de grupos aditivos, i.e.,
+<math id="Ch4.Thmexercise13.p1.m5" class="ltx_Math" alttext="T(x+y)=T(x)+T(y)" display="inline"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><annotation encoding="application/x-tex">T(x+y)=T(x)+T(y)</annotation></semantics></math>, para todos <math id="Ch4.Thmexercise13.p1.m6" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math>. Mostre que <math id="Ch4.Thmexercise13.p1.m7" class="ltx_Math" alttext="T" display="inline"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math> é linear, i.e., mostre que <math id="Ch4.Thmexercise13.p1.m8" class="ltx_Math" alttext="T(\lambda x)=\lambda T(x)" display="inline"><semantics><mrow><mrow><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">T(\lambda x)=\lambda T(x)</annotation></semantics></math>,
+para todos <math id="Ch4.Thmexercise13.p1.m9" class="ltx_Math" alttext="x\in E" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x\in E</annotation></semantics></math>, <math id="Ch4.Thmexercise13.p1.m10" class="ltx_Math" alttext="\lambda\in\mathds{Q}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{Q}</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise14" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.14</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise14.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise14.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial sobre <math id="Ch4.Thmexercise14.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e <math id="Ch4.Thmexercise14.p1.m3" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> uma norma em <math id="Ch4.Thmexercise14.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> que satisfaz a identidade do paralelogramo
+(<a href="Ch4.S1.html#E5" title="In 4.1.8 Lema (identidade do paralelogramo). ‣ 4.1. Espaços Normados e com Produto Interno ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1.5</span></a>). O objetivo deste exercício é mostrar que <math id="Ch4.Thmexercise14.p1.m5" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> está associada a um único
+produto interno no espaço vetorial <math id="Ch4.Thmexercise14.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+<ul id="I14" class="ltx_itemize">
+<li id="I14.ix1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(a)</span><div id="I14.ix1.p1" class="ltx_para">​<p class="ltx_p">Mostre que:</p>
+<div id="Ex10" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex10.m1" class="ltx_Math" alttext="\|x+y\|^{2}+\|x+z\|^{2}+\|y+z\|^{2}=\|x+y+z\|^{2}+\|x\|^{2}+\|y\|^{2}+\|z\|^{2}," display="block"><semantics><mrow><mrow><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow><mo>=</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>z</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mi>z</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">\|x+y\|^{2}+\|x+z\|^{2}+\|y+z\|^{2}=\|x+y+z\|^{2}+\|x\|^{2}+\|y\|^{2}+\|z\|^{2},</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">para todos <math id="I14.ix1.p1.m1" class="ltx_Math" alttext="x,y,z\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y,z\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I14.ix2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(b)</span><div id="I14.ix2.p1" class="ltx_para">​<p class="ltx_p">Defina <math id="I14.ix2.p1.m1" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle:E\times E\to\mathds{R}" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0.278em" stretchy="false">⟩</mo></mrow><mo rspace="0.278em">:</mo><mrow><mrow><mi>E</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle:E\times E\to\mathds{R}</annotation></semantics></math> através da fórmula (<a href="#E21" title="In Exercício 4.11 (fórmula de polarização). ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.5.21</span></a>)
+e use o resultado do item (a) para concluir que <math id="I14.ix2.p1.m2" class="ltx_Math" alttext="\langle x+y,z\rangle=\langle x,z\rangle+\langle y,z\rangle" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo>,</mo><mi>z</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>z</mi><mo stretchy="false">⟩</mo></mrow><mo>+</mo><mrow><mo stretchy="false">⟨</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">⟩</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle x+y,z\rangle=\langle x,z\rangle+\langle y,z\rangle</annotation></semantics></math>,
+para todos <math id="I14.ix2.p1.m3" class="ltx_Math" alttext="x,y,z\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y,z\in E</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I14.ix3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(c)</span><div id="I14.ix3.p1" class="ltx_para">​<p class="ltx_p">Use o resultado do item (b) e o resultado do Exercício <a href="#Ch4.Thmexercise13" title="Exercício 4.13. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.13</span></a> para concluir que
+<math id="I14.ix3.p1.m1" class="ltx_Math" alttext="\langle\lambda x,y\rangle=\lambda\langle x,y\rangle" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle\lambda x,y\rangle=\lambda\langle x,y\rangle</annotation></semantics></math>, para todos <math id="I14.ix3.p1.m2" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> e todo <math id="I14.ix3.p1.m3" class="ltx_Math" alttext="\lambda\in\mathds{Q}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℚ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{Q}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I14.ix4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(d)</span><div id="I14.ix4.p1" class="ltx_para">​<p class="ltx_p">Use o resultado do item (d) e o resultado dos Exercícios <a href="#Ch4.Thmexercise1" title="Exercício 4.1. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.1</span></a> e
+<a href="#Ch4.Thmexercise2" title="Exercício 4.2. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2</span></a> para concluir que
+<math id="I14.ix4.p1.m1" class="ltx_Math" alttext="\langle\lambda x,y\rangle=\lambda\langle x,y\rangle" display="inline"><semantics><mrow><mrow><mo stretchy="false">⟨</mo><mrow><mi>λ</mi><mo>⁢</mo><mi>x</mi></mrow><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>=</mo><mrow><mi>λ</mi><mo>⁢</mo><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow></mrow></mrow><annotation encoding="application/x-tex">\langle\lambda x,y\rangle=\lambda\langle x,y\rangle</annotation></semantics></math>, para todos <math id="I14.ix4.p1.m2" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> e todo <math id="I14.ix4.p1.m3" class="ltx_Math" alttext="\lambda\in\mathds{R}" display="inline"><semantics><mrow><mi>λ</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\lambda\in\mathds{R}</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I14.ix5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(e)</span><div id="I14.ix5.p1" class="ltx_para">​<p class="ltx_p">Se <math id="I14.ix5.p1.m1" class="ltx_Math" alttext="\mathds{K}=\mathds{R}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{R}</annotation></semantics></math>, mostre que (<a href="#E21" title="In Exercício 4.11 (fórmula de polarização). ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.5.21</span></a>) define um produto interno <math id="I14.ix5.p1.m2" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math>
+em <math id="I14.ix5.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> e que <math id="I14.ix5.p1.m4" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> é a norma associada a <math id="I14.ix5.p1.m5" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math>.</p>
+</div>
+</li>
+<li id="I14.ix6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">(f)</span><div id="I14.ix6.p1" class="ltx_para">​<p class="ltx_p">Se <math id="I14.ix6.p1.m1" class="ltx_Math" alttext="\mathds{K}=\mathds{C}" display="inline"><semantics><mrow><mi>𝕂</mi><mo>=</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">\mathds{K}=\mathds{C}</annotation></semantics></math>, use o resultado do Exercício <a href="#Ch4.Thmexercise9" title="Exercício 4.9. ‣ Espaços Normados e com Produto Interno ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.9</span></a> para concluir que existe
+um único produto interno em <math id="I14.ix6.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> ao qual a norma <math id="I14.ix6.p1.m3" class="ltx_math_unparsed" alttext="\|\cdot\|" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em">∥</mo></mrow><annotation encoding="application/x-tex">\|\cdot\|</annotation></semantics></math> está associada.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexercise15" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.15</span></span><span class="ltx_text ltx_font_italic"> </span>(teorema de Pitágoras)<span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise15.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise15.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial sobre <math id="Ch4.Thmexercise15.p1.m2" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math> e <math id="Ch4.Thmexercise15.p1.m3" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> um produto interno em <math id="Ch4.Thmexercise15.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Se <math id="Ch4.Thmexercise15.p1.m5" class="ltx_Math" alttext="x,y\in E" display="inline"><semantics><mrow><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><mo>∈</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">x,y\in E</annotation></semantics></math> são ortogonais, mostre que:</p>
+<div id="Ex11" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex11.m1" class="ltx_Math" alttext="\|x+y\|^{2}=\|x\|^{2}+\|y\|^{2}." display="block"><semantics><mrow><mrow><msup><mrow><mo stretchy="false">‖</mo><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="false">‖</mo><mi>y</mi><mo stretchy="false">‖</mo></mrow><mn>2</mn></msup></mrow></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\|x+y\|^{2}=\|x\|^{2}+\|y\|^{2}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx2" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Aplicações Lineares Contínuas</h2>
+
+<div id="Ch4.Thmexercise16" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.16</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise16.p1" class="ltx_para">
+<p class="ltx_p">Mostre que:</p>
+<ul id="I15" class="ltx_itemize">
+<li id="I15.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I15.i1.p1" class="ltx_para">​<p class="ltx_p">um espaço vetorial normado não nulo nunca é um espaço métrico limitado;</p>
+</div>
+</li>
+<li id="I15.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I15.i2.p1" class="ltx_para">​<p class="ltx_p">uma aplicação linear não nula entre espaços normados nunca possui imagem limitada.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexercise17" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.17</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise17.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise17.p1.m1" class="ltx_math_unparsed" alttext="(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(E,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle E$}})</annotation></semantics></math>, <math id="Ch4.Thmexercise17.p1.m2" class="ltx_math_unparsed" alttext="(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})" display="inline"><semantics><mrow><mo stretchy="false">(</mo><mi>F</mi><mo>,</mo><mo lspace="0em" rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">(F,\|\cdot\|_{\lower 2.0pt\hbox{$\scriptstyle F$}})</annotation></semantics></math> espaços normados sobre <math id="Ch4.Thmexercise17.p1.m3" class="ltx_Math" alttext="\mathds{K}" display="inline"><semantics><mi>𝕂</mi><annotation encoding="application/x-tex">\mathds{K}</annotation></semantics></math>,
+com <math id="Ch4.Thmexercise17.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> não nulo. Se <math id="Ch4.Thmexercise17.p1.m5" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é uma aplicação linear limitada, mostre que:</p>
+<div id="Ex12" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex12.m1" class="ltx_math_unparsed" alttext="\|T\|=\sup\big{\{}\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}:\text{$x\in E%
+$ e $\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1$}\big{\}}." display="block"><semantics><mrow><mo rspace="0.167em">∥</mo><mi>T</mi><mo lspace="0em" rspace="0.0835em">∥</mo><mo lspace="0.0835em" rspace="0.1389em">=</mo><mo lspace="0.1389em" movablelimits="false" rspace="0em">sup</mo><mrow><mo maxsize="120%" minsize="120%">{</mo><mo lspace="0em" rspace="0.167em">∥</mo><mi>T</mi><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><msub><mo lspace="0em" rspace="0.167em">∥</mo><mpadded voffset="-2.0pt"><mi mathsize="70%">F</mi></mpadded></msub><mo rspace="0.278em">:</mo><mrow><mrow><mi>x</mi><mo>∈</mo><mi>E</mi></mrow><mtext> e </mtext><mrow><msub><mrow><mo stretchy="false">‖</mo><mi>x</mi><mo stretchy="false">‖</mo></mrow><mpadded voffset="-2.0pt"><mi mathsize="70%">E</mi></mpadded></msub><mo>=</mo><mn>1</mn></mrow></mrow><mo maxsize="120%" minsize="120%">}</mo></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\|T\|=\sup\big{\{}\|T(x)\|_{\lower 2.0pt\hbox{$\scriptstyle F$}}:\text{$x\in E%
+$ e $\|x\|_{\lower 2.0pt\hbox{$\scriptstyle E$}}=1$}\big{\}}.</annotation></semantics></math></span>
+</div>
+</div>
+</div>
+<div id="Ch4.Thmexercise18" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.18</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise18.p1" class="ltx_para">
+<p class="ltx_p">Mostre que (<a href="Ch4.S2.html#E1" title="In 4.2.3 Definição. ‣ 4.2. Aplicações Lineares Contínuas ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.2.1</span></a>) define uma norma no espaço vetorial <math id="Ch4.Thmexercise18.p1.m1" class="ltx_Math" alttext="\mathrm{Lin}(E,F)" display="inline"><semantics><mrow><mi>Lin</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo>,</mo><mi>F</mi><mo stretchy="false">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{Lin}(E,F)</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise19" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.19</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise19.p1" class="ltx_para">
+<p class="ltx_p">Seja <math id="Ch4.Thmexercise19.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial complexo. Denotemos por <math id="Ch4.Thmexercise19.p1.m2" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> o conjunto <math id="Ch4.Thmexercise19.p1.m3" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+munido da mesma soma de <math id="Ch4.Thmexercise19.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> e da operação de multiplicação por escalares complexos
+definida por:</p>
+<div id="Ex13" class="ltx_equation ltx_eqn_div">
+<span><math id="Ex13.m1" class="ltx_Math" alttext="\mathds{C}\times E\ni(\lambda,x)\longmapsto\bar{\lambda}x\in E." display="block"><semantics><mrow><mrow><mrow><mi>ℂ</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>λ</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟼</mo><mrow><mover accent="true"><mi>λ</mi><mo>¯</mo></mover><mo>⁢</mo><mi>x</mi></mrow><mo>∈</mo><mi>E</mi></mrow><mo lspace="0em">.</mo></mrow><annotation encoding="application/x-tex">\mathds{C}\times E\ni(\lambda,x)\longmapsto\bar{\lambda}x\in E.</annotation></semantics></math></span>
+</div>
+<p class="ltx_p">Mostre que:</p>
+<ul id="I16" class="ltx_itemize">
+<li id="I16.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I16.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I16.i1.p1.m1" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> também é um espaço vetorial complexo;</p>
+</div>
+</li>
+<li id="I16.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I16.i2.p1" class="ltx_para">​<p class="ltx_p">uma aplicação <math id="I16.i2.p1.m1" class="ltx_math_unparsed" alttext="\|\cdot\|:E\to\mathds{R}" display="inline"><semantics><mrow><mo rspace="0em">∥</mo><mo lspace="0em" rspace="0em">⋅</mo><mo lspace="0em" rspace="0.167em">∥</mo><mo rspace="0.278em">:</mo><mi>E</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">\|\cdot\|:E\to\mathds{R}</annotation></semantics></math> é uma norma em <math id="I16.i2.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> se e somente se ela é uma norma
+em <math id="I16.i2.p1.m3" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Dizemos que <math id="Ch4.Thmexercise19.p1.m5" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> é o espaço vetorial
+<span class="ltx_text ltx_font_italic">conjugado</span> a <math id="Ch4.Thmexercise19.p1.m6" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise20" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.20</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise20.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise20.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial complexo e <math id="Ch4.Thmexercise20.p1.m2" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> seu espaço vetorial conjugado. Mostre que:</p>
+<ul id="I17" class="ltx_itemize">
+<li id="I17.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I17.i1.p1" class="ltx_para">​<p class="ltx_p">o espaço vetorial conjugado de <math id="I17.i1.p1.m1" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> é <math id="I17.i1.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>;</p>
+</div>
+</li>
+<li id="I17.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I17.i2.p1" class="ltx_para">​<p class="ltx_p">se <math id="I17.i2.p1.m1" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math> é um subespaço vetorial de <math id="I17.i2.p1.m2" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> então o espaço vetorial conjugado a <math id="I17.i2.p1.m3" class="ltx_Math" alttext="S" display="inline"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+é um subespaço vetorial de <math id="I17.i2.p1.m4" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math>.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div id="Ch4.Thmexercise21" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.21</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise21.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise21.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math> um espaço vetorial complexo e <math id="Ch4.Thmexercise21.p1.m2" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math> seu espaço vetorial conjugado.
+Se <math id="Ch4.Thmexercise21.p1.m3" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math> é um produto interno em <math id="Ch4.Thmexercise21.p1.m4" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, mostre que:</p>
+<div id="E23" class="ltx_equation ltx_eqn_div">
+<span><math id="E23.m1" class="ltx_Math" alttext="E\times E\ni(x,y)\longmapsto\overline{\langle x,y\rangle}\in\mathds{C}" display="block"><semantics><mrow><mrow><mi>E</mi><mo lspace="0.222em" rspace="0.222em">×</mo><mi>E</mi></mrow><mo>∋</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">⟼</mo><mover accent="true"><mrow><mo stretchy="false">⟨</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">⟩</mo></mrow><mo>¯</mo></mover><mo>∈</mo><mi>ℂ</mi></mrow><annotation encoding="application/x-tex">E\times E\ni(x,y)\longmapsto\overline{\langle x,y\rangle}\in\mathds{C}</annotation></semantics></math></span>
+                <span class="ltx_tag ltx_tag_equation ltx_align_right">(4.5.23)</span>
+                
+              
+</div>
+<p class="ltx_p">é um produto interno em <math id="Ch4.Thmexercise21.p1.m5" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math>. Mostre que <math id="Ch4.Thmexercise21.p1.m6" class="ltx_Math" alttext="\langle\cdot,\cdot\rangle" display="inline"><semantics><mrow><mo stretchy="false">⟨</mo><mo lspace="0em" rspace="0em">⋅</mo><mo rspace="0em">,</mo><mo lspace="0em" rspace="0em">⋅</mo><mo stretchy="false">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot,\cdot\rangle</annotation></semantics></math>
+e (<a href="#E23" title="In Exercício 4.21. ‣ Aplicações Lineares Contínuas ‣ Exercícios para o Capítulo 4 ‣ Capítulo 4 Alguns Tópicos de Análise Funcional ‣ Notas Para o Curso de Medida e Integração" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4.5.23</span></a>) definem a mesma norma em <math id="Ch4.Thmexercise21.p1.m7" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.</p>
+</div>
+</div>
+<div id="Ch4.Thmexercise22" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.22</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise22.p1" class="ltx_para">
+<p class="ltx_p">Sejam <math id="Ch4.Thmexercise22.p1.m1" class="ltx_Math" alttext="E" display="inline"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>, <math id="Ch4.Thmexercise22.p1.m2" class="ltx_Math" alttext="F" display="inline"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math> espaços vetoriais complexos e <math id="Ch4.Thmexercise22.p1.m3" class="ltx_Math" alttext="\overline{E}" display="inline"><semantics><mover accent="true"><mi>E</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{E}</annotation></semantics></math>, <math id="Ch4.Thmexercise22.p1.m4" class="ltx_Math" alttext="\overline{F}" display="inline"><semantics><mover accent="true"><mi>F</mi><mo>¯</mo></mover><annotation encoding="application/x-tex">\overline{F}</annotation></semantics></math> seus espaços
+vetoriais conjugados. Mostre que as seguintes afirmações são equivalentes sobre
+uma aplicação <math id="Ch4.Thmexercise22.p1.m5" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math>:</p>
+<ul id="I18" class="ltx_itemize">
+<li id="I18.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I18.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I18.i1.p1.m1" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é linear;</p>
+</div>
+</li>
+<li id="I18.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I18.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I18.i2.p1.m1" class="ltx_Math" alttext="T:\overline{E}\to\overline{F}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mover accent="true"><mi>E</mi><mo>¯</mo></mover><mo stretchy="false">→</mo><mover accent="true"><mi>F</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">T:\overline{E}\to\overline{F}</annotation></semantics></math> é linear.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p">Mostre também que são equivalentes as seguintes afirmações:</p>
+<ul id="I19" class="ltx_itemize">
+<li id="I19.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I19.i1.p1" class="ltx_para">​<p class="ltx_p"><math id="I19.i1.p1.m1" class="ltx_Math" alttext="T:E\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:E\to F</annotation></semantics></math> é linear-conjugada;</p>
+</div>
+</li>
+<li id="I19.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I19.i2.p1" class="ltx_para">​<p class="ltx_p"><math id="I19.i2.p1.m1" class="ltx_Math" alttext="T:\overline{E}\to F" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mover accent="true"><mi>E</mi><mo>¯</mo></mover><mo stretchy="false">→</mo><mi>F</mi></mrow></mrow><annotation encoding="application/x-tex">T:\overline{E}\to F</annotation></semantics></math> é linear;</p>
+</div>
+</li>
+<li id="I19.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span><div id="I19.i3.p1" class="ltx_para">​<p class="ltx_p"><math id="I19.i3.p1.m1" class="ltx_Math" alttext="T:E\to\overline{F}" display="inline"><semantics><mrow><mi>T</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>E</mi><mo stretchy="false">→</mo><mover accent="true"><mi>F</mi><mo>¯</mo></mover></mrow></mrow><annotation encoding="application/x-tex">T:E\to\overline{F}</annotation></semantics></math> é linear.</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="SSx3" class="ltx_subsection normal">
+<div class="section level2">
+
+<h2 class="ltx_title ltx_title_subsection">Funções Convexas</h2>
+
+<div id="Ch4.Thmexercise23" class="ltx_theorem ltx_theorem_exercise">
+
+<h6 class="ltx_title ltx_runin ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem header-section-number"><span class="ltx_text ltx_font_italic">Exercício 4.23</span></span><span class="ltx_text ltx_font_italic">.</span>
+</h6>
+<div id="Ch4.Thmexercise23.p1" class="ltx_para">
+<p class="ltx_p">Se <math id="Ch4.Thmexercise23.p1.m1" class="ltx_Math" alttext="f:\mathds{R}\to\mathds{R}" display="inline"><semantics><mrow><mi>f</mi><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mi>ℝ</mi><mo stretchy="false">→</mo><mi>ℝ</mi></mrow></mrow><annotation encoding="application/x-tex">f:\mathds{R}\to\mathds{R}</annotation></semantics></math> é uma função afim, i.e., existem <math id="Ch4.Thmexercise23.p1.m2" class="ltx_Math" alttext="a,b\in\mathds{R}" display="inline"><semantics><mrow><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">a,b\in\mathds{R}</annotation></semantics></math> com <math id="Ch4.Thmexercise23.p1.m3" class="ltx_Math" alttext="f(x)=ax+b" display="inline"><semantics><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>x</mi></mrow><mo>+</mo><mi>b</mi></mrow></mrow><annotation encoding="application/x-tex">f(x)=ax+b</annotation></semantics></math> para todo
+<math id="Ch4.Thmexercise23.p1.m4" class="ltx_Math" alttext="x\in\mathds{R}" display="inline"><semantics><mrow><mi>x</mi><mo>∈</mo><mi>ℝ</mi></mrow><annotation encoding="application/x-tex">x\in\mathds{R}</annotation></semantics></math>, mostre que <math id="Ch4.Thmexercise23.p1.m5" class="ltx_Math" alttext="f" display="inline"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math> é convexa.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+</section>
+</div>
+</div>
+</div>
+<a href="Ch4.S5.html" class="navigation navigation-prev" aria-label="Previous page"><i class="fa fa-angle-left"></i></a><a href="Ch5.html" class="navigation navigation-next" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+</div>
+</div>
+<script src="bookml/gitbook/js/app.min.js"></script>
+<script src="bookml/gitbook/js/jquery.highlight.js"></script>
+<script src="bookml/gitbook/js/plugin-search.js"></script>
+<script src="bookml/gitbook/js/plugin-fontsettings.js"></script>
+<script src="bookml/gitbook/js/plugin-bookdown.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script>
+        MathJax = {
+          startup: {
+            ready() {
+              // do not process equations disabled with \bmlDisableMathJax (code suggested by Davide P. Cervone)
+              class bmlFindMathML extends MathJax._.input.mathml.FindMathML.FindMathML {
+                processMath(set) {
+                  const adaptor = this.adaptor;
+                  for (const node of set.values()) {
+                    if (adaptor.hasClass(node, 'bml_disable_mathjax')) {
+                      set.delete(node);
+                    }
+                  }
+                  return super.processMath(set);
+                }
+              }
+
+              MathJax._.components.global.combineDefaults(MathJax.config, 'mml', {FindMathML: new bmlFindMathML()});
+
+              MathJax.startup.defaultReady();
+
+              // preproces MathML to make MathJax aware of certain LaTeXML and BookML additional info
+              const mmlFilters = MathJax.startup.input[0].mmlFilters;
+
+              // convert the LaTeXML calligraphic (chancery) annotation to a form MathJax understands
+              // since the corresponding Unicode characters render as script (rounded)
+              const script2latin = {
+                '𝒜': 'A', 'ℬ': 'B', '𝒞': 'C', '𝒟': 'D', 'ℰ': 'E', 'ℱ': 'F', '𝒢': 'G',
+                'ℋ': 'H', 'ℐ': 'I', '𝒥': 'J', '𝒦': 'K', 'ℒ': 'L', 'ℳ': 'M', '𝒩': 'N',
+                '𝒪': 'O', '𝒫': 'P', '𝒬': 'Q', 'ℛ': 'R', '𝒮': 'S', '𝒯': 'T', '𝒰': 'U',
+                '𝒱': 'V', '𝒲': 'W', '𝒳': 'X', '𝒴': 'Y', '𝒵': 'Z',
+              };
+
+              mmlFilters.add((args) => {
+                for (const n of args.data.getElementsByClassName('ltx_font_mathcaligraphic')) {
+                  n.classList.add('MJX-tex-calligraphic');
+                  const letter = script2latin[n.textContent];
+                  if (letter !== undefined) { n.textContent = letter; }
+                }
+              });
+
+              // adjust characters based on Unicode variation sequences
+              const replacements = {
+                // MathJax renders the empty set as the U+FE00 variant, so the plain character needs adjusting
+                '∅': { variant: 'variant' },
+                // MathJax renders script characters in rounded style, which is fine for no variation and U+FE00
+                '𝒜\xFE00': { text: 'A', variant: 'tex-calligraphic' },
+                'ℬ\xFE00': { text: 'B', variant: 'tex-calligraphic' },
+                '𝒞\xFE00': { text: 'C', variant: 'tex-calligraphic' },
+                '𝒟\xFE00': { text: 'D', variant: 'tex-calligraphic' },
+                'ℰ\xFE00': { text: 'E', variant: 'tex-calligraphic' },
+                'ℱ\xFE00': { text: 'F', variant: 'tex-calligraphic' },
+                '𝒢\xFE00': { text: 'G', variant: 'tex-calligraphic' },
+                'ℋ\xFE00': { text: 'H', variant: 'tex-calligraphic' },
+                'ℐ\xFE00': { text: 'I', variant: 'tex-calligraphic' },
+                '𝒥\xFE00': { text: 'J', variant: 'tex-calligraphic' },
+                '𝒦\xFE00': { text: 'K', variant: 'tex-calligraphic' },
+                'ℒ\xFE00': { text: 'L', variant: 'tex-calligraphic' },
+                'ℳ\xFE00': { text: 'M', variant: 'tex-calligraphic' },
+                '𝒩\xFE00': { text: 'N', variant: 'tex-calligraphic' },
+                '𝒪\xFE00': { text: 'O', variant: 'tex-calligraphic' },
+                '𝒫\xFE00': { text: 'P', variant: 'tex-calligraphic' },
+                '𝒬\xFE00': { text: 'Q', variant: 'tex-calligraphic' },
+                'ℛ\xFE00': { text: 'R', variant: 'tex-calligraphic' },
+                '𝒮\xFE00': { text: 'S', variant: 'tex-calligraphic' },
+                '𝒯\xFE00': { text: 'T', variant: 'tex-calligraphic' },
+                '𝒰\xFE00': { text: 'U', variant: 'tex-calligraphic' },
+                '𝒱\xFE00': { text: 'V', variant: 'tex-calligraphic' },
+                '𝒲\xFE00': { text: 'W', variant: 'tex-calligraphic' },
+                '𝒳\xFE00': { text: 'X', variant: 'tex-calligraphic' },
+                '𝒴\xFE00': { text: 'Y', variant: 'tex-calligraphic' },
+                '𝒵\xFE00': { text: 'Z', variant: 'tex-calligraphic' }
+              };
+
+              mmlFilters.add((args) => {
+                let nodes = document.evaluate('.//m:mi | .//m:mn | .//m:mo | .//m:ms', args.data,
+                  () => 'http://www.w3.org/1998/Math/MathML', XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE);
+                for (let i = 0; i < nodes.snapshotLength; i++) {
+                  const n = nodes.snapshotItem(i);
+                  const repl = replacements[n.innerHTML];
+                  if (repl !== undefined) {
+                    const variant = repl['variant'];
+                    const text = repl['text'];
+                    if (variant !== undefined) { n.classList.add('MJX-' + variant); n.removeAttribute('mathvariant'); }
+                    if (text !== undefined) { n.innerHTML = text; }
+                  }
+                }
+              });
+            }
+          }
+        };
+      </script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/mml-chtml.js"></script>
+<script type="text/javascript">
+                gitbook.require(["gitbook"], function(gitbook) {
+                gitbook.start({
+                  "fontsettings": {
+                    "theme": "white",
+                    "family": "sans",
+                    "size": 2
+                  },
+                  "download": [ [ "NotasMedida.pdf", "PDF" ], ],
+                  "search": {
+                    "engine": "fuse"
+                  },
+                  "toc": {
+                    "collapse": "none"
+                  }
+                });
+              });
+            </script>
+</body>
+
+</html>
